@@ -1,0 +1,42 @@
+.banners {
+  &__container{
+    padding: 30px 0;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    flex-shrink: 0;
+    width: 33%;
+
+    &:not(:last-child) {
+      margin-right: 0.5%;
+    }
+  }
+}
+.banners-article {
+  padding: 40px 40px;
+  padding-right: 45%;
+  min-height: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #a7a4a4;
+
+  &--mid {
+   background-image: url(../../img/mid400.jpg);
+  }
+  &--summer {
+   background-image: url(../../img/summer400.jpg);
+  }
+  &--accs {
+   background-image: url(../../img/accs400.jpg);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+}

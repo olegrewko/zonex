@@ -1,0 +1,22 @@
+.product{
+  &__image{
+    margin-bottom: 20px;
+    img{
+      max-height: 100%;
+      object-fit: cover;
+
+    }
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: 5px;
+    color: darkslategray;
+    font-size: 12px;
+  }
+  &__price{
+    margin: 0;
+    color: rgb(25, 28, 28);
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

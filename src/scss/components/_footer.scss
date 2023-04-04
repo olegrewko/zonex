@@ -1,0 +1,135 @@
+.footer {
+  &__content{
+        padding: 0 50px;
+        padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  &__column{
+
+    &:nth-child(1){
+      min-width: 250px;
+      // margin-left: -50px;
+    }
+    &:nth-child(2){
+      min-width: 150px;
+      margin-left: -50px;
+    }
+  }
+  &__link{
+    color: rgb(30, 35, 35);
+  }
+
+  &__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &__form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+
+  }
+  &__list--row {
+     font-weight: 500;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    .footer__item{
+      margin-bottom: 0;
+      color: black;
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  }
+   &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #1f3c39;
+    padding: 20px 0;
+  }
+  &__social{
+    margin-right: 10px;
+  }
+}
+.subscribe-form {
+  position: relative;
+  &__title{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__field{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+  }
+  input{
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 100px;
+
+    &::placeholder{
+      color: rgba(#000000, 0.7)
+    }
+  }
+ }
+ .social {
+
+  display: flex;
+  align-items: flex-end;
+  &__item{
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+  }
+  &__link{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  &--tw {
+    background-image: url(../../img/twitter.png);
+  }
+  &--fb {
+    background-image: url(../../img/facebook.png);
+  }
+  &--in {
+    background-image: url(../../img/instagram.png);
+  }
+  &--pin {
+    background-image: url(../../img/pinterest.png);
+  }
+}
+ }

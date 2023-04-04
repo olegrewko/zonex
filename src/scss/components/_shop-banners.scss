@@ -1,0 +1,40 @@
+.shop-banners {
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.shop-banner {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding:  40px;
+  min-height: 300px;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(maroon, 0.1);
+  }
+
+  &--man{
+    background-image: url(../../img/banner01.jpg);
+  }
+  &--woman{
+    background-image: url(../../img/banner02.jpg);
+  }
+
+}

@@ -1,0 +1,37 @@
+.hero{
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-color: #d9d9d7;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 100px;
+    height: 100%;
+  }
+   &__title{
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 40px;
+    z-index: 10;
+   }
+   &__d{
+    margin: 0;
+    max-width: 500px;
+    font-weight: 500;
+    font-size: 10px;
+    z-index: 10;
+   }
+   &__image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+   }
+}
