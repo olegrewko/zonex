@@ -1,16 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/_components.js":
-/*!*******************************!*\
-  !*** ./src/js/_components.js ***!
-  \*******************************/
-/***/ (() => {
-
-console.log('components');
-
-/***/ }),
-
 /***/ "./src/js/_functions.js":
 /*!******************************!*\
   !*** ./src/js/_functions.js ***!
@@ -124,7 +114,9 @@ __webpack_require__.r(__webpack_exports__);
   windowEl: window,
   documentEl: document,
   htmlEl: document.documentElement,
-  bodyEl: document.body
+  bodyEl: document.body,
+  $bannerSlider: document.querySelector('.banner-slider'),
+  $catalogSlider: document.querySelector('.hero-catalog__slider')
 });
 
 /***/ }),
@@ -140,6 +132,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/js/components/banner-slider.js":
+/*!********************************************!*\
+  !*** ./src/js/components/banner-slider.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../vendor/swiper.min.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_vars.js */ "./src/js/_vars.js");
+
+
+const bannerSlider = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '../vendor/swiper.min.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(_vars_js__WEBPACK_IMPORTED_MODULE_1__["default"].$bannerSlider, {
+  loop: true,
+  sliderPerView: 1,
+  pagination: {
+    el: '.banner-pag',
+    type: 'bullets',
+    clickable: 'true'
+  }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/catalog-slider.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/catalog-slider.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../vendor/swiper.min.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+
+const catalogSlider = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '../vendor/swiper.min.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$bannerSlider, {
+  loop: true,
+  sliderPerView: 1,
+  pagination: {
+    el: '.banner-pag',
+    type: 'bullets',
+    clickable: 'true'
+  }
+});
 
 /***/ }),
 
@@ -538,12 +578,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
+/* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
 
 
 
 
+
+
+// $(function () {
+//     $('.catalog__slider').slick({
+//     arrows: false,
+//     prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg" alt="img/arrow-left.svg" /></button>',
+//     nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt="img/arrow-right.svg" /></button>',
+//     dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     fade: true,
+//     responsive: [{
+//         breakpoint: 768,
+//         settings: {
+
+//           arrows: false
+
+//         }
+//       },
+
+//     ]
+//   });
+// });
 })();
 
 /******/ })()
