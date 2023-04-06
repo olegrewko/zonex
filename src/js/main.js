@@ -1,8 +1,10 @@
 import './_vendor';
-import vars from './_vars';
+import vars from '../_vars';
 import './_functions';
 import './components/banner-slider.js';
 import './components/catalog-slider.js';
+import './components/catalog-props.js';
+import './components/catalog-filter-toggle.js';
 
 // $(function () {
 //     $('.catalog__slider').slick({

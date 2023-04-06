@@ -110,13 +110,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+// export default {
+//   windowEl: window,
+//   documentEl: document,
+//   htmlEl: document.documentElement,
+//   bodyEl: document.body,
+//   $bannerSlider: document.querySelector('.banner-slider'),
+//   $catalogSlider: document.querySelector('.hero-catalog__slider'),
+//   $catalogFilters: document.querySelectorAll('.catalog-filter')
+// }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  windowEl: window,
-  documentEl: document,
-  htmlEl: document.documentElement,
-  bodyEl: document.body,
+  $window: window,
+  $document: document,
+  $html: document.documentElement,
+  $body: document.body,
   $bannerSlider: document.querySelector('.banner-slider'),
-  $catalogSlider: document.querySelector('.hero-catalog__slider')
+  $marketing: document.querySelector('.marketing'),
+  $catalogSlider: document.querySelector('.hero-catalog__slider'),
+  $catalogFiltersTop: document.querySelectorAll('.catalog-filter__top'),
+  $hideFilters: document.querySelector('.hide-filters'),
+  $catalogColumns: document.querySelector('.catalog-columns__list'),
+  $catalogGridContent: document.querySelector('.catalog-grid__content'),
+  $catalogFilterItems: document.querySelectorAll('.catalog-filter__item'),
+  $catalogChoice: document.querySelector('.catalog-choice'),
+  $customSelect: document.querySelectorAll('.custom-select'),
+  $freeDeliveryBtn: document.querySelector('.free-delivery__btn'),
+  $colorSelect: document.querySelector('.color-select'),
+  $sizeSelect: document.querySelector('.size-select'),
+  $stepper: document.querySelector('.stepper'),
+  $cardSliderThumbs: document.querySelector('.card-slider__thumbs'),
+  $sliderImg: document.querySelector('.card-slider__main img'),
+  $cardDescrLink: document.querySelectorAll('.card-description__link'),
+  $cardRelatedSlider: document.querySelector('.card-related__slider'),
+  $burger: document.querySelector('.burger'),
+  $navClose: document.querySelector('.nav__close'),
+  $nav: document.querySelector('.nav'),
+  $mobileFiltersOpen: document.querySelector('.catalog-mobile-filters'),
+  $catalogFilters: document.querySelector('.catalog-filters')
 });
 
 /***/ }),
@@ -156,6 +186,73 @@ const bannerSlider = new Object(function webpackMissingModule() { var e = new Er
     clickable: 'true'
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/components/catalog-filter-toggle.js":
+/*!****************************************************!*\
+  !*** ./src/js/components/catalog-filter-toggle.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars.js */ "./src/js/_vars.js");
+
+
+// if (document.querySelector('.catalog')) {
+_vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogFiltersTop.forEach(el => {
+  el.addEventListener('click', e => {
+    e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter--open');
+  });
+});
+_vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$hideFilters.addEventListener('click', e => {
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogFiltersTop.forEach(el => {
+    el.closest('.catalog-filter').classList.remove('catalog-filter--open');
+  });
+});
+// }
+
+/***/ }),
+
+/***/ "./src/js/components/catalog-props.js":
+/*!********************************************!*\
+  !*** ./src/js/components/catalog-props.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+if (document.querySelector('.catalog')) {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$freeDeliveryBtn.addEventListener('click', e => {
+    console.log(e.currentTarget);
+    e.currentTarget.closest('.free-delivery').style.display = 'none';
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogColumns.addEventListener('click', e => {
+    if (e.target.classList.contains('.catalog-columns__btn') || e.target.closest('.catalog-columns__item')) {
+      let columns = e.target.dataset.columns;
+      let $columnsBtn = document.querySelectorAll('.catalog-columns__btn');
+      $columnsBtn.forEach(el => {
+        el.classList.remove('catalog-columns__btn--current');
+      });
+      e.target.classList.add('catalog-columns__btn--current');
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogGridContent.dataset.gridColumns = columns;
+    }
+  });
+}
+if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$customSelect) {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$customSelect.forEach(el => {
+    el.addEventListener('click', e => {
+      e.currentTarget.classList.toggle('custom-select--open');
+      if (e.target.classList.contains('custom-select__item')) {
+        let text = e.target.textContent;
+        e.currentTarget.querySelector('.custom-select__top').textContent = text;
+      }
+    });
+  });
+}
 
 /***/ }),
 
@@ -576,10 +673,14 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../_vars'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
 /* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
+/* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
+/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+
+
 
 
 
