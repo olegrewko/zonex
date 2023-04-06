@@ -22,6 +22,7 @@
 
 <body class="page__body">
   <div class="site-container">
+
     <header class="header">
   <div class="container header__container">
     <nav class="nav header__nav">
@@ -66,80 +67,274 @@
 </header>
 
     <main class="main">
-      <section class="hero">
-  <div class="container hero__container">
-    <h1 class="visually-hidden">Zonex-best shop</h1>
-    <!--
-       <div class="banner-slider">
+      <!-- <div class="hero-catalog">
+  <div class="container hero-catalog__container">
+    <div class="hero-catalog__slider">
+
+
+        <div class="catalog-slide">
+            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
+            <p class="catalog-slide__d">his fall denim is king! Denim is officially back
+               in and cool to wear in all its many forms</p>
+               <div class="catalog-slide__btns">
+                <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
+                <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop Now</a>
+               </div>
+
+            <img class="catalog-slide__image"  src="../img/girl02.png" alt="girl02.png">
+        </div>
+
+    </div>
+  </div>
+</div> -->
+
+<div class="hero-catalog">
+  <div class="container container-narrow hero-catalog__container">
+    <div class="hero-catalog__slider">
+      <button class="hero-prev-btn btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#prev-arrow"></use>
+        </svg>
+      </button>
+      <button class="hero-next-btn btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#next-arrow"></use>
+        </svg>
+      </button>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-            <p class="hero__d">Fall-Winter Clearance Sales / Zonex-best shop</p>
-            <img class="hero__image"  src="../img/svg/girl.png" alt="girl.png">
+          <div class="catalog-slide">
+            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
+            <p class="catalog-slide__descr">This fall denim is king! Denim is officially back in and cool to wear in all
+              its many forms</p>
+            <div class="catalog-slide__btns">
+              <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
+              <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop now</a>
+            </div>
+            <img class="catalog-slide__image"  src="../img/girl02.png" alt="girl02.png">
+          </div>
         </div>
-        <div class="swiper-slide">
-          <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-          <p class="hero__d">Fall-Winter Clearance Sales / Zonex-best shop</p>
-          <img class="hero__image"  src="../img/svg/girl.png" alt="girl.png">
-        </div>
-        <div class="swiper-slide">
-          <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-          <p class="hero__d">Fall-Winter Clearance Sales / Zonex-best shop</p>
-          <img class="hero__image"  src="../img/svg/girl.png" alt="girl.png">
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-pagination hero-pag"></div>
+    </div>
+  </div>
+</div>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Catalog</h2>
+
+      <div class="breadcrumbs">
+  <div class="container">
+   <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link"></a>Home</li>
+    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link"></a>Shop</li>
+    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link--current">
+      New Arrivals
+    </a></li>
+   </ul>
+  </div>
+</div>
+
+      <div class="container catalog-content">
+        <div class="catalog-filters">
+  <!-- <div class="container"> -->
+  <button class="hide-filters btn-reset">
+    Hide filters
+  </button>
+  <div class="catalog-filter catalog-filter--open">
+    <div class="catalog-filter__top">
+      <div class="catalog-filter__cap">
+      <h3 class="catalog-filter__title">Categories</h3>
+      <span class="catalog-filter__q">3</span>
+      </div>
+      <span class="catalog-filter__toggle"></span>
+    </div>
+    <div class="catalog-filter__bottom">
+      <ul class="catalog-filter__items">
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">All categories</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Accessories</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Dresses</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Coats</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Clothes</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">T-short</span>
+          </label>
+        </li>
+            <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Summer</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Shirts</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Jacket</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Short</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="catalog-filter">
+    <div class="catalog-filter__top">
+      <div class="catalog-filter__cap">
+      <h3 class="catalog-filter__title">Color</h3>
+      <span class="catalog-filter__q">5</span>
+      </div>
+      <span class="catalog-filter__toggle"></span>
+    </div>
+    <div class="catalog-filter__bottom">
+      <ul class="catalog-filter__items">
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">All categories</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Accessories</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Dresses</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Coats</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Clothes</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">T-short</span>
+          </label>
+        </li>
+            <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Summer</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+           <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Shirts</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Jacket</span>
+          </label>
+        </li>
+        <li class="catalog-filter__item">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input visually-hidden">
+            <span class="custom-checkbox__text">Short</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+<!-- </div> -->
+</div>
+
+        <div class="catalog-grid">
+  <div class="container">
+  <div class="catalog-grid__props catalog-props">
+    <div class="catalog-props__top">
+      <div class="catalog-props__columns catalog-columns">
+        <span class="catalog-columns__text">Column number</span>
+        <ul class="catalog-columns__list">
+          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="3">3</button></li>
+          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current" data-columns="4">
+            4</button></li>
+          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
+        </ul>
+      </div>
+      <div class="custom-select">
+        <div class="custom-select__top">Sort by latest</div>
+        <div class="custom-select__dropdown">
+          <ul class="custom-select__list">
+            <li class="custom-select__item">Sort by latest</li>
+            <li class="custom-select__item">Sort by price</li>
+            <li class="custom-select__item">Sort by smth</li>
+          </ul>
         </div>
       </div>
-     -->
-       <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-          <p class="hero__d">Fall-Winter Clearance Sales / Zonex-best shop</p>
-          <img class="hero__image"  src="../img/svg/girl.png" alt="girl.png">
+      <!-- <select name="" id="" class="catalog-select">
+        <option value="">123</option>
+      </select> -->
     </div>
+    <div class="catalog-props__choice catalog-choice">
+      <button class="btn-reset catalog-choice__item">
+        Accessories
+        <img src="../img/close.png" alt="../img/close16.png" width="7px" height="7px">
+      </button>
+      <button class="btn-reset catalog-choice__item">
+        28
+         <img src="../img/close.png" alt="../img/close16.png" width="7px" height="7px">
+      </button>
+      <button class="btn-reset main-link catalog-choice__clear">
+        Clear all
+      </button>
 
+    </div>
   </div>
-</section>
-
-      <section class="banners">
-  <h2 class="visually-hidden">Banners</h2>
-  <div class="container banners__container">
-    <ul class="banners__list">
-      <li class="banners__item ">
-        <article class="banners__article banners-article banners-article--mid">
-          <h3 class="banners-article__title">
-            Womens Mid-Season
-          </h3>
-          <a class="main-link banners-article__link" href="">Shop Now</a>
-        </article>
-      </li>
-      <li class="banners__item">
-        <article class="banners__article banners-article banners-article--summer">
-           <h3 class="banners-article__title">
-            Summer Romance
-          </h3>
-          <a class="main-link banners-article__link" href="">Shop Now</a>
-        </article>
-      </li>
-      <li class="banners__item">
-        <article class="banners__article banners-article banners-article--accs">
-           <h3 class="banners-article__title">
-            Sale All Acsessories
-          </h3>
-          <a class="main-link banners-article__link" href="">Shop Now</a>
-        </article>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="main-products">
-  <h2 class="visually-hidden">Main-products</h2>
-  <div class="container main-products__container">
-    <ul class="main-products__nav">
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link main-products__btn--current" data-filter="best-sellers">Best products</button></li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link" data-filter="new-products">New products</button></li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link" data-filter="sale-products">Sale products</button></li>
-    </ul>
-
-    <ul class="main-products__list products-grid">
-      <li class="products-grid__item">
+  <ul class="catalog-grid__content" data-grid-columns="4">
+    <li class="products-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod01.jpg" alt="../img/prod01.jpg">
@@ -250,7 +445,7 @@
       <li class="products-grid__item">
         <article class="product">
           <div class="product__image">
-            <img src="../img/m6.png" alt="../img/m6.png">
+            <img src="../img/prod09.jpg" alt="../img/prod09.jpg">
           </div>
           <h3 class="product__title">Eye Mesh Boat Shoes</h3>
           <span class="product__price">$220.0</span>
@@ -274,27 +469,23 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-    </ul>
-    <div class="main-products__btn-center">
-      <button class="btn-reset main-products__more">Load more</button>
-    </div>
-  </div>
-</section>
+  </ul>
+  <ul class="pagination">
+    <li class="pagination__item"><a href="#" class="pagination__link pagination__link--current">1</a></li>
+    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">
+        Next
+        <img src="../img/angle-right.png" alt="">
+      </a></li>
+  </ul>
+ </div>
+</div>
 
-      <section class="shop-banners">
-  <h2 class="visually-hidden">Banners</h2>
-  <div class="container shop-banners__container">
-    <a href="" class="shop-banners__banner shop-banner shop-banner--man">
-      <h3 class="shop-banner__title">Mens Sportswear</h3>
-      <span class="shop-banner__text main-link  main-link--white">Read more</span>
-    </a>
-    <a href="" class="shop-banners__banner shop-banner shop-banner--woman">
-      <h3 class="shop-banner__title">Find your fit</h3>
-      <span class="shop-banner__text main-link  main-link--white">Read more</span>
-    </a>
-  </div>
-</section>
+      </div>
 
+      </section>
     </main>
     <footer class="footer">
   <div class="container footer__container">

@@ -4636,11 +4636,12 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
-/* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
-/* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
-/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+/* harmony import */ var _js_vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/_vars */ "./src/js/_vars.js");
+/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
+/* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
+/* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
+/* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
+/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
 
 
 
@@ -4648,27 +4649,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// $(function () {
-//     $('.catalog__slider').slick({
-//     arrows: false,
-//     prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg" alt="img/arrow-left.svg" /></button>',
-//     nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt="img/arrow-right.svg" /></button>',
-//     dots: true,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     fade: true,
-//     responsive: [{
-//         breakpoint: 768,
-//         settings: {
-
-//           arrows: false
-
-//         }
-//       },
-
-//     ]
-//   });
-// });
+_js_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$freeDeliveryBtn.addEventListener('click', e => {
+  e.currentTarget.closest('.free-delivery').style.display = 'none';
+});
 })();
 
 /******/ })()
