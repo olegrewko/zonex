@@ -1,4 +1,5 @@
 <div class="catalog-grid">
+  <div class="container">
   <div class="catalog-grid__props catalog-props">
     <div class="catalog-props__top">
       <div class="catalog-props__columns catalog-columns">
@@ -10,9 +11,19 @@
           <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
         </ul>
       </div>
-      <select name="" id="" class="catalog-select">
+      <div class="custom-select">
+        <div class="custom-select__top">Sort by latest</div>
+        <div class="custom-select__dropdown">
+          <ul class="custom-select__list">
+            <li class="custom-select__item">Sort by latest</li>
+            <li class="custom-select__item">Sort by price</li>
+            <li class="custom-select__item">Sort by smth</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <select name="" id="" class="catalog-select">
         <option value="">123</option>
-      </select>
+      </select> -->
     </div>
     <div class="catalog-props__choice catalog-choice">
       <button class="btn-reset catalog-choice__item">
@@ -166,4 +177,5 @@
         </article>
       </li>
   </ul>
+ </div>
 </div>

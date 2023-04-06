@@ -66,14 +66,15 @@
 </header>
 
     <main class="main">
-      <div class="hero-catalog">
+      <!-- <div class="hero-catalog">
   <div class="container hero-catalog__container">
     <div class="hero-catalog__slider">
 
+
         <div class="catalog-slide">
-            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
-            <p class="catalog-slide__d">his fall denim is king! Denim is officially back
-               in and cool to wear in all its many forms</p>
+            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
+            <p class="catalog-slide__d">his fall denim is king! Denim is officially back
+               in and cool to wear in all its many forms</p>
                <div class="catalog-slide__btns">
                 <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
                 <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop Now</a>
@@ -81,18 +82,39 @@
 
             <img class="catalog-slide__image"  src="../img/girl02.png" alt="girl02.png">
         </div>
-        <!-- <div class="catalog-slide">
-          <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
-          <p class="catalog-slide__d">his fall denim is king! Denim is officially back
-             in and cool to wear in all its many forms</p>
-             <div class="catalog-slide__btns">
+
+    </div>
+  </div>
+</div> -->
+<div class="hero-catalog">
+  <div class="container container-narrow hero-catalog__container">
+    <div class="hero-catalog__slider">
+      <button class="hero-prev-btn btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#prev-arrow"></use>
+        </svg>
+      </button>
+      <button class="hero-next-btn btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#next-arrow"></use>
+        </svg>
+      </button>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="catalog-slide">
+            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
+            <p class="catalog-slide__descr">This fall denim is king! Denim is officially back in and cool to wear in all
+              its many forms</p>
+            <div class="catalog-slide__btns">
               <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
-              <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop Now</a>
-             </div>
-
-          <img class="catalog-slide__image"  src="../img/girl03.png" alt="girl03.png">
-        </div> -->
-
+              <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop now</a>
+            </div>
+            <img class="catalog-slide__image"  src="../img/girl02.png" alt="girl02.png">
+          </div>
+        </div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-pagination hero-pag"></div>
     </div>
   </div>
 </div>
@@ -112,9 +134,9 @@
   </div>
 </div>
 
-      <div class="catalog-content">
+      <div class="container catalog-content">
         <div class="catalog-filters">
-  <div class="container">
+  <!-- <div class="container"> -->
   <button class="hide-filters btn-reset">
     Hide filters
   </button>
@@ -264,10 +286,11 @@
       </ul>
     </div>
   </div>
-</div>
+<!-- </div> -->
 </div>
 
         <div class="catalog-grid">
+  <div class="container">
   <div class="catalog-grid__props catalog-props">
     <div class="catalog-props__top">
       <div class="catalog-props__columns catalog-columns">
@@ -279,9 +302,19 @@
           <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
         </ul>
       </div>
-      <select name="" id="" class="catalog-select">
+      <div class="custom-select">
+        <div class="custom-select__top">Sort by latest</div>
+        <div class="custom-select__dropdown">
+          <ul class="custom-select__list">
+            <li class="custom-select__item">Sort by latest</li>
+            <li class="custom-select__item">Sort by price</li>
+            <li class="custom-select__item">Sort by smth</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <select name="" id="" class="catalog-select">
         <option value="">123</option>
-      </select>
+      </select> -->
     </div>
     <div class="catalog-props__choice catalog-choice">
       <button class="btn-reset catalog-choice__item">
@@ -435,6 +468,7 @@
         </article>
       </li>
   </ul>
+ </div>
 </div>
 
       </div>
