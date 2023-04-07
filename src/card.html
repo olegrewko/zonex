@@ -3,19 +3,20 @@
 
 @include('partials/head.html')
 
-<body class="page__body">
+<body class="card-page">
   <div class="site-container">
 
     @include('partials/header.html')
     <main class="main">
-      @include('partials/hero-catalog.html')
-      <section class="catalog">
-        <h2 class="visually-hidden">Catalog</h2>
+
+      <section class="card">
+        <h2 class="visually-hidden">Card</h2>
 
       @include('partials/breadcrumbs.html')
-      <div class="container catalog-content">
-        @include('partials/catalog-filters.html')
-        @include('partials/catalog-grid.html')
+      <div class="card-content">
+        <div class="card-content__top">
+          @include('partials/card-top.html')
+        </div>
       </div>
 
       </section>

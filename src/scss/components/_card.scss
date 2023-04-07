@@ -1,0 +1,125 @@
+.card {
+  padding-top: 60px;
+}
+.card-content {
+  padding-top: 20px;
+}
+.card-top {
+  .container{
+    display: flex;
+  }
+  &__left{
+    width: 57%;
+  }
+  &__right{
+    padding-top: 30px;
+    padding-left: 3%;
+    width: calc(100% - 57%);
+  }
+}
+.card-info {
+  &__prop{
+    margin-bottom: 15px;
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  &__rate{
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-gray);
+  }
+}
+.card-info {
+
+  &__price{
+  display: flex;
+  align-items: flex-end;
+}
+  &__current{
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-dark);
+
+  }
+  &__old {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray);
+    text-decoration: line-through;
+  }
+  &__descr {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    // line-height: 20;
+    color: var(--color-tundora);
+
+  }
+
+}
+.color-select {
+
+  &__selected{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+
+    span{
+     color: var(--color-dark);
+
+    }
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  &__btn{
+    position: relative;
+   border-radius: 100%;
+   width: 24px;
+   height: 24px;
+   cursor: pointer;
+  }
+   &::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border: 2px solid grey;
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+  &:hover {
+      &::before{
+      border: 2px solid black;
+      transition: all 0.3s;
+      }
+  }
+  &__btn--active {
+      &::before{
+      border: 2px solid black;
+      transition: all 0.3s;
+      }
+  }
+
+
+}
