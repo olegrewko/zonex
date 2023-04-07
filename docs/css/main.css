@@ -1222,7 +1222,7 @@ svg {
   height: 24px;
   cursor: pointer;
 }
-.color-select::before {
+.color-select__btn::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1239,13 +1239,13 @@ svg {
   transition: all 0.3s;
   cursor: pointer;
 }
-.color-select:hover::before {
+.color-select__btn:hover::before {
   border: 2px solid black;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.color-select__btn--active::before {
+.color-select__btn__btn--active::before {
   border: 2px solid black;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
