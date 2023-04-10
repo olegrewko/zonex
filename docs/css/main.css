@@ -1266,6 +1266,20 @@ svg {
 .size-select__selected span {
   color: var(--color-dark);
 }
+.size-select__clear {
+  display: none;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #d24242;
+}
+.size-select__clear img {
+  margin-top: 2px;
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  color: currentColor;
+}
 .size-select__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1273,16 +1287,17 @@ svg {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 5px;
+  margin-bottom: 7px;
 }
 .size-select__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .size-select__btn {
   position: relative;
   color: var(--color-gray);
   width: 40px;
   height: 30px;
+  font-size: 12px;
   cursor: pointer;
 }
 .size-select__btn::before {
@@ -1318,6 +1333,58 @@ svg {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.stepper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #ccc;
+  height: 58px;
+}
+.stepper__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 44px;
+  height: 100%;
+}
+.stepper__btn svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  fill: var(--color-gray);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.stepper__btn:hover svg {
+  fill: var(--color-dark);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.stepper__btn--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.stepper__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border: none;
+  height: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-dark);
 }
 
 .footer__content {

@@ -301,6 +301,91 @@ if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$colorSelect) {
     }
   });
 }
+if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$sizeSelect) {
+  let size = '';
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$sizeSelect.addEventListener('click', e => {
+    if (e.target.classList.contains('size-select__btn')) {
+      e.currentTarget.querySelector('.size-select__clear').style.display = 'inline-flex';
+      let color = e.target.dataset.color;
+      e.currentTarget.querySelector('.size-select__selected span').textContent = color;
+      e.target.classList.toggle('size-select__btn--active');
+      if (e.target.classList.contains('size-select__btn--active')) {
+        let currentSize = e.target.textContent;
+        size += currentSize + ', ';
+      } else {
+        let currentSize = e.target.textContent + ', ';
+        size = size.replace(currentSize, '');
+      }
+      e.currentTarget.querySelector('.size-select__selected span').textContent = size;
+      if (!size) {
+        e.currentTarget.querySelector('.size-select__selected span').textContent = 'Select a size';
+      }
+    }
+    if (e.target.classList.contains('size-select__clear')) {
+      e.currentTarget.querySelector('.size-select__selected span').textContent = 'Select a size';
+      document.querySelectorAll('.size-select__btn').forEach(el => el.classList.remove('size-select__btn--active'));
+      e.target.style.display = 'none';
+      size = '';
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/components/stepper.js":
+/*!**************************************!*\
+  !*** ./src/js/components/stepper.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper) {
+  const $stepperInput = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__input'),
+    $stepperMinus = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__btn--minus'),
+    $stepperPlus = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__btn--plus');
+  $stepperInput.addEventListener('keydown', e => {
+    console.log(e.currentTarget.value);
+    if (e.currentTarget.value <= 1) {
+      $stepperMinus.classList.add('stepper__btn--disabled');
+      $stepperPlus.classList.remove('stepper__btn--disabled');
+    } else {
+      $stepperMinus.classList.remove('stepper__btn--disabled');
+    }
+    if (e.currentTarget.value > 99998) {
+      $stepperMinus.classList.remove('stepper__btn--disabled');
+      $stepperPlus.classList.add('stepper__btn--disabled');
+    } else {
+      $stepperPlus.classList.remove('stepper__btn--disabled');
+    }
+  });
+  $stepperPlus.addEventListener('click', e => {
+    let currentValue = parseInt($stepperInput.value);
+    currentValue++;
+    $stepperInput.value = currentValue;
+    $stepperMinus.classList.remove('stepper__btn--disabled');
+    if ($stepperInput.value > 99998) {
+      $stepperInput.value = 99999;
+      $stepperPlus.classList.add('stepper__btn--disabled');
+    } else {
+      $stepperPlus.classList.remove('stepper__btn--disabled');
+    }
+  });
+  $stepperMinus.addEventListener('click', e => {
+    let currentValue = parseInt($stepperInput.value);
+    currentValue--;
+    $stepperInput.value = currentValue;
+    $stepperPlus.classList.remove('stepper__btn--disabled');
+    if ($stepperInput.value <= 1) {
+      $stepperInput.value = 1;
+      $stepperMinus.classList.add('stepper__btn--disabled');
+    } else {
+      $stepperMinus.classList.remove('stepper__btn--disabled');
+    }
+  });
+}
 
 /***/ }),
 
@@ -4664,7 +4749,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
 /* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
 /* harmony import */ var _components_color_select_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/color-select.js */ "./src/js/components/color-select.js");
-/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+/* harmony import */ var _components_stepper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/stepper.js */ "./src/js/components/stepper.js");
+/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+
 
 
 
