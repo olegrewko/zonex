@@ -200,19 +200,18 @@ const bannerSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___def
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars.js */ "./src/js/_vars.js");
 
-
-// if (document.querySelector('.catalog')) {
-_vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogFiltersTop.forEach(el => {
-  el.addEventListener('click', e => {
-    e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter--open');
-  });
-});
-_vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$hideFilters.addEventListener('click', e => {
+if (document.querySelector('.catalog')) {
   _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogFiltersTop.forEach(el => {
-    el.closest('.catalog-filter').classList.remove('catalog-filter--open');
+    el.addEventListener('click', e => {
+      e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter--open');
+    });
   });
-});
-// }
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$hideFilters.addEventListener('click', e => {
+    _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogFiltersTop.forEach(el => {
+      el.closest('.catalog-filter').classList.remove('catalog-filter--open');
+    });
+  });
+}
 
 /***/ }),
 
@@ -279,6 +278,29 @@ const catalogSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___de
     clickable: 'true'
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/components/color-select.js":
+/*!*******************************************!*\
+  !*** ./src/js/components/color-select.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$colorSelect) {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$colorSelect.addEventListener('click', e => {
+    if (e.target.classList.contains('color-select__btn')) {
+      document.querySelectorAll('.color-select__btn').forEach(el => el.classList.remove('color-select__btn--active'));
+      let color = e.target.dataset.color;
+      e.currentTarget.querySelector('.color-select__selected span').textContent = color;
+      e.target.classList.add('color-select__btn--active');
+    }
+  });
+}
 
 /***/ }),
 
@@ -4641,7 +4663,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
 /* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
 /* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
-/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+/* harmony import */ var _components_color_select_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/color-select.js */ "./src/js/components/color-select.js");
+/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
 
 
 
@@ -4649,9 +4672,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-_js_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$freeDeliveryBtn.addEventListener('click', e => {
-  e.currentTarget.closest('.free-delivery').style.display = 'none';
-});
+
+
+// vars.$freeDeliveryBtn.addEventListener('click', (e) => {
+//   e.currentTarget.closest('.free-delivery').style.display = 'none';
+// });
 })();
 
 /******/ })()
