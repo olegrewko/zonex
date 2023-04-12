@@ -39,11 +39,25 @@
       border: 2px solid var(--color-dark);
       color: var(--color-white);
       background-color: var(--color-dark);
+
+      &:hover {
+      border: 2px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent;
+      transition: all 0.3s;
+      }
     }
     &--light {
       border: 2px solid var(--color-dark);
       color: var(--color-dark);
       background-color: transparent;
+      transition: all 0.3s;
+
+       &:hover {
+      border: 2px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark);
+      }
     }
     &:not(:last-child){
       margin-right: 15px;

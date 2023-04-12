@@ -329,6 +329,15 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+}
+.shop-nav__link:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
 }
 .shop-nav__link--user {
   background-image: url(../../img/user.png);
@@ -371,6 +380,15 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+}
+.search-form__btn:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
 }
 
 .hero {
@@ -764,10 +782,26 @@ svg {
   color: var(--color-white);
   background-color: var(--color-dark);
 }
+.catalog-slide__link--dark:hover {
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .catalog-slide__link--light {
   border: 2px solid var(--color-dark);
   color: var(--color-dark);
   background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.catalog-slide__link--light:hover {
+  border: 2px solid var(--color-dark);
+  color: var(--color-white);
+  background-color: var(--color-dark);
 }
 .catalog-slide__link:not(:last-child) {
   margin-right: 15px;
@@ -1034,6 +1068,9 @@ svg {
   color: #aaa;
   font-size: 13px;
   padding-left: 15px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .custom-checkbox__text::before {
   content: "";
@@ -1050,6 +1087,12 @@ svg {
   left: 2px;
   top: 1px;
   display: none;
+}
+.custom-checkbox__text:hover {
+  color: var(--color-dark);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .catalog-grid {
