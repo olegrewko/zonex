@@ -1,11 +1,35 @@
-import Swiper from "../vendor/swiper.min.js";
-import vars  from "../_vars";
- const catalogSlider = new Swiper(vars.$bannerSlider, {
+import Swiper from '../vendor/swiper.min.js';
+import vars from '../_vars';
+
+const catalogSlider = new Swiper(vars.$catalogSlider, {
   loop: true,
-  sliderPerView: 1,
-  pagination: {
-    el: '.banner-pag',
-    type: 'bullets',
-    clickable: 'true',
+  slidesPerView: 1,
+  containerModifierClass: 'hero-catalog-',
+  navigation: {
+    nextEl: '.hero-next-btn',
+    prevEl: '.hero-prev-btn',
   },
- });
+  pagination: {
+    el: '.hero-pag',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
+const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    el: '.related-pag',
+    type: 'bullets',
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+    }
+  }
+});
+
+
