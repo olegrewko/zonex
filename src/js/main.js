@@ -16,10 +16,10 @@ import './components/catalog-filter-toggle.js';
 // });
 
 import vars from '../js/_vars';
-import {resizeContent} from './functions/resize';
-import {scrollTo} from './functions/smooth-scroll';
-import {disableScroll, enableScroll} from './functions/stop-scroll';
-import SimpleBar from 'simplebar';
+// import {resizeContent} from './functions/resize';
+// import {scrollTo} from './functions/smooth-scroll';
+// import {disableScroll, enableScroll} from './functions/stop-scroll';
+// import SimpleBar from 'simplebar';
 
 //disableScroll(fix) // fix -> class of element with position: fixed
 // new SimpleBar(document.getElementById('myElement'));
