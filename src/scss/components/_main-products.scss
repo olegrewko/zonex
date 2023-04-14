@@ -41,7 +41,14 @@ transition: all 0.3s;
 }
    }
    &__btn{
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-tundora);
+    transition: all 0.3s;
+    &:hover{
+      color: var(--color-dark);
+      transition: all 0.3s;
+    }
     &--current {
      &::before{
       width: 100%;
@@ -55,19 +62,20 @@ transition: all 0.3s;
 .products-grid {
 
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
   &__item{
-    max-width: 234px;
+    max-width: 250px;
     width: 100%;
     margin-right: 5px;
     margin-bottom: 80px;
+    width: 18.5%;
 
     &:nth-child(5n){
-    margin-right: 0px;
+    margin-right: 1px;
     }
     &:nth-last-child(-n+5){
-    margin-right: 0px;
+    margin-right: 1px;
     }
   }
 }

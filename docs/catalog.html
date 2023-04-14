@@ -22,16 +22,13 @@
 
 <body class="page__body">
   <div class="site-container">
-    <div class="free-delivery">
-  Free delivery from $60 and free returns
-  <button class="free-delivery__btn btn-reset">
-    <img src="../img/kz-close.png" alt="kz-close.png">
-  </button>
-</div>
 
     <header class="header">
   <div class="container header__container">
     <nav class="nav header__nav">
+         <button class="nav__btn">
+                <img src="img/menu-btn.svg" alt="" />
+          </button>
       <ul class="nav__list">
         <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="../catalog.html" class="nav__link">Shop</a></li>
@@ -111,7 +108,7 @@
         <div class="swiper-slide">
           <div class="catalog-slide">
             <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
-            <br class="catalog-slide__descr">This fall denim is king! Denim is officially back in and cool</br> to wear in all
+            <p class="catalog-slide__descr">This fall denim is king! Denim is officially back</br> in and cool to wear in all
               its many forms</p>
             <div class="catalog-slide__btns">
               <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
@@ -317,9 +314,9 @@
         <span class="catalog-columns__text">Column number</span>
         <ul class="catalog-columns__list">
           <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="3">3</button></li>
-          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current" data-columns="4">
+          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="4">
             4</button></li>
-          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
+          <li class="catalog-columns__item" ><button class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current" data-columns="5">5</button></li>
         </ul>
       </div>
       <div class="custom-select">
@@ -334,7 +331,9 @@
       </div>
       <!-- <select name="" id="" class="catalog-select">
         <option value="">123</option>
-      </select> -->
+      </select>
+    data-grid-columns="5"
+    -->
     </div>
     <div class="catalog-props__choice catalog-choice">
       <button class="btn-reset catalog-choice__item">
@@ -351,8 +350,8 @@
 
     </div>
   </div>
-  <ul class="catalog-grid__content" data-grid-columns="4">
-    <li class="products-grid__item">
+  <ul class="catalog-grid__content">
+    <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod01.jpg" alt="../img/prod01.jpg">
@@ -361,7 +360,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod02.jpg" alt="../img/prod02.jpg">
@@ -370,7 +369,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod03.jpg" alt="../img/prod03.jpg">
@@ -379,7 +378,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod04.jpg" alt="../img/prod04.jpg">
@@ -388,7 +387,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-       <li class="products-grid__item">
+       <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod05.jpg" alt="../img/prod05.jpg">
@@ -397,7 +396,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod06.jpg" alt="../img/prod01.jpg">
@@ -406,7 +405,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod07.jpg" alt="../img/prod02.jpg">
@@ -415,7 +414,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod08.jpg" alt="../img/prod03.jpg">
@@ -424,7 +423,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod09.jpg" alt="../img/prod04.jpg">
@@ -433,7 +432,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-       <li class="products-grid__item">
+       <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod10.jpg" alt="../img/prod05.jpg">
@@ -442,7 +441,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-          <li class="products-grid__item">
+          <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod11.png" alt="../img/prod11.jpg">
@@ -451,7 +450,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod12.png" alt="../img/prod02.jpg">
@@ -460,7 +459,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod09.jpg" alt="../img/prod09.jpg">
@@ -469,7 +468,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-      <li class="products-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod14.png" alt="../img/prod04.jpg">
@@ -478,7 +477,7 @@
           <span class="product__price">$120.0</span>
         </article>
       </li>
-       <li class="products-grid__item">
+       <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod15.png" alt="../img/prod15.png">
@@ -561,20 +560,20 @@
 </footer>
 
   </div>
-     <!-- <script type="text/javascript"> -->
-      // $(document).ready (function () {
-      // var defaults = {
-      // containerID: «toTop»,
-      // containerHoverID: «toTopHover»,
-      // scrollSpeed: 1200,
-      // easingType: «linear»,
-      // };
+     <script type="text/javascript">
+      $(document).ready(function () {
+        var defaults = {
+          containerID: "toTop",
+          containerHoverID: "toTopHover",
+          scrollSpeed: 1200,
+          easingType: "linear",
+        };
 
-      // $().UItoTop ({
-      // easingType: «easeOutQuart»,
-      // });
-      // });
-    <!-- </script> -->
+        $().UItoTop({
+          easingType: "easeOutQuart",
+        });
+      });
+     </script>
 
     <a href="#" id="toTop" style="display: block">
       <span id="toTopHover" style="opacity: 1"> </span

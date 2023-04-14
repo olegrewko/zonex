@@ -1,7 +1,10 @@
 import './_vendor';
 
 import './_functions';
-import './components/card-bottom-tabs';
+import './components/jquery.js';
+
+import './components/burger.js';
+import './components/card-bottom-tabs.js';
 import './components/banner-slider.js';
 import './components/catalog-slider.js';
 import './components/catalog-props.js';
@@ -33,6 +36,14 @@ if (document.querySelector('.to-top')) {
     scrollTo(document.querySelector('.site-container'));
   });
 }
+$(function () {
+  $('.nav__btn').on('click', function name() {
+    $('.nav__list').toggleClass('nav__list--active');
+
+
+  });
+  });
+
  $(document).ready(function () {
         var defaults = {
           containerID: "toTop",

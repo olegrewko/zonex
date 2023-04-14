@@ -1,11 +1,15 @@
 .shop-nav {
   display: flex;
    align-items: center;
-  // margin-left: 100px;
+
 
   &__item{
     &:not(:last-child){
       margin-right: 25px;
+      @include xs {
+       margin-right: 5px;
+
+      }
     }
   }
   &__link{

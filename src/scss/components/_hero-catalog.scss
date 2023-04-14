@@ -10,6 +10,12 @@
 .catalog-slide {
   position: relative;
   padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  @include sm {
+    padding: 20px 100px;
+  }
+
   &__title{
     max-width: 375px;
     width: 100%;
@@ -29,12 +35,16 @@
    &__btns {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     z-index: 10;
    }
    &__link {
     display: inline-block;
     font-size: 12px;
+
     padding: 15px 45px;
+    margin-top: 10px;
     &--dark {
       border: 2px solid var(--color-dark);
       color: var(--color-white);
@@ -68,6 +78,8 @@
     right: 15%;
     bottom: 0;
     max-height: 100%;
+    z-index: -1;
+
    }
 }
 .hero-prev-btn,
