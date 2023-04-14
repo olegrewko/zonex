@@ -14,14 +14,24 @@
 .card-top {
   .container{
     display: flex;
+     @include xs {
+      flex-wrap: wrap;
+    }
+
   }
   &__left{
     width: 57%;
+    @include xs {
+      width: 100%;
+    }
   }
   &__right{
     padding-top: 30px;
     padding-left: 3%;
     width: calc(100% - 57%);
+     @include xs {
+      width: 100%;
+    }
   }
 }
 .card-info {
@@ -123,6 +133,8 @@
   &__list{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     padding-left: 5px;
   }
   &__item{
@@ -135,7 +147,7 @@
    border-radius: 100%;
    width: 24px;
    height: 24px;
-
+   margin: 5px 0;
    cursor: pointer;
 
    &::before{
@@ -147,6 +159,7 @@
       border-radius: 100%;
       width: 32px;
       height: 32px;
+
       transform: translate(-50%, -50%);
       transition: all 0.3s;
       cursor: pointer;
@@ -199,6 +212,8 @@
   &__list{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 2px;
     margin-bottom: 7px;
 
   }
@@ -215,6 +230,7 @@
    height: 30px;
    font-size: 12px;
    cursor: pointer;
+   margin: 3px 0;
 
    &::before{
       content: "";
@@ -321,6 +337,7 @@
 }
 .card-description {
   display: flex;
+  // flex-wrap: wrap;
   align-items: flex-start;
 
     &__right {
@@ -330,15 +347,16 @@
     width: 84%;
 
     // @include md {
-    //   padding-right: 50px;
-    //   padding-left: 50px;
+    //   padding-right: 20px;
+    //   padding-left: 20px;
     // }
 
-    // @include xs {
-    //   padding-right: 0;
-    //   padding-left: 0;
-    //   width: 100%;
-    // }
+    @include xs {
+      width: 100%;
+      padding-right: 5px;
+      padding-left: 5px;
+
+    }
   }
 
   &__left {
@@ -346,12 +364,12 @@
     width: 16%;
 
     // @include md {
-    //   width: 35%;
+    //   width: 14%;
     // }
 
-    // @include xs {
-    //   width: 100%;
-    // }
+    @include xs {
+      width: 100%;
+    }
   }
     &__navigation {
     padding: 23px 0;
@@ -366,7 +384,7 @@
   }
     &__link {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 10px;
     color: var(--color-gray);
     transition: color 0.3s;
 
@@ -387,13 +405,14 @@
       margin-top: 0;
       margin-bottom: 30px;
       font-weight: 500;
-      font-size: 13px;
-      line-height: 26px;
+      font-size: 10px;
+      line-height: 16px;
     }
 
     &--active {
       display: block;
     }
+
   }
 
   .simplebar-track.simplebar-vertical {
@@ -409,6 +428,9 @@
     height: 100%;
     background-color: var(--color-dark);
     opacity: 1;
+  }
+  @include xs {
+    flex-wrap: wrap;
   }
 }
 .card-related {

@@ -105,8 +105,14 @@
 .custom-checkbox {
   display: inline-block;
   cursor: pointer;
+
+
+
   &__input{
     display: none;
+
+
+
     &:checked + span {
       color: #000;
           &::after{
@@ -116,14 +122,18 @@
       top: 1px;
       display: inline-block;
     }
+   }
+
+ }
+
     &__text {
       &::before{
         border: 2px solid #000;
       }
     }
 
-  }
-}
+
+
   &__text {
     position: relative;
     color: #aaa;
@@ -139,6 +149,7 @@
       width: 11px;
       height: 11px;
       border: 2px solid #aaa;
+
     }
       &::after{
       content: '\2713';
@@ -151,6 +162,106 @@
       color: var(--color-dark);
       transition: all 0.3s;
     }
+
+      &--blue{
+
+    //   &:checked + span {
+    //   color: #000;
+    //       &::after{
+    //   content: '';
+    //   position: absolute;
+    //   left: 2px;
+    //   top: 1px;
+    //   display: inline-block;
+    //   background-image: url(../../img/checkmark.png);
+    //   background-repeat: no-repeat;
+    //   background-position:  center;
+    //   background-size: cover;
+    // }
+             &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: #023549;
+    }
+
+          &:checked + span {
+      color: #000;
+                     &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: #023549;
+    }
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: inline-block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: #023549;
+    }
+      &::after{
+      content: '\2713';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: none;
+    }
+    }
+      &--red{
+
+      &:checked + span {
+      color: #000;
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #aaa;
+      background-color: red;
+    }
+
+    }
+
   }
 }
 .catalog-grid {

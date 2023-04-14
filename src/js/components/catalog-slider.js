@@ -18,7 +18,7 @@ const catalogSlider = new Swiper(vars.$catalogSlider, {
 
 const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
     el: '.related-pag',
@@ -27,7 +27,13 @@ const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
   },
   breakpoints: {
     768: {
+      slidesPerView: 5,
+    },
+    576: {
       slidesPerView: 4,
+    },
+    420: {
+      slidesPerView: 3,
     }
   }
 });

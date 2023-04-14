@@ -358,7 +358,7 @@ const catalogSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___de
 });
 const relatedSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___default())(_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$cardRelatedSlider, {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 10,
   pagination: {
     el: '.related-pag',
@@ -367,7 +367,13 @@ const relatedSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___de
   },
   breakpoints: {
     768: {
+      slidesPerView: 5
+    },
+    576: {
       slidesPerView: 4
+    },
+    420: {
+      slidesPerView: 3
     }
   }
 });
