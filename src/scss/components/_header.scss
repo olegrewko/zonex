@@ -49,36 +49,6 @@
   width: 25px;
   height: 18px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: var(--color-dark);
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: 0;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: var(--color-dark);
-  // }
-
-  // &__line {
-  //   position: absolute;
-  //   left: 0;
-  //   top: 50%;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: var(--color-dark);
-  //   transform: translateY(-50%);
-  // }
-
   @include sm {
     display: block;
   }
@@ -102,7 +72,7 @@
     top: 0;
     padding: 5% 2%;
     width: 80%;
-    height: 70vh;
+    height: 33vh;
     background-color: #fff;
     transition: left 0.3s;
     z-index: 200;

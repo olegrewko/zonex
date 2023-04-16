@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap");
 :root {
   --font-family: "Jost", sans-serif;
-  --content-width: 1170px;
+  --content-width: 1070px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --light-color: #fff;
-  --color-tundora: #030e73;
+  --color-tundora: #0d1fc7;
   --color-gray: #9b9898;
   --color-dark: #000;
   --color-white: #fff;
@@ -72,6 +72,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .site-container {
@@ -317,7 +318,7 @@ ul {
     top: 0;
     padding: 5% 2%;
     width: 80%;
-    height: 70vh;
+    height: 33vh;
     background-color: #fff;
     -webkit-transition: left 0.3s;
     -o-transition: left 0.3s;
@@ -327,7 +328,7 @@ ul {
 }
 
 .nav {
-  z-index: 50;
+  z-index: 250;
 }
 .nav__list {
   display: -webkit-box;
@@ -341,6 +342,20 @@ ul {
 }
 .nav__item:not(:last-child) {
   margin-right: 40px;
+}
+.nav__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-dark);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav__link:hover {
+  color: var(--color-tundora);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 1200px) {
   .nav__link {
@@ -938,7 +953,46 @@ ul {
   z-index: -1;
 }
 
-.hero-prev-btn,
+.hero-prev-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  width: 48px;
+  height: 48px;
+  color: var(--color-dark);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.hero-prev-btn svg {
+  width: 40px;
+  height: 20px;
+  background-image: url(../../img/prev-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.hero-prev-btn:hover {
+  background-color: var(--color-white);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
 .hero-next-btn {
   position: absolute;
   left: 10px;
@@ -964,28 +1018,19 @@ ul {
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.hero-prev-btn svg,
 .hero-next-btn svg {
   width: 40px;
   height: 20px;
-  fill: currentColor;
-  -webkit-transition: fill 0.3s;
-  -o-transition: fill 0.3s;
-  transition: fill 0.3s;
+  background-image: url(../../img/next-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-.hero-prev-btn:hover,
 .hero-next-btn:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-white);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-}
-.hero-prev-btn:hover svg,
-.hero-next-btn:hover svg {
-  fill: var(--color-white);
-  -webkit-transition: fill 0.3s;
-  -o-transition: fill 0.3s;
-  transition: fill 0.3s;
 }
 
 .hero-next-btn {
@@ -1033,6 +1078,7 @@ ul {
   margin-right: 30px;
 }
 .breadcrumbs__item::after {
+  color: rgb(203, 216, 216);
   content: "/";
   position: absolute;
   right: -20px;
@@ -1040,9 +1086,19 @@ ul {
 }
 .breadcrumbs__link {
   color: rgb(203, 216, 216);
+  font-size: 12px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.breadcrumbs__link:hover {
+  color: var(--color-gray);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .breadcrumbs__link--current {
-  color: var(--color-dark);
+  color: var(--color-tundora);
 }
 
 .catalog-filters {
@@ -1358,7 +1414,7 @@ ul {
   width: 11px;
   height: 11px;
   border: 2px solid #aaa;
-  background-color: green;
+  background-color: rgb(38, 89, 38);
 }
 .custom-checkbox__text--black::before {
   content: "";
@@ -1422,7 +1478,7 @@ ul {
   width: 11px;
   height: 11px;
   border: 2px solid #aaa;
-  background-color: purple;
+  background-color: rgb(87, 2, 87);
 }
 .custom-checkbox__text--purple:checked + span {
   color: #000;
@@ -1501,7 +1557,7 @@ ul {
   width: 11px;
   height: 11px;
   border: 2px solid #aaa;
-  background-color: maroon;
+  background-color: rgb(82, 47, 47);
 }
 
 .catalog-grid {

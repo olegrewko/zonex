@@ -13,6 +13,7 @@
     }
 
     &::after{
+      color: rgb(203, 216, 216);
       content: "/";
       position: absolute;
       right: -20px;
@@ -23,8 +24,14 @@
 
   &__link{
     color: rgb(203, 216, 216);
+    font-size: 12px;
+    transition: all 0.3s;
+    &:hover{
+      color: var(--color-gray);
+      transition: all 0.3s;
+    }
     &--current {
-      color: var(--color-dark);
+      color: var(--color-tundora);
     }
   }
 

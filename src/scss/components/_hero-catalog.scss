@@ -82,7 +82,38 @@
 
    }
 }
-.hero-prev-btn,
+.hero-prev-btn {
+    position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  width: 48px;
+  height: 48px;
+  color: var(--color-dark);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    background-image: url(../../img/prev-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    // transition: fill 0.3s;
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    transition: background-color 0.3s;
+
+    }
+
+}
 .hero-next-btn {
   position: absolute;
   left: 10px;
@@ -101,19 +132,18 @@
   svg {
     width: 40px;
     height: 20px;
-    fill: currentColor;
-    transition: fill 0.3s;
+    background-image: url(../../img/next-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    // transition: fill 0.3s;
   }
 
   &:hover {
-    background-color: var(--color-dark);
+    background-color: var(--color-white);
     transition: background-color 0.3s;
 
-    svg {
-      fill: var(--color-white);
-      transition: fill 0.3s;
     }
-  }
 }
 .hero-next-btn {
   left: auto;
