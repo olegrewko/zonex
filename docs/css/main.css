@@ -251,10 +251,8 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .header__shop-nav {
   margin-left: 250px;
@@ -316,14 +314,14 @@ ul {
     position: fixed;
     left: -150vw;
     top: 0;
-    padding: 5% 2%;
+    padding: 10% 2%;
     width: 80%;
-    height: 33vh;
+    height: 60vh;
     background-color: #fff;
     -webkit-transition: left 0.3s;
     -o-transition: left 0.3s;
     transition: left 0.3s;
-    z-index: 200;
+    z-index: 300;
   }
 }
 
@@ -361,7 +359,7 @@ ul {
   .nav__link {
     width: 100%;
     display: inline-block;
-    padding: 10px 10%;
+    padding: 20px 10%;
     border-bottom: 1px solid grey;
   }
 }

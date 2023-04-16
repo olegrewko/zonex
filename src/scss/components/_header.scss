@@ -11,9 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
   }
   &__shop-nav{
@@ -70,12 +70,12 @@
     position: fixed;
     left: -150vw;
     top: 0;
-    padding: 5% 2%;
+    padding: 10% 2%;
     width: 80%;
-    height: 33vh;
+    height: 60vh;
     background-color: #fff;
     transition: left 0.3s;
-    z-index: 200;
+    z-index: 300;
 
   }
 }
