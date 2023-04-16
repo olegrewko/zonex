@@ -955,7 +955,7 @@ ul {
   position: absolute;
   left: 10px;
   top: 50%;
-  z-index: 20;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,7 +995,7 @@ ul {
   position: absolute;
   left: 10px;
   top: 50%;
-  z-index: 20;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
