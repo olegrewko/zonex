@@ -1290,10 +1290,218 @@ ul {
   position: absolute;
   left: 0;
   top: 4px;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border: 2px solid #aaa;
   background-color: red;
+}
+.custom-checkbox__text--orange::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: orange;
+}
+.custom-checkbox__text--orange:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--orange:checked + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: orange;
+}
+.custom-checkbox__text--orange:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: inline-block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--orange::after {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: none;
+}
+.custom-checkbox__text--green:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--green:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--green::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: green;
+}
+.custom-checkbox__text--black::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: black;
+}
+.custom-checkbox__text--black:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--black:checked + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: black;
+}
+.custom-checkbox__text--black::after {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: none;
+}
+.custom-checkbox__text--brown:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--brown:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--brown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: brown;
+}
+.custom-checkbox__text--purple::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: purple;
+}
+.custom-checkbox__text--purple:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--purple:checked + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: purple;
+}
+.custom-checkbox__text--purple:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: inline-block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--purple::after {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: none;
+}
+.custom-checkbox__text--grey:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--grey:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--grey::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: grey;
+}
+.custom-checkbox__text--maroon:checked + span {
+  color: #000;
+}
+.custom-checkbox__text--maroon:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  display: block;
+  background-image: url(../../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom-checkbox__text--maroon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #aaa;
+  background-color: maroon;
 }
 
 .catalog-grid {

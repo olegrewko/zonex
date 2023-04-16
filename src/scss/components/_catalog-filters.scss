@@ -165,20 +165,7 @@
 
       &--blue{
 
-    //   &:checked + span {
-    //   color: #000;
-    //       &::after{
-    //   content: '';
-    //   position: absolute;
-    //   left: 2px;
-    //   top: 1px;
-    //   display: inline-block;
-    //   background-image: url(../../img/checkmark.png);
-    //   background-repeat: no-repeat;
-    //   background-position:  center;
-    //   background-size: cover;
-    // }
-             &::before{
+                &::before{
       content: "";
       position: absolute;
       left: 0;
@@ -254,10 +241,285 @@
       position: absolute;
       left: 0;
       top: 4px;
-      width: 10px;
-      height: 10px;
+      width: 11px;
+      height: 11px;
       border: 2px solid #aaa;
       background-color: red;
+    }
+
+    }
+      &--orange{
+
+                &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: orange;
+    }
+
+          &:checked + span {
+      color: #000;
+                     &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: orange;
+    }
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: inline-block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+    //      &::before{
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 4px;
+    //   width: 11px;
+    //   height: 11px;
+    //   border: 2px solid #aaa;
+    //   background-color: #023549;
+    // }
+      &::after{
+      content: '\2713';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: none;
+    }
+    }
+      &--green{
+
+      &:checked + span {
+      color: #000;
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: green;
+    }
+
+    }
+      &--black{
+
+                &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: black;
+    }
+
+          &:checked + span {
+      color: #000;
+                     &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: black;
+    }
+    //       &::after{
+    //   content: '';
+    //   position: absolute;
+    //   left: 2px;
+    //   top: 1px;
+    //   display: inline-block;
+    //   background-image: url(../../img/checkmark.png);
+    //   background-repeat: no-repeat;
+    //   background-position:  center;
+    //   background-size: cover;
+    // }
+   }
+
+    //      &::before{
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 4px;
+    //   width: 11px;
+    //   height: 11px;
+    //   border: 2px solid #aaa;
+    //   background-color: #023549;
+    // }
+      &::after{
+      content: '\2713';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: none;
+    }
+    }
+      &--brown{
+
+      &:checked + span {
+      color: #000;
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: brown;
+    }
+
+    }
+      &--purple{
+
+                &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: purple;
+    }
+
+          &:checked + span {
+      color: #000;
+                     &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: purple;
+    }
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: inline-block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+
+      &::after{
+      content: '\2713';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: none;
+    }
+    }
+      &--grey{
+
+      &:checked + span {
+      color: #000;
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: grey;
+    }
+
+    }
+      &--maroon{
+
+      &:checked + span {
+      color: #000;
+          &::after{
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      display: block;
+      background-image: url(../../img/checkmark.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover;
+    }
+   }
+
+         &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+      background-color: maroon;
     }
 
     }
