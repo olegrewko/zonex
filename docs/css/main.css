@@ -11,6 +11,7 @@
   --color-gray: #9b9898;
   --color-dark: #000;
   --color-white: #fff;
+  --color-cameo: #dbbba9;
 }
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
@@ -1793,6 +1794,38 @@ ul {
   width: 5px;
   height: 9px;
   margin-left: 5px;
+}
+
+.sizes-table {
+  border-collapse: collapse;
+  width: 80%;
+}
+.sizes-table caption {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+td {
+  cursor: pointer;
+  border: 2px solid var(--color-cameo);
+  padding: 3px 5px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-gray);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+td:hover {
+  color: var(--color-dark);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+td:selected {
+  color: var(--color-dark);
 }
 
 .card-slider {
