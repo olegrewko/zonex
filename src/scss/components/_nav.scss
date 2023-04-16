@@ -1,10 +1,11 @@
 .nav {
+  z-index: 50;
   &__list{
     display: flex;
+     @include md {
+      display: block;
+    }
   }
-  &__btn {
-  display: none;
-}
 
   &__item{
     &:not(:last-child){
@@ -12,68 +13,52 @@
     }
   }
   &__link{
-    position: relative;
-    &::before{
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 0;
-      height: 2px;
-      background-color: #000;
-      transition: width 0.15s;
-
+      @include md {
+        width: 100%;
+      display: inline-block;
+      padding: 10px 10%;
+      border-bottom: 1px solid grey;
     }
-    &:hover{
-       &::before{
-      width: 100%;
-      transition: width 0.15s;
-     }
+    // position: relative;
+    // &::before{
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -5px;
+    //   width: 0;
+    //   height: 2px;
+    //   background-color: #000;
+    //   transition: width 0.15s;
 
-    }
-    &--current {
-     &::before{
-      width: 100%;
-      transition: width 0.15s;
-     }
+    // }
+    // &:hover{
+    //    &::before{
+    //   width: 100%;
+    //   transition: width 0.15s;
+    //  }
 
-    }
+    // }
+    // &--current {
+    //  &::before{
+    //   width: 100%;
+    //   transition: width 0.15s;
+    //  }
+
+    // }
   }
   @include sm {
 
-    .nav__btn {
-  display: block;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  z-index: 10;
-  margin-top: 15px;
-  margin-bottom: 12px;
-}
-
-    .nav__list {
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 55px;
-
-  background-color: rgba(69, 69, 69, 0.95);
-  display: block;
-  text-align: left;
-  transform: translateY(-200%);
-  transition: all .5s;
-
-}
-.nav__list.nav__list--active {
-  transform: translateY(0);
-  transition: all .5s;
-}
+    .nav {
+      display: none;
 
   }
-}
+  }
+  &--visible {
+    left: 0;
+    transition: all 0.3s;
+  }
 
+}
 // .nav__list {
 
 //   position: absolute;

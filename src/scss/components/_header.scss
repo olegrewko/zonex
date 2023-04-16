@@ -2,10 +2,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  // position: fixed;
-  // left: 0;
-  // right: 0;
-  // top: 0;
+
   width: 100%;
   z-index: 5;
 
@@ -21,10 +18,13 @@
   }
   &__shop-nav{
     margin-left: 250px;
+     @include md {
+      margin-left: 0;
+    }
   }
 
 }
- .logo {
+.logo {
    display: inline-block;
     width: 117px;
     height: 22px;
@@ -36,10 +36,76 @@
     object-fit: cover;
   }
   @include xs {
-    width: 80px;
+    width: 70px;
     height: 17px;
   }
   }
-  .card-page {
+.card-page {
     padding-top: 0;
   }
+.burger {
+  position: relative;
+  display: none;
+  width: 25px;
+  height: 18px;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: var(--color-dark);
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: var(--color-dark);
+  // }
+
+  // &__line {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 50%;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: var(--color-dark);
+  //   transform: translateY(-50%);
+  // }
+
+  @include sm {
+    display: block;
+  }
+}
+.nav {
+  &__close {
+     display: none;
+
+    @include md {
+      position: absolute;
+      right: 10%;
+      top: 5%;
+      display: block;
+    }
+  }
+
+  @include md {
+
+    position: fixed;
+    left: -150vw;
+    top: 0;
+    padding: 5% 2%;
+    width: 80%;
+    height: 70vh;
+    background-color: #fff;
+    transition: left 0.3s;
+    z-index: 200;
+
+  }
+}

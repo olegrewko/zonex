@@ -207,11 +207,12 @@ if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$burger) {
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$navClose.addEventListener('click', () => {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$nav.classList.remove('nav--visible');
   });
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$nav.addEventListener('click', e => {
-    if (e.target.classList.contains('nav__link')) {
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$nav.classList.remove('nav--visible');
-    }
-  });
+
+  // vars.$nav.addEventListener('click', (e) => {
+  //   if (e.target.classList.contains('nav__link')) {
+  //     vars.$nav.classList.remove('nav--visible');
+  //   }
+  // });
 }
 
 /***/ }),

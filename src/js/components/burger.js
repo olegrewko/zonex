@@ -9,10 +9,10 @@ if (vars.$burger) {
     vars.$nav.classList.remove('nav--visible');
   });
 
-  vars.$nav.addEventListener('click', (e) => {
-    if (e.target.classList.contains('nav__link')) {
-      vars.$nav.classList.remove('nav--visible');
-    }
-  });
+  // vars.$nav.addEventListener('click', (e) => {
+  //   if (e.target.classList.contains('nav__link')) {
+  //     vars.$nav.classList.remove('nav--visible');
+  //   }
+  // });
 }
 
