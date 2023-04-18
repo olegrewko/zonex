@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap");
 :root {
   --font-family: "Jost", sans-serif;
-  --content-width: 1070px;
+  --content-width: 970px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --light-color: #fff;
@@ -123,7 +123,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  max-width: 1170px;
   width: 100%;
 }
 
@@ -247,8 +247,20 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .header {
+    width: 80%;
+  }
+}
+@media (max-width: 276px) {
+  .header {
+    width: 60%;
+  }
 }
 .header__shop-nav {
   margin-left: 250px;
@@ -273,7 +285,7 @@ ul {
 }
 @media (max-width: 576px) {
   .logo {
-    width: 70px;
+    width: 60px;
     height: 17px;
   }
 }
@@ -288,7 +300,7 @@ ul {
   width: 25px;
   height: 18px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .burger {
     display: block;
   }
@@ -307,12 +319,12 @@ ul {
 }
 @media (max-width: 1200px) {
   .nav {
-    position: fixed;
+    position: absolute;
     left: -150vw;
     top: 0;
     padding: 10% 2%;
     width: 80%;
-    height: 60vh;
+    height: 70vh;
     background-color: #fff;
     -webkit-transition: left 0.3s;
     -o-transition: left 0.3s;
@@ -355,8 +367,8 @@ ul {
   .nav__link {
     width: 100%;
     display: inline-block;
-    padding: 20px 10%;
-    border-bottom: 1px solid grey;
+    padding: 20px 20px;
+    border-bottom: 0px solid grey;
   }
 }
 @media (max-width: 768px) {
@@ -378,6 +390,13 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .shop-nav {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }
 .shop-nav__item:not(:last-child) {
   margin-right: 25px;
