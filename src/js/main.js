@@ -1,8 +1,8 @@
 import './_vendor';
 
 import './_functions';
-import './components/jquery.js';
-
+// import './components/jquery.js';
+import './components/catalog-filter-toggle.js';
 import './components/burger.js';
 import './components/card-bottom-tabs.js';
 import './components/banner-slider.js';
@@ -12,7 +12,7 @@ import './components/color-select.js';
 import './components/card-slider.js';
 import './components/product.js';
 import './components/stepper.js';
-import './components/catalog-filter-toggle.js';
+// import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';
 // vars.$freeDeliveryBtn.addEventListener('click', (e) => {
 //   e.currentTarget.closest('.free-delivery').style.display = 'none';

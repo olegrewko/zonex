@@ -40,12 +40,12 @@
     font-size: 14px;
     text-transform: uppercase;
   }
-  &__cap {
+  &__caption {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &__q{
+  &__quantity{
     display: inline-flex;
     align-items: center;
     border-radius: 25px;
@@ -59,17 +59,17 @@
     background-color: #000;
     transform: translateY(-1px);
   }
-  &--open{
-  .catalog-filter__bottom {
-    display: block;
-    padding-bottom: 30px;
-      }
-  .catalog-filter__toggle {
-    &::before{
-      display: none;
-    }
-  }
-  }
+  // &--open{
+  // .catalog-filter__bottom {
+  //   display: block;
+  //   padding-bottom: 30px;
+  //     }
+  // .catalog-filter__toggle {
+  //   &::before{
+  //     display: none;
+  //   }
+  // }
+  // }
   &__items {
     columns: 2;
   }
@@ -99,6 +99,17 @@
       height: 2px;
       background-color: currentColor;
       transform: translateY(-50%);
+    }
+  }
+   &--open {
+    .catalog-filter__bottom {
+      display: block;
+    }
+
+    .catalog-filter__toggle {
+      &::before {
+        display: none;
+      }
     }
   }
 }

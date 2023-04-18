@@ -22,8 +22,9 @@
 <body class="page__body">
   <div class="site-container">
 
-    <header class="header">
-  <div class="container header__container">
+    <div class="container header__container ">
+ <header class="header">
+  <!-- <div class="container header__container"> -->
 
     <button class="burger btn-reset header__burger">
       <img src="img/menu-btn.svg" alt="" />
@@ -68,12 +69,13 @@
     <li class="shop-nav__item">
       <a href="#" class="shop-nav__link cart" aria-label="cart">
         <span class="cart__icon"></span>
-        <span class="cart__q">3</span>
+        <span class="cart__quantity">3</span>
       </a>
     </li>
   </ul>
-  </div>
-</header>
+
+ </header>
+</div>
 
     <main class="main">
       <!-- <div class="hero-catalog">
@@ -165,9 +167,9 @@
   </button>
   <div class="catalog-filter catalog-filter--open">
     <div class="catalog-filter__top">
-      <div class="catalog-filter__cap">
+      <div class="catalog-filter__caption">
       <h3 class="catalog-filter__title">Categories</h3>
-      <span class="catalog-filter__q">3</span>
+      <span class="catalog-filter__quantity quantity">0</span>
       </div>
       <span class="catalog-filter__toggle"></span>
     </div>
@@ -238,9 +240,9 @@
   </div>
   <div class="catalog-filter">
     <div class="catalog-filter__top">
-      <div class="catalog-filter__cap">
+      <div class="catalog-filter__caption">
       <h3 class="catalog-filter__title">Color</h3>
-      <span class="catalog-filter__q">5</span>
+      <span class="catalog-filter__quantity quantity">0</span>
       </div>
       <span class="catalog-filter__toggle"></span>
     </div>
@@ -311,9 +313,9 @@
   </div>
   <div class="catalog-filter">
     <div class="catalog-filter__top">
-      <div class="catalog-filter__cap">
+      <div class="catalog-filter__caption">
       <h3 class="catalog-filter__title">Size</h3>
-      <span class="catalog-filter__q">5</span>
+      <span class="catalog-filter__quantity quantity">0</span>
       </div>
       <span class="catalog-filter__toggle"></span>
     </div>
@@ -343,7 +345,7 @@
   </div>
   <div class="catalog-filter">
     <div class="catalog-filter__top">
-      <div class="catalog-filter__cap">
+      <div class="catalog-filter__caption">
       <h3 class="catalog-filter__title">Price</h3>
       <!-- <span class="catalog-filter__q">5</span> -->
       </div>
@@ -379,28 +381,12 @@
           </ul>
         </div>
       </div>
-      <!-- <select name="" id="" class="catalog-select">
-        <option value="">123</option>
-      </select>
-    data-grid-columns="5"
-    -->
     </div>
-    <div class="catalog-props__choice catalog-choice">
-      <button class="btn-reset catalog-choice__item">
-        Accessories
-        <img src="../img/close.png" alt="../img/close16.png" width="7px" height="7px">
-      </button>
-      <button class="btn-reset catalog-choice__item">
-        28
-         <img src="../img/close.png" alt="../img/close16.png" width="7px" height="7px">
-      </button>
-      <button class="btn-reset main-link catalog-choice__clear">
-        Clear all
-      </button>
-
+   <div class="catalog-props__choice catalog-choice">
+      <button class="btn-reset catalog-choice__clear">Clear all</button>
     </div>
   </div>
-  <ul class="catalog-grid__content">
+  <ul class="catalog-grid__content" data-grid-columns="5">
     <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
@@ -491,7 +477,7 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-          <li class="catalog-grid__item">
+      <li class="catalog-grid__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod11.png" alt="../img/prod11.jpg">

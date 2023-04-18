@@ -1,12 +1,14 @@
 .header {
-  position: absolute;
-  left: 0;
-  top: 0;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+
 
   width: 100%;
-  z-index: 5;
+  z-index: 50;
 
-  &__container{
+  // &__container{
 
     display: flex;
     align-items: center;
@@ -15,9 +17,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-  }
+  // }
   &__shop-nav{
-    margin-left: 250px;
+    margin-left: 50px;
      @include md {
       margin-left: 0;
     }

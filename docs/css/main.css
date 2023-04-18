@@ -236,13 +236,8 @@ ul {
 }
 
 .header {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
-  z-index: 5;
-}
-.header__container {
+  z-index: 50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +251,7 @@ ul {
   padding-bottom: 20px;
 }
 .header__shop-nav {
-  margin-left: 250px;
+  margin-left: 50px;
 }
 @media (max-width: 1200px) {
   .header__shop-nav {
@@ -426,7 +421,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.cart__q {
+.cart__quantity {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -459,6 +454,22 @@ ul {
   -webkit-transition: all 0.3;
   -o-transition: all 0.3;
   transition: all 0.3;
+}
+
+.quantity {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0 5px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--color-white);
+  background-color: var(--color-dark);
 }
 
 .hero {
@@ -1149,7 +1160,7 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
 }
-.catalog-filter__cap {
+.catalog-filter__caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,7 +1171,7 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.catalog-filter__q {
+.catalog-filter__quantity {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1179,13 +1190,6 @@ ul {
   -webkit-transform: translateY(-1px);
   -ms-transform: translateY(-1px);
   transform: translateY(-1px);
-}
-.catalog-filter--open .catalog-filter__bottom {
-  display: block;
-  padding-bottom: 30px;
-}
-.catalog-filter--open .catalog-filter__toggle::before {
-  display: none;
 }
 .catalog-filter__items {
   -webkit-columns: 2;
@@ -1222,6 +1226,12 @@ ul {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.catalog-filter--open .catalog-filter__bottom {
+  display: block;
+}
+.catalog-filter--open .catalog-filter__toggle::before {
+  display: none;
 }
 
 .custom-checkbox {
