@@ -2,22 +2,19 @@ import './_vendor';
 
 import './_functions';
 import './components/jquery.js';
-
-import './components/burger.js';
-import './components/card-bottom-tabs.js';
-import './components/banner-slider.js';
-import './components/catalog-slider.js';
-import './components/catalog-props.js';
-import './components/color-select.js';
-import './components/card-slider.js';
-import './components/product.js';
-import './components/stepper.js';
-import './components/catalog-filter-toggle.js';
-// import 'simplebar/dist/simplebar.css';
-// vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-//   e.currentTarget.closest('.free-delivery').style.display = 'none';
-// });
-
+// import './vendor/focus-visible.min.js';
+// import './components/main-slider';
+import './components/catalog-slider';
+// import './components/marketing';
+import './components/catalog-filter-toggle';
+import './components/catalog-props';
+import './components/color-select';
+import './components/stepper';
+import './components/card-slider';
+import './components/card-bottom-tabs';
+import './components/products';
+import './components/burger';
+import './components/mobile-filter';
 import vars from '../js/_vars';
 // import {resizeContent} from './functions/resize';
 // import {scrollTo} from './functions/smooth-scroll';
@@ -43,6 +40,8 @@ $(function () {
 
   });
   });
+
+
 
  $(document).ready(function () {
         var defaults = {
