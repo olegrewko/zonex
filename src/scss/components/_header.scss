@@ -1,5 +1,5 @@
 .header {
-  // position: absolute;
+  // position: fixed;
   // top: 0;
   // right: 0;
   // left: 0;
@@ -8,16 +8,21 @@
   width: 100%;
   z-index: 50;
 
-  // &__container{
+
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+      @include xs {
+        width: 80%;
+    }
+      @include xxs {
+        width: 60%;
+    }
 
-  // }
   &__shop-nav{
     margin-left: 250px;
      @include md {
@@ -38,7 +43,7 @@
     object-fit: cover;
   }
   @include xs {
-    width: 70px;
+    width: 60px;
     height: 17px;
   }
   }
@@ -51,7 +56,7 @@
   width: 25px;
   height: 18px;
 
-  @include sm {
+  @include md {
     display: block;
   }
 }
@@ -69,12 +74,12 @@
 
   @include md {
 
-    position: fixed;
+    position: absolute;
     left: -150vw;
     top: 0;
     padding: 10% 2%;
     width: 80%;
-    height: 60vh;
+    height: 70vh;
     background-color: #fff;
     transition: left 0.3s;
     z-index: 300;
