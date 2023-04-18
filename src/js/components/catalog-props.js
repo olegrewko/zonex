@@ -2,10 +2,10 @@ import vars from '../_vars';
 
 if (document.querySelector('.catalog')) {
 
-  vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-    console.log(e.currentTarget)
-    e.currentTarget.closest('.free-delivery').style.display = 'none';
-  });
+  // vars.$freeDeliveryBtn.addEventListener('click', (e) => {
+  //   console.log(e.currentTarget)
+  //   e.currentTarget.closest('.free-delivery').style.display = 'none';
+  // });
 
   vars.$catalogColumns.addEventListener('click', (e) => {
     if (e.target.classList.contains('.catalog-columns__btn') || e.target.closest('.catalog-columns__item')) {

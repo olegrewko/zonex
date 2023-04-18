@@ -1,4 +1,5 @@
 import vars  from "../_vars";
+
 if (vars.$colorSelect) {
   vars.$colorSelect.addEventListener('click', (e) => {
     if (e.target.classList.contains('color-select__btn')) {

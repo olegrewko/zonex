@@ -1,6 +1,6 @@
-import './_vendor';
+// import './_vendor';
 
-import './_functions';
+// import './_functions';
 // import './components/jquery.js';
 import './components/catalog-filter-toggle.js';
 import './components/burger.js';
@@ -17,7 +17,16 @@ import './components/stepper.js';
 // vars.$freeDeliveryBtn.addEventListener('click', (e) => {
 //   e.currentTarget.closest('.free-delivery').style.display = 'none';
 // });
-
+// import './components/catalog-slider.js';
+// import './components/catalog-filter-toggle';
+// import './components/catalog-props';
+// import './components/card-select';
+// import './components/stepper';
+// import './components/color-select.js';
+// import './components/card-bottom-tabs';
+// import './components/product';
+// import './components/burger';
+// import './components/mobile-filter';
 import vars from '../js/_vars';
 // import {resizeContent} from './functions/resize';
 // import {scrollTo} from './functions/smooth-scroll';
