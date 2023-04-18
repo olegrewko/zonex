@@ -610,13 +610,13 @@ ul {
   background-color: #a7a4a4;
 }
 .banners-article--mid {
-  background-image: url(../../img/mid400.jpg);
+  background-image: url(../../img/mid.jpg);
 }
 .banners-article--summer {
-  background-image: url(../../img/summer400.jpg);
+  background-image: url(../../img/summer.jpg);
 }
 .banners-article--accs {
-  background-image: url(../../img/accs400.jpg);
+  background-image: url(../../img/accs.jpg);
 }
 .banners-article__title {
   margin: 0;
