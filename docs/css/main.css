@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap");
 :root {
   --font-family: "Jost", sans-serif;
-  --content-width: 970px;
+  --content-width: 1170px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --light-color: #fff;
@@ -887,7 +887,7 @@ ul {
 }
 
 .hero-catalog {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .hero-catalog__slider {
   position: relative;
@@ -1097,7 +1097,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0;
   border-bottom: 2px solid #eee;
 }
 .breadcrumbs__item {
@@ -2627,9 +2627,5 @@ td:selected {
 }
 .social__link--pin {
   background-image: url(../../img/pinterest.png);
-}
-
-.page__body {
-  height: var(--vh);
 }
 /*# sourceMappingURL=main.css.map */

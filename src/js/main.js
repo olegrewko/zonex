@@ -65,3 +65,34 @@ $(function () {
           easingType: "easeOutQuart",
         });
       });
+
+
+// $('.tab').on('click', function (e) {
+        // e.preventDefault();
+        // $($(this).siblings()).removeClass('tab--active');
+        // $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
+        // $(this).addClass('tab--active');
+        // $($(this).attr('href')).addClass('tab-content--active');
+
+//       });
+
+if (document.querySelector('.tab')) {
+  document.querySelector('.tab').addEventListener('click', (t) => {
+
+        t.preventDefault();
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
+
+  });
+}
+
+  //  $('.tab').on('click', function (ab) {
+  //       ab.preventDefault();
+  //       $($(this).siblings()).removeClass('tab--active');
+  //       $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+  //       $(this).addClass('tab--active');
+  //       $($(this).attr('href')).addClass('tabs-content--active');
+
+  //     });
