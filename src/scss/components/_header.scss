@@ -1,11 +1,12 @@
 .header {
-  // position: fixed;
+  // position: absolute;
   // top: 0;
   // right: 0;
   // left: 0;
 
 
   width: 100%;
+  height: 60px;
   z-index: 50;
 
 
@@ -17,9 +18,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
       @include xs {
-        width: 80%;
+        width: 100%;
     }
-      @include xxs {
+      @include xs320 {
         width: 60%;
     }
 

@@ -2,7 +2,12 @@
   padding-top: 30px;
   max-width: 259px;
   width: 100%;
-  margin-right: 5px;
+  margin-right: 0px;
+   @include xs420 {
+      max-width: 120px;
+    width: 100%;
+
+}
 }
 .catalog-content {
   min-height: 500px;
@@ -46,11 +51,14 @@
     justify-content: center;
   }
   &__quantity{
+
     display: inline-flex;
     align-items: center;
+
     border-radius: 25px;
     margin-left: 5px;
-    padding: 4px 5px;
+    margin-right: 5px;
+    padding: 5px ;
     font-weight: 700;
     font-size: 10px;
     height: 16px;
@@ -59,9 +67,20 @@
     background-color: #000;
     transform: translateY(-1px);
   }
-
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+  }
   &__items {
     columns: 2;
+      @include xs420 {
+      columns: 1;
+  }
+ }
+  &__items01 {
+
+      columns: 1;
+
   }
   &__toggle{
     position: relative;
@@ -534,7 +553,7 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 40px;
 
     // @include md {
@@ -542,17 +561,76 @@
     // }
   }
     &__item{
-    max-width: 250px;
+    max-width: 190px;
     width: 100%;
     margin-right: 5px;
     margin-bottom: 80px;
-    width: 18.5%;
+    width: 19.5%;
 
     &:nth-child(5n){
     margin-right: 0px;
     }
     &:nth-last-child(-n+5){
     margin-right: 0px;
+    }
+     @include sm {
+      max-width: 250px;
+    width: 100%;
+    margin-right: 5px;
+    margin-bottom: 80px;
+    width: 22.7%;
+       &:not(:nth-child(4n)) {
+      margin-right: 2%;
+    }
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+    }
+     @include xs {
+
+      max-width: 320px;
+    width: 100%;
+    margin-right: 2px;
+    margin-bottom: 80px;
+    width: 31.3%;
+       &:not(:nth-child(3n)) {
+      margin-right: 1%;
+    }
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
+    }
+     @include xs420 {
+
+      max-width: 420px;
+    width: 100%;
+    margin-right: 2px;
+    margin-bottom: 80px;
+    width: 45%;
+       &:not(:nth-child(2n)) {
+      margin-right: 1%;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+    }
+     @include xs380 {
+
+      max-width: 220px;
+    width: 100%;
+    margin-right: 2px;
+    margin-bottom: 80px;
+    width: 100%;
+       &:not(:nth-child(n)) {
+      margin-right: 0.3%;
+    }
+
+    &:nth-last-child(-n+1) {
+      margin-bottom: 0;
+    }
     }
   }
 }
@@ -587,7 +665,7 @@
     width: 18.6%;
 
     &:not(:nth-child(5n)) {
-      margin-right: 3%;
+      margin-right: 1%;
     }
 
     &:nth-last-child(-n+5) {
@@ -634,19 +712,19 @@
 }
 .custom-select {
   position: relative;
-  min-width: 115px;
+  min-width: 105px;
   &__top{
     position: relative;
     border-bottom: 2px solid #eee;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
      padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 25px;
     &::after{
       content: "";
       position: absolute;
-      right: -15px;
+      right: 10px;
       top: 30%;
       width: 10px;
       height: 6px;

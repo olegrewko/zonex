@@ -35,6 +35,21 @@
     @content;
   }
 }
+@mixin xs420 {
+  @media (max-width: (420px)) {
+    @content;
+  }
+}
+@mixin xs320 {
+  @media (max-width: (320px)) {
+    @content;
+  }
+}
+@mixin xs380 {
+  @media (max-width: (380px)) {
+    @content;
+  }
+}
 @mixin xxs {
   @media (max-width: (276px)) {
     @content;

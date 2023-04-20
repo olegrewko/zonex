@@ -5,13 +5,14 @@
   background-color: #d9d9d7;
 
   &__container {
-    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 100px;
     height: 100%;
+
   }
    &__title{
     margin: 0;
