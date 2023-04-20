@@ -366,10 +366,7 @@ ul {
     padding: 10% 2%;
     width: 70%;
     height: 75vh;
-    background-color: #fff;
-    -webkit-transition: left 0.3s;
-    -o-transition: left 0.3s;
-    transition: left 0.3s;
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 400;
   }
 }
