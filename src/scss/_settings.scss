@@ -91,8 +91,8 @@ a {
   // text-align: center;
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  // max-width: var(--container-width);
-  max-width: 1170px;
+  max-width: var(--container-width);
+  // max-width: 1170px;
   width: 100%;
 }
 

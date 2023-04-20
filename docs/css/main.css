@@ -123,7 +123,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  max-width: 1170px;
+  max-width: var(--container-width);
   width: 100%;
 }
 
@@ -248,8 +248,8 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -258,12 +258,8 @@ ul {
     width: 100%;
   }
 }
-@media (max-width: 320px) {
-  .header {
-    width: 60%;
-  }
-}
 .header__shop-nav {
+  z-index: 250;
   margin-left: 250px;
 }
 @media (max-width: 1200px) {
@@ -272,7 +268,50 @@ ul {
   }
 }
 
+.header__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #d9d9d7;
+}
+
+.header-grey {
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d9d9d7;
+}
+@media (max-width: 576px) {
+  .header-grey {
+    width: 100%;
+  }
+}
+.header-grey__shop-nav {
+  z-index: 50;
+  margin-left: 250px;
+}
+@media (max-width: 1200px) {
+  .header-grey__shop-nav {
+    margin-left: 0;
+  }
+}
+
 .logo {
+  z-index: 50;
   display: inline-block;
   width: 117px;
   height: 22px;
@@ -296,6 +335,7 @@ ul {
 }
 
 .burger {
+  z-index: 50;
   position: relative;
   display: none;
   width: 25px;
@@ -322,15 +362,15 @@ ul {
   .nav {
     position: absolute;
     left: -150vw;
-    top: 0;
+    top: 60px;
     padding: 10% 2%;
-    width: 80%;
-    height: 70vh;
+    width: 70%;
+    height: 75vh;
     background-color: #fff;
     -webkit-transition: left 0.3s;
     -o-transition: left 0.3s;
     transition: left 0.3s;
-    z-index: 300;
+    z-index: 400;
   }
 }
 
@@ -643,15 +683,15 @@ ul {
 }
 .product__sale {
   position: absolute;
-  left: 20px;
-  top: 20px;
-  z-index: 20;
-  border: 2px solid var(--color-dark);
-  padding: 4px 10px;
-  font-weight: 700;
-  font-size: 10px;
+  left: 5px;
+  top: 5px;
+  z-index: 10;
+  border: 2px solid var(--color-gray);
+  padding: 2px 5px;
+  font-weight: 500;
+  font-size: 8px;
   text-transform: uppercase;
-  color: #111;
+  color: var(--color-gray);
 }
 .product__title {
   margin: 0;
