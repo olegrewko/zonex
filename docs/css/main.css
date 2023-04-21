@@ -2679,16 +2679,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   border-top: 2px solid #eee;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .footer__social {
   margin-right: 10px;
@@ -2767,12 +2767,17 @@ ul {
 }
 
 .social {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-left: 2px solid var(--color-gray);
 }
 .social__item:not(:last-child) {
   margin-right: 30px;
@@ -2796,5 +2801,54 @@ ul {
 }
 .social__link--pin {
   background-image: url(../../img/pinterest.png);
+}
+
+.social-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1px 1px;
+  text-align: center;
+}
+.social-inner img {
+  width: 23px;
+  height: 23px;
+  margin: 1px;
+}
+
+.roll {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.roll .rollover {
+  display: none;
+}
+
+.roll:hover .rollover {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
