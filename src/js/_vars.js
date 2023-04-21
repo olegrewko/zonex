@@ -25,6 +25,7 @@ export default {
   $freeDeliveryBtn: document.querySelector('.free-delivery__btn'),
   $colorSelect: document.querySelector('.color-select'),
   $sizeSelect: document.querySelector('.size-select'),
+  // $sizeSelectCheckbox: document.querySelector('.size-select__checkbox'),
   $stepper: document.querySelector('.stepper'),
   $cardSliderThumbs: document.querySelector('.card-slider__thumbs'),
   $sliderImg: document.querySelector('.card-slider__main img'),

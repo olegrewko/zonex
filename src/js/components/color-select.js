@@ -56,3 +56,19 @@ if (vars.$sizeSelect) {
   });
 
 }
+// if (vars.$sizeSelectCheckbox) {
+
+//   vars.$sizeSelectCheckbox.addEventListener('click', (e) => {
+//     if (e.target.classList.contains('size-select__checkbox')) {
+
+//      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//       checkboxes.forEach(function(checkbox) {
+//       checkbox.classList.remove('checked');
+//     });
+
+//     }
+
+
+//   });
+
+// }
