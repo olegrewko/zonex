@@ -2618,7 +2618,7 @@ ul {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 .footer__item:not(:last-child) {
   margin-bottom: 10px;
@@ -2688,7 +2688,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   border-top: 2px solid #eee;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 .footer__social {
   margin-right: 10px;
@@ -2767,7 +2767,7 @@ ul {
 }
 
 .social {
-  margin-top: 40px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2850,5 +2850,27 @@ ul {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   display: block;
+}
+
+.tiny-footer {
+  text-align: center;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0 5px;
+}
+
+.tiny-grey {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+  color: grey;
 }
 /*# sourceMappingURL=main.css.map */

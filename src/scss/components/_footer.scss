@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   &__item{
     &:not(:last-child){
@@ -72,7 +72,7 @@
     flex-wrap: wrap;
     align-items: center;
     border-top: 2px solid #eee;
-    padding: 10px 0;
+    padding: 0px 0;
 
   }
   &__social{
@@ -144,7 +144,7 @@
   }
  }
  .social {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -210,4 +210,18 @@
   transition: all .4s;
   display: block;
 
+}
+.tiny-footer {
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 5px;
+}
+.tiny-grey {
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+color: grey;
 }
