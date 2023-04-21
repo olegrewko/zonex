@@ -5,6 +5,9 @@
     overflow: hidden;
     width: 100%;
     background-color: #f8f8f8;
+    // @include xs320 {
+    //   width: 80%;
+    // }
   }
 }
 .catalog-slide {
@@ -13,7 +16,10 @@
   display: flex;
   flex-direction: column;
   @include sm {
-    padding: 20px 100px;
+    padding: 20px 20px;
+  }
+  @include xs {
+    padding: 10px 10px;
   }
 
   &__title{
@@ -27,6 +33,7 @@
     margin: 0;
     margin-bottom: 40px;
     max-width: 400px;
+    width: 100%;
     font-weight: 500;
     font-size: 10px;
     color: black;
@@ -79,7 +86,10 @@
     bottom: 0;
     max-height: 100%;
     z-index: -1;
-
+    @include xs420 {
+      max-height: 60%;
+      right: 10%;
+    }
    }
 }
 .hero-prev-btn {

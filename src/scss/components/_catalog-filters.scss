@@ -679,6 +679,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+    @include xs {
+
+      display: none;
+
+  }
 }
 }
 .catalog-columns {
@@ -708,6 +713,11 @@
   &--current{
     color: var(--color-dark);
   }
+  }
+  @include xs {
+    .catalog-columns{
+      display: none;
+    }
   }
 }
 .custom-select {
@@ -817,9 +827,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
   &__item{
     &:not(:last-child){
-      margin-right: 10px;
+      margin-right: 5px;
     }
   }
   &__link {
