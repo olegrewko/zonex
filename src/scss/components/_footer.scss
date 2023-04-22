@@ -148,7 +148,7 @@
   display: flex;
   justify-content: start;
   align-items: flex-start;
-  border-left: 2px solid var(--color-gray);
+  border-left: 2px solid var(--color-dark);
   &__item{
 
     &:not(:last-child){
@@ -187,8 +187,8 @@
   padding: 1px 1px;
   text-align: center;
   img {
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     margin: 1px;
   }
 }
