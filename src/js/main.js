@@ -1,13 +1,14 @@
 import './_vendor';
 
 import './_functions';
+import './components/tabs.js';
 import './components/catalog-props.js';
 import './components/catalog-filter-toggle.js';
 import './components/burger.js';
 import './components/card-bottom-tabs.js';
 import './components/banner-slider.js';
 import './components/catalog-slider.js';
-// import './components/catalog-props.js';
+
 import './components/color-select.js';
 import './components/card-slider.js';
 import './components/product.js';

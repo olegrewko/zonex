@@ -1,20 +1,25 @@
 <section class="main-products">
   <h2 class="visually-hidden">Main-products</h2>
-  <div class="container main-products__container">
-    <ul class="main-products__nav">
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link main-products__btn--current" data-filter="best-sellers">Best products</button></li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link" data-filter="new-products">New products</button></li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link" data-filter="sale-products">Sale products</button></li>
+  <div class="container main-products__container tabs">
+    <ul class="main-products__nav tabs__list">
+      <li class="main-products__item"><button  class="main-products__btn btn-reset  main-products__btn--current tabs__btn tabs__btn--active" data-tabs-path="main" data-filter="best-sellers">Best products</button></li>
+      <li class="main-products__item"><button class="main-products__btn btn-reset  tabs__btn" data-tabs-path="archive" data-filter="new-products">New products</button></li>
+      <li class="main-products__item"><button class="main-products__btn btn-reset  tabs__btn" data-tabs-path="settings" data-filter="sale-products">Sale products</button></li>
     </ul>
-
-    <ul class="main-products__list products-grid">
-      <li class="products-grid__item">
+    <div class="tabs__content tabs__content--active" data-tabs-target="main">
+     <ul class="main-products__list products-grid">
+      <li class="products-grid__item tabs__item">
         <article class="product">
           <div class="product__image">
             <img src="../img/prod01.jpg" alt="../img/prod01.jpg">
           </div>
-          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <h3 class="product__title">
+            <a href="../catalog.html">
+            Eye Mesh Boat Shoes
+            </a>
+          </h3>
           <span class="product__price">$220.0</span>
+
         </article>
       </li>
       <li class="products-grid__item">
@@ -38,6 +43,7 @@
       <li class="products-grid__item">
         <article class="product">
           <div class="product__image">
+            <span class="product__sale">Sale</span>
             <img src="../img/prod04.jpg" alt="../img/prod04.jpg">
           </div>
           <h3 class="product__title">Eye Mesh Boat Shoes</h3>
@@ -143,9 +149,290 @@
           <span class="product__price">$220.0</span>
         </article>
       </li>
-    </ul>
-    <!-- <div class="main-products__btn-center">
-      <button class="btn-reset main-products__more">Load more</button>
-    </div> -->
+     </ul>
+    </div>
+    <div class="tabs__content" data-tabs-target="archive">
+     <ul class="main-products__list products-grid">
+      <li class="products-grid__item tabs__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod01.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod03.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <span class="product__sale">Sale</span>
+            <img src="../img/prod02.jpg" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+       <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod05.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod01.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod03.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+       <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod05.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod02.jpg" alt="../img/prod11.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod12.png" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/m6.png" alt="../img/m6.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod14.png" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod15.png" alt="../img/prod15.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+     </ul>
+    </div>
+    <div class="tabs__content" data-tabs-target="settings">
+     <ul class="main-products__list products-grid">
+      <li class="products-grid__item tabs__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod01.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod03.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <span class="product__sale">Sale</span>
+            <img src="../img/prod01.jpg" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+       <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod05.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod01.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod03.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+       <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod01.jpg" alt="../img/prod05.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod11.png" alt="../img/prod11.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod12.png" alt="../img/prod02.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/m6.png" alt="../img/m6.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod14.png" alt="../img/prod04.jpg">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$120.0</span>
+        </article>
+      </li>
+      <li class="products-grid__item">
+        <article class="product">
+          <div class="product__image">
+            <img src="../img/prod15.png" alt="../img/prod15.png">
+          </div>
+          <h3 class="product__title">Eye Mesh Boat Shoes</h3>
+          <span class="product__price">$220.0</span>
+        </article>
+      </li>
+     </ul>
+    </div>
+
   </div>
 </section>
