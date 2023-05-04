@@ -1,3 +1,46 @@
+.hero-blog{
+  padding-top: 50px;
+  // &__overlay{
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background-color: rgba (0, 0, 0, 0.5);
+  // }
+  &__box{
+    position: relative;
+    max-width: 1166px;
+    height: 400px;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    font-display: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    background-image: url(../../img/k1170grey.png);
+    background-size: cover;
+    background-position: center center;
+
+  }
+   &__overlay{
+    display: block;
+    max-width: 400px;
+    // display: flex;
+    // font-display: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+   &__title{
+    font-weight: 700;
+    font-size: 60px;
+    color: antiquewhite;
+    text-align: center;
+
+   }
+}
 .hero-catalog{
   padding-top: 50px;
   &__slider{
@@ -5,9 +48,7 @@
     overflow: hidden;
     width: 100%;
     background-color: #f8f8f8;
-    // @include xs320 {
-    //   width: 80%;
-    // }
+
   }
 }
 .catalog-slide {
