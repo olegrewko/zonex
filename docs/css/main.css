@@ -1072,7 +1072,7 @@ ul {
 .hero-blog__box {
   position: relative;
   max-width: 1166px;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
@@ -1095,8 +1095,9 @@ ul {
   max-width: 400px;
 }
 .hero-blog__title {
+  padding-top: 40px;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 70px;
   color: antiquewhite;
   text-align: center;
 }
@@ -1324,7 +1325,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 0px 0;
   border-bottom: 0px solid #eee;
 }
 .breadcrumbs__item {
