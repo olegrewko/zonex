@@ -1,0 +1,144 @@
+.blog-grid {
+      margin-top: 0px;
+      display: grid;
+      grid-template-columns: 259px  1fr;
+      grid-template-rows: auto;
+      column-gap: 10px;
+}
+.blog-filters {
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 259px;
+  width: 100%;
+
+  // border: 1px solid grey;
+  // padding: 20px;
+
+  //  &__title {
+  //   font-weight: 500;
+  //   font-size: 14px;
+  //  }
+   @include xs420 {
+      max-width: 120px;
+    width: 100%;
+
+}
+}
+.blog-filter01,
+.blog-filter02,
+.blog-filter03 {
+
+  border: 1px solid rgb(226, 224, 224);
+  padding: 15px;
+  margin-bottom: 20px;
+    &__title {
+      margin: 20px 0px;
+
+      padding: 5px;
+      padding-left: 5px;
+    font-weight: 700;
+    font-size: 18px;
+
+    border-left: 2px solid #000;
+   }
+   &__wrap {
+      margin: 10px 0;
+
+     display: grid;
+      grid-template-columns: 1fr  1fr;
+      grid-template-rows: auto;
+      column-gap: 10px;
+      &:not(:last-child){
+        padding: 10px 0 ;
+
+        border-bottom: 1px solid #ebe8e8;
+
+      }
+
+   }
+    &__image {
+      margin-right: 10px;
+
+   }
+   &__wrap-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-transform: uppercase;
+   }
+   &__link{
+      font-size: 12px;
+     font-weight: 700;
+     color: #000;
+     transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover{
+        color: darkgray;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+   }
+   &__text-title{
+
+    // font-size: 12px;
+    // font-weight: 700;
+    // color: #000;
+   }
+   &__text-date {
+
+    font-size: 12px;
+    color: darkgray;
+   }
+}
+.blog-content {
+  // display: flex;
+  // justify-content: space-between;
+  margin-top: 40px;
+  padding: 10px;
+  max-width: 900px;
+  width: 100%;
+    &__title{
+
+      font-weight: 500;
+      font-size: 20px;
+    }
+    &__link{
+      // font-weight: 500;
+      // font-size: 18px;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover{
+        color: darkgray;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+    }
+    &__text{
+      font-weight: 500;
+      font-size: 14px;
+      color: rgb(99, 99, 99);
+      line-height: 1.7;
+
+    }
+          p::first-letter {
+      text-transform: uppercase;
+      margin: 0 5px 10px 0;
+      padding: 5px 15px;
+      border: 2px solid gainsboro;
+      font-size: 16px;
+      font-weight: 700;
+}
+    h6 {
+      font-weight: 500;
+      font-size: 16px;
+      color: rgb(99, 99, 99);
+    }
+    span {
+      color: rgb(35, 35, 35);
+    }
+}
