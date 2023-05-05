@@ -1,13 +1,37 @@
+.hero-about{
+  padding-top: 50px;
+
+  &__box{
+    // position: relative;
+    max-width: 1169px;
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    background-image: url(../../img/about350.png);
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  //  &__title{
+  //   padding-top: 40px;
+  //   font-weight: 700;
+  //   font-size: 70px;
+  //   color: antiquewhite;
+  //   text-align: center;
+
+  //  }
+}
 .hero-blog{
   padding-top: 50px;
-  // &__overlay{
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background-color: rgba (0, 0, 0, 0.5);
-  // }
+
   &__box{
     position: relative;
     max-width: 1166px;
@@ -16,7 +40,7 @@
     overflow: hidden;
     width: 100%;
     display: flex;
-    font-display: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2a2a2a;
@@ -25,14 +49,7 @@
     background-position: center center;
 
   }
-   &__overlay{
-    display: block;
-    max-width: 400px;
-    // display: flex;
-    // font-display: column;
-    // justify-content: center;
-    // align-items: center;
-  }
+
    &__title{
     padding-top: 40px;
     font-weight: 700;

@@ -93,9 +93,7 @@ transition: all 0.3s;
 		}
 }
  .contact-grid {
-      /* max-width: 1000px; */
-      /* width: 100%; */
-      // flex-basis: 100%;
+
       display: grid;
       grid-template-columns: 1fr  1fr;
       grid-template-rows: 450px;
