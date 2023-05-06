@@ -46,18 +46,18 @@
       width: 100%;
       height: auto;
       display: grid;
-      grid-template-columns: 1fr  1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
-      column-gap: 10px;
+      column-gap: 5px;
       // background-color: #eeeeec;
       margin: 0 auto;
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 20px 0px;
+      padding: 0px 0px;
 
        @include xs {
-        grid-template-columns:  1fr 1fr;
-        gap: 10px;
+        grid-template-columns:  1fr 1fr 1fr;
+        gap: 5px;
        }
 
       &__title{

@@ -127,6 +127,7 @@ __webpack_require__.r(__webpack_exports__);
   $body: document.body,
   $bannerSlider: document.querySelector('.banner-slider'),
   $marketing: document.querySelector('.marketing'),
+  $blogSlider: document.querySelector('.blog-content__slider'),
   $catalogSlider: document.querySelector('.hero-catalog__slider'),
   $catalogFiltersTop: document.querySelectorAll('.catalog-filter__top'),
   $hideFilters: document.querySelector('.hide-filters'),
@@ -391,6 +392,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
 
 
+const blogSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___default())(_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$blogSlider, {
+  loop: true,
+  slidesPerView: 1,
+  containerModifierClass: 'blog-cont-',
+  navigation: {
+    nextEl: '.hero-next-btn',
+    prevEl: '.hero-prev-btn'
+  },
+  pagination: {
+    el: '.hero-pag',
+    type: 'bullets',
+    clickable: true
+  }
+});
 const catalogSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___default())(_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$catalogSlider, {
   loop: true,
   slidesPerView: 1,

@@ -69,6 +69,7 @@
 
   }
 }
+
 .catalog-slide {
   position: relative;
   padding: 100px 100px;
@@ -141,13 +142,14 @@
    }
    &__image{
     position: absolute;
-    right: 15%;
+
+    right: 0;
     bottom: 0;
     max-height: 100%;
     z-index: -1;
     @include xs420 {
       max-height: 60%;
-      right: 10%;
+      // right: 10%;
     }
    }
 }
@@ -243,17 +245,6 @@
 
     opacity: 1;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   left: 50%;
-    //   top: 50%;
-    //   z-index: -1;
-    //   border-radius: 100%;
-    //   width: 20px;
-    //   height: 20px;
-    //   background-color: #ccc;
-    //   transform: translate(-50%, -50%);
-    // }
+
   }
 }

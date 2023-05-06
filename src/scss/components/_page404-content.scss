@@ -1,13 +1,16 @@
 .page404-content {
-  margin: 0 auto;
+  &__block {
+       width: 400px;
+       height: 300px;
       display: flex;
       flex-direction: column;
-  align-items: center;
+
   text-align: center;
   justify-content: center;
-  height: 100vh;
 
+}
  		&__title {
+      align-items: center;
       font-weight: 700;
       font-size: 40px;
       line-height: 45px;
@@ -17,6 +20,7 @@
 
 
 		&__subtitle {
+      align-items: center;
       font-weight: 500;
       font-size: 15px;
       line-height: 45px;
@@ -24,6 +28,7 @@
 		}
 
     		&__btn {
+          align-items: center;
 margin-top: 60px;
         max-width: 400px;
   width: 100%;
