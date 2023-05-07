@@ -1,16 +1,42 @@
 .contacts {
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  align-items: center;
 
+  // padding-top: 50px;
+
+  &__box{
+    position: relative;
+    max-width: 1166px;
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    background-image: url(../../img/contact.png);
+    background-size: cover;
+    background-position: center center;
 
 
 		&__title {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 45px;
 		}
 
 		// .contacts__subtitle
 
 		&__subtitle {
-      font-weight: 500;
-font-size: 20px;
-line-height: 25px;
+font-weight: 700;
+font-size:14px;
+line-height: 15px;
 color: var(--color-tundora);
 		}
 
@@ -114,3 +140,4 @@ transition: all 0.3s;
       }
 
  }
+}
