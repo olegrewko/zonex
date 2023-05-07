@@ -1,0 +1,44 @@
+.blog-content {
+
+		// .blog-content__grid-main
+
+		&__grid-main {
+       margin-top: 0px;
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      grid-template-rows: auto;
+      column-gap: 5px;
+
+      @include sm {
+
+         grid-template-columns: 1fr;
+        }
+
+		}
+
+		// .blog-content__w
+
+		&__w {
+
+		}
+    &__aside {
+      max-width: 250px;
+      width: 100%;
+    }
+
+		// .blog-content__grid-submain
+
+		&__grid-submain {
+
+       margin-top: 0px;
+      display: grid;
+      grid-template-columns: 120px  1fr;
+      grid-template-rows: auto;
+      column-gap: 5px;
+
+      @include sm {
+
+         grid-template-columns: 1fr;
+        }
+		}
+}

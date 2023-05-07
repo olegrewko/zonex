@@ -6,13 +6,17 @@
       grid-template-columns: 1fr  1fr 1fr;
       grid-template-rows: auto;
       gap: 40px;
+      place-items: center;
       padding: 0;
-      background-color: #eeeeec;
+      background-color: #f4f4ed;
       margin: 0 auto;
       // padding-top: 40px;
       // padding-bottom: 40px;
       padding: 60px 40px;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
+      &__white {
+        background-color: transparent;
+      }
        @include xs {
         grid-template-columns:  1fr;
         gap: 10px;
@@ -49,7 +53,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
-      column-gap: 5px;
+      gap: 5px;
+      place-items: center;
       // background-color: #eeeeec;
       margin: 0 auto;
       margin-top: 20px;
