@@ -8,6 +8,7 @@
 
   &__bottom {
     padding-top: 70px;
+
   }
 
 }
@@ -32,6 +33,9 @@
      @include xs {
       width: 100%;
     }
+  }
+  &__line {
+    border-bottom: 2px solid var(--color-tundora);
   }
 }
 .card-info {
@@ -361,12 +365,13 @@
   }
 }
 .card-description {
+  border-top: 2px solid #eee;
   display: flex;
   // flex-wrap: wrap;
   align-items: flex-start;
 
     &__right {
-    padding-top: 21px;
+    padding-top: 61px;
     padding-right: 20px;
     padding-left: 25px;
     width: 84%;
