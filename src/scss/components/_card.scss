@@ -291,6 +291,42 @@
   }
 
 }
+.promo {
+    margin-bottom: 20px;
+		&__maroon {
+      color: #d24242;
+    }
+
+		&__clock {
+      display: flex;
+      @include sm {
+        display: flex;
+        flex-direction: column;
+      }
+		}
+
+		// .promo__clock-item
+
+		&__clock-item {
+      display: flex;
+		}
+}
+.days {
+  margin-right: 0px;
+}
+.smalltext {
+  font-size: 15px;
+  font-weight: 700;
+  color: #d24242;
+  margin-right: 10px;
+  margin-left: 3px;
+}
+.hours {
+}
+.minutes {
+}
+.seconds {
+}
 
 .stepper {
   display: flex;

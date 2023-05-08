@@ -492,21 +492,41 @@ if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$sizeSelect) {
     }
   });
 }
-// if (vars.$sizeSelectCheckbox) {
-
-//   vars.$sizeSelectCheckbox.addEventListener('click', (e) => {
-//     if (e.target.classList.contains('size-select__checkbox')) {
-
-//      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-//       checkboxes.forEach(function(checkbox) {
-//       checkbox.classList.remove('checked');
-//     });
-
-//     }
-
-//   });
-
-// }
+function getTimeRemaining(endtime) {
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor(total / 1000 % 60);
+  const minutes = Math.floor(total / 1000 / 60 % 60);
+  const hours = Math.floor(total / (1000 * 60 * 60) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
+function initializeClock(id, endtime) {
+  const clock = document.getElementById(id);
+  const daysSpan = clock.querySelector('.days');
+  const hoursSpan = clock.querySelector('.hours');
+  const minutesSpan = clock.querySelector('.minutes');
+  const secondsSpan = clock.querySelector('.seconds');
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
+}
+const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('promo__clock', deadline);
 
 /***/ }),
 
@@ -5097,6 +5117,16 @@ class GraphTabs {
   }
 }
 
+/***/ }),
+
+/***/ "./node_modules/simplebar/dist/simplebar.css":
+/*!***************************************************!*\
+  !*** ./node_modules/simplebar/dist/simplebar.css ***!
+  \***************************************************/
+/***/ (() => {
+
+throw new Error("Module parse failed: Unexpected token (1:17)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> [data-simplebar] {\n|   position: relative;\n|   flex-direction: column;");
+
 /***/ })
 
 /******/ 	});
@@ -5190,7 +5220,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product.js */ "./src/js/components/product.js");
 /* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_product_js__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _components_stepper_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/stepper.js */ "./src/js/components/stepper.js");
-/* harmony import */ var _js_vars__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../js/_vars */ "./src/js/_vars.js");
+/* harmony import */ var simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! simplebar/dist/simplebar.css */ "./node_modules/simplebar/dist/simplebar.css");
+/* harmony import */ var simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _js_vars__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../js/_vars */ "./src/js/_vars.js");
 
 
 
@@ -5205,10 +5237,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import './components/catalog-filter-toggle.js';
-// import 'simplebar/dist/simplebar.css';
-// vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-//   e.currentTarget.closest('.free-delivery').style.display = 'none';
-// });
+
+_js_vars__WEBPACK_IMPORTED_MODULE_14__["default"].$freeDeliveryBtn.addEventListener('click', e => {
+  e.currentTarget.closest('.free-delivery').style.display = 'none';
+});
 // import './components/catalog-slider.js';
 // import './components/catalog-filter-toggle';
 // import './components/catalog-props';
@@ -5252,16 +5284,6 @@ $(document).ready(function () {
     easingType: "easeOutQuart"
   });
 });
-
-// $('.tab').on('click', function (e) {
-// e.preventDefault();
-// $($(this).siblings()).removeClass('tab--active');
-// $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
-// $(this).addClass('tab--active');
-// $($(this).attr('href')).addClass('tab-content--active');
-
-//       });
-
 if (document.querySelector('.tab')) {
   document.querySelector('.tab').addEventListener('click', t => {
     t.preventDefault();
@@ -5271,15 +5293,6 @@ if (document.querySelector('.tab')) {
     $($(undefined).attr('href')).addClass('tabs-content--active');
   });
 }
-
-//  $('.tab').on('click', function (ab) {
-//       ab.preventDefault();
-//       $($(this).siblings()).removeClass('tab--active');
-//       $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-//       $(this).addClass('tab--active');
-//       $($(this).attr('href')).addClass('tabs-content--active');
-
-//     });
 })();
 
 /******/ })()

@@ -14,10 +14,10 @@ import './components/card-slider.js';
 import './components/product.js';
 import './components/stepper.js';
 // import './components/catalog-filter-toggle.js';
-// import 'simplebar/dist/simplebar.css';
-// vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-//   e.currentTarget.closest('.free-delivery').style.display = 'none';
-// });
+import 'simplebar/dist/simplebar.css';
+vars.$freeDeliveryBtn.addEventListener('click', (e) => {
+  e.currentTarget.closest('.free-delivery').style.display = 'none';
+});
 // import './components/catalog-slider.js';
 // import './components/catalog-filter-toggle';
 // import './components/catalog-props';
@@ -68,14 +68,7 @@ $(function () {
       });
 
 
-// $('.tab').on('click', function (e) {
-        // e.preventDefault();
-        // $($(this).siblings()).removeClass('tab--active');
-        // $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
-        // $(this).addClass('tab--active');
-        // $($(this).attr('href')).addClass('tab-content--active');
 
-//       });
 
 if (document.querySelector('.tab')) {
   document.querySelector('.tab').addEventListener('click', (t) => {
@@ -89,11 +82,4 @@ if (document.querySelector('.tab')) {
   });
 }
 
-  //  $('.tab').on('click', function (ab) {
-  //       ab.preventDefault();
-  //       $($(this).siblings()).removeClass('tab--active');
-  //       $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-  //       $(this).addClass('tab--active');
-  //       $($(this).attr('href')).addClass('tabs-content--active');
 
-  //     });
