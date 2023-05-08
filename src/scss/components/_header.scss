@@ -64,9 +64,7 @@
       @include xs {
         width: 100%;
     }
-    //   @include xs320 {
-    //     width: 60%;
-    // }
+
 
   &__shop-nav{
     z-index: 50;
@@ -127,8 +125,8 @@
 
     position: absolute;
     left: -150vw;
-    top: 60px;
-    padding: 10% 2%;
+    top: 90px;
+    padding: 5% 2%;
     width: 70%;
     height: 78vh;
     // border: 2px solid var(--color-dark);
