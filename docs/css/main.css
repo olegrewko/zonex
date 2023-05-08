@@ -1160,7 +1160,7 @@ ul {
 }
 .hero-blog__title {
   padding-top: 40px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 60px;
   color: antiquewhite;
   text-align: center;
@@ -3564,6 +3564,12 @@ ul {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
+}
+.blog-filter01__link:not(:last-child),
+.blog-filter02__link:not(:last-child),
+.blog-filter03__link:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted grey;
 }
 .blog-filter01__link:hover,
 .blog-filter02__link:hover,
