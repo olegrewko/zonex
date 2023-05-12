@@ -26,9 +26,23 @@
       background-color: #f4f4ed;
       margin: 0 auto;
 
-      padding: 60px 40px;
+      padding: 60px 20px;
 
+      &__address,
+      &__tel,
+      &__email{
+        display: flex;
 
+      }
+      &__hours{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__image{
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+      }
       &__white {
         background-color: transparent;
       }
