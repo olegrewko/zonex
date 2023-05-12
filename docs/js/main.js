@@ -5117,16 +5117,6 @@ class GraphTabs {
   }
 }
 
-/***/ }),
-
-/***/ "./node_modules/simplebar/dist/simplebar.css":
-/*!***************************************************!*\
-  !*** ./node_modules/simplebar/dist/simplebar.css ***!
-  \***************************************************/
-/***/ (() => {
-
-throw new Error("Module parse failed: Unexpected token (1:17)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> [data-simplebar] {\n|   position: relative;\n|   flex-direction: column;");
-
 /***/ })
 
 /******/ 	});
@@ -5206,23 +5196,22 @@ var __webpack_exports__ = {};
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
-/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_tabs_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
-/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
-/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
-/* harmony import */ var _components_card_bottom_tabs_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/card-bottom-tabs.js */ "./src/js/components/card-bottom-tabs.js");
-/* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
-/* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
-/* harmony import */ var _components_color_select_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/color-select.js */ "./src/js/components/color-select.js");
-/* harmony import */ var _components_card_slider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/card-slider.js */ "./src/js/components/card-slider.js");
-/* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product.js */ "./src/js/components/product.js");
-/* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_product_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_stepper_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/stepper.js */ "./src/js/components/stepper.js");
-/* harmony import */ var simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! simplebar/dist/simplebar.css */ "./node_modules/simplebar/dist/simplebar.css");
-/* harmony import */ var simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(simplebar_dist_simplebar_css__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _js_vars__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../js/_vars */ "./src/js/_vars.js");
+/* harmony import */ var _js_vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/_vars */ "./src/js/_vars.js");
+/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
+/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_tabs_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_catalog_props_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/catalog-props.js */ "./src/js/components/catalog-props.js");
+/* harmony import */ var _components_catalog_filter_toggle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/catalog-filter-toggle.js */ "./src/js/components/catalog-filter-toggle.js");
+/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
+/* harmony import */ var _components_card_bottom_tabs_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/card-bottom-tabs.js */ "./src/js/components/card-bottom-tabs.js");
+/* harmony import */ var _components_banner_slider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/banner-slider.js */ "./src/js/components/banner-slider.js");
+/* harmony import */ var _components_catalog_slider_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/catalog-slider.js */ "./src/js/components/catalog-slider.js");
+/* harmony import */ var _components_color_select_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/color-select.js */ "./src/js/components/color-select.js");
+/* harmony import */ var _components_card_slider_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/card-slider.js */ "./src/js/components/card-slider.js");
+/* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/product.js */ "./src/js/components/product.js");
+/* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_product_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_stepper_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/stepper.js */ "./src/js/components/stepper.js");
+
 
 
 
@@ -5237,9 +5226,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import './components/catalog-filter-toggle.js';
-
-_js_vars__WEBPACK_IMPORTED_MODULE_14__["default"].$freeDeliveryBtn.addEventListener('click', e => {
-  e.currentTarget.closest('.free-delivery').style.display = 'none';
+// import 'simplebar/dist/simplebar.css';
+_js_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$freeDeliveryBtn.addEventListener('click', e => {
+  e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
 });
 // import './components/catalog-slider.js';
 // import './components/catalog-filter-toggle';
@@ -5251,7 +5240,7 @@ _js_vars__WEBPACK_IMPORTED_MODULE_14__["default"].$freeDeliveryBtn.addEventListe
 // import './components/product';
 // import './components/burger';
 // import './components/mobile-filter';
-
+// import vars from '../js/_vars';
 // import {resizeContent} from './functions/resize';
 // import {scrollTo} from './functions/smooth-scroll';
 // import {disableScroll, enableScroll} from './functions/stop-scroll';

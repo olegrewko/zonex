@@ -1,5 +1,5 @@
 import './_vendor';
-
+import vars from '../js/_vars';
 import './_functions';
 import './components/tabs.js';
 import './components/catalog-props.js';
@@ -14,9 +14,9 @@ import './components/card-slider.js';
 import './components/product.js';
 import './components/stepper.js';
 // import './components/catalog-filter-toggle.js';
-import 'simplebar/dist/simplebar.css';
+// import 'simplebar/dist/simplebar.css';
 vars.$freeDeliveryBtn.addEventListener('click', (e) => {
-  e.currentTarget.closest('.free-delivery').style.display = 'none';
+  e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
 });
 // import './components/catalog-slider.js';
 // import './components/catalog-filter-toggle';
@@ -28,7 +28,7 @@ vars.$freeDeliveryBtn.addEventListener('click', (e) => {
 // import './components/product';
 // import './components/burger';
 // import './components/mobile-filter';
-import vars from '../js/_vars';
+// import vars from '../js/_vars';
 // import {resizeContent} from './functions/resize';
 // import {scrollTo} from './functions/smooth-scroll';
 // import {disableScroll, enableScroll} from './functions/stop-scroll';
