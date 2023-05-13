@@ -294,6 +294,7 @@
 .promo {
     margin-bottom: 20px;
 		&__maroon {
+      font-weight: 500;
       color: #d24242;
     }
 
@@ -315,8 +316,8 @@
   margin-right: 0px;
 }
 .smalltext {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
   color: #d24242;
   margin-right: 10px;
   margin-left: 3px;

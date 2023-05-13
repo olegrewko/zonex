@@ -2644,6 +2644,7 @@ ul {
   margin-bottom: 20px;
 }
 .promo__maroon {
+  font-weight: 500;
   color: #d24242;
 }
 .promo__clock {
@@ -2673,8 +2674,8 @@ ul {
 }
 
 .smalltext {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
   color: #d24242;
   margin-right: 10px;
   margin-left: 3px;
@@ -2917,10 +2918,9 @@ ul {
 }
 .footer__column:nth-child(2) {
   min-width: 150px;
-  margin-left: -50px;
 }
 .footer__column:nth-child(3) {
-  max-width: 450px;
+  max-width: 350px;
   width: 100%;
 }
 .footer__link {
@@ -3263,7 +3263,7 @@ ul {
   min-width: 150px;
 }
 .footer-black__column:nth-child(3) {
-  max-width: 450px;
+  max-width: 350px;
   width: 100%;
 }
 
