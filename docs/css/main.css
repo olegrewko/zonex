@@ -393,7 +393,7 @@ ul {
     padding: 5% 2%;
     width: 58%;
     height: 78vh;
-    background-color: rgba(211, 222, 92, 0.9);
+    background-color: #c9e8ea;
     z-index: 400;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -1437,7 +1437,7 @@ ul {
   transition: all 0.3s;
 }
 .breadcrumbs__link--current {
-  color: maroon;
+  color: tomato;
 }
 
 .catalog-filters {
