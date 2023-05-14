@@ -352,19 +352,25 @@ if (document.querySelector('.catalog')) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
 
-if (document.querySelector('.catalog')) {
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogColumns.addEventListener('click', e => {
-    if (e.target.classList.contains('.catalog-columns__btn') || e.target.closest('.catalog-columns__item')) {
-      let columns = e.target.dataset.columns;
-      let $columnsBtn = document.querySelectorAll('.catalog-columns__btn');
-      $columnsBtn.forEach(el => {
-        el.classList.remove('catalog-columns__btn--current');
-      });
-      e.target.classList.add('catalog-columns__btn--current');
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$catalogGridContent.dataset.gridColumns = columns;
-    }
-  });
-}
+
+// if (document.querySelector('.catalog-columns')) {
+
+//   vars.$catalogColumns.addEventListener('click', (e) => {
+//     if (e.target.classList.contains('.catalog-columns__btn') || e.target.closest('.catalog-columns__item')) {
+//       let columns = e.target.dataset.columns;
+//       let $columnsBtn = document.querySelectorAll('.catalog-columns__btn');
+
+//       $columnsBtn.forEach(el => {
+//         el.classList.remove('catalog-columns__btn--current');
+//       });
+
+//       e.target.classList.add('catalog-columns__btn--current');
+
+//       vars.$catalogGridContent.dataset.gridColumns = columns;
+//     }
+//   });
+// }
+
 if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$customSelect) {
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$customSelect.forEach(el => {
     el.addEventListener('click', e => {

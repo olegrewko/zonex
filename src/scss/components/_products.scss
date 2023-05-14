@@ -15,10 +15,10 @@
         max-height: 80%;
         width: 80%;
       }
-      @include xs320 {
-        max-height: 50%;
-        width: 50%;
-      }
+      // @include xs320 {
+      //   max-height: 50%;
+      //   width: 50%;
+      // }
     }
   }
   &__sale {
