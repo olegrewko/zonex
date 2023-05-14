@@ -1,5 +1,6 @@
 import './_vendor';
 import vars from '../js/_vars';
+
 import './_functions';
 import './components/tabs.js';
 import './components/catalog-props.js';
@@ -13,6 +14,7 @@ import './components/color-select.js';
 import './components/card-slider.js';
 import './components/product.js';
 import './components/stepper.js';
+import './_components.js';
 // import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';
 vars.$freeDeliveryBtn.addEventListener('click', (e) => {
@@ -82,4 +84,28 @@ if (document.querySelector('.tab')) {
   });
 }
 
+// $(function () {
+//    $('.shop-content__filter-btn').on('click', function(){
+
+//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+//     $(this).addClass('shop-content__filter-btn--active');
+//   });
+// });
+
+  // $('.button-list').on('click', function(){
+  //   $('.product').addClass('product--list');
+  // });
+
+  // $('.button-grid').on('click', function(){
+  //   $('.product').removeClass('product--list');
+
+  // });
+$(function () {
+ $('.catalog-props-top__filter-btn').on('click', function(){
+
+    $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+    $(this).addClass('catalog-props-top__filter-btn--active');
+
+  });
+});
 

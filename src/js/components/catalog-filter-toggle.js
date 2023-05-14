@@ -93,3 +93,22 @@ if (document.querySelector('.catalog')) {
 
   });
 }
+
+
+
+//  $('.catalog-props__top__filter-btn').on('click', function(){
+
+//     $('.catalog-props__top__filter-btn').removeClass('catalog-props__top__filter-btn--active');
+//     $(this).addClass('catalog-props__top__filter-btn--active');
+//   });
+
+  // $('.button-list').on('click', function(){
+  //   $('.product').addClass('product--list');
+  // });
+
+  // $('.button-grid').on('click', function(){
+  //   $('.product').removeClass('product--list');
+
+  // });
+
+

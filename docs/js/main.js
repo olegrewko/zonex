@@ -1,6 +1,29 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/_components.js":
+/*!*******************************!*\
+  !*** ./src/js/_components.js ***!
+  \*******************************/
+/***/ (() => {
+
+console.log('components');
+
+//  $('.catalog-props-top__filter-btn').on('click', function(){
+
+//     $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+//     $(this).addClass('catalog-props-top__filter-btn--active');
+
+//   });
+
+//  $('.shop-content__filter-btn').on('click', function(){
+
+//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+//     $(this).addClass('shop-content__filter-btn--active');
+//   });
+
+/***/ }),
+
 /***/ "./src/js/_functions.js":
 /*!******************************!*\
   !*** ./src/js/_functions.js ***!
@@ -9,14 +32,13 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
-/* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
+/* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-
-console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)());
+// import { mobileCheck } from "./functions/mobile-check";
+// console.log(mobileCheck())
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -48,7 +70,7 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 
 // Реализация табов
 
-const tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_1__["default"]('tab');
+const tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -340,6 +362,21 @@ if (document.querySelector('.catalog')) {
   });
 }
 
+//  $('.catalog-props__top__filter-btn').on('click', function(){
+
+//     $('.catalog-props__top__filter-btn').removeClass('catalog-props__top__filter-btn--active');
+//     $(this).addClass('catalog-props__top__filter-btn--active');
+//   });
+
+// $('.button-list').on('click', function(){
+//   $('.product').addClass('product--list');
+// });
+
+// $('.button-grid').on('click', function(){
+//   $('.product').removeClass('product--list');
+
+// });
+
 /***/ }),
 
 /***/ "./src/js/components/catalog-props.js":
@@ -534,6 +571,14 @@ function initializeClock(id, endtime) {
 const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('promo__clock', deadline);
 
+// $(function () {
+//    $('.shop-content__filter-btn').on('click', function(){
+
+//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+//     $(this).addClass('shop-content__filter-btn--active');
+//   });
+// });
+
 /***/ }),
 
 /***/ "./src/js/components/product.js":
@@ -718,34 +763,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
   };
 });
-
-/***/ }),
-
-/***/ "./src/js/functions/mobile-check.js":
-/*!******************************************!*\
-  !*** ./src/js/functions/mobile-check.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mobileCheck": () => (/* binding */ mobileCheck)
-/* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
-
-const mobileCheck = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  if (/android/i.test(userAgent)) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--android');
-    return "Android";
-  }
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--ios');
-    return "iOS";
-  }
-  return "unknown";
-};
 
 /***/ }),
 
@@ -5217,6 +5234,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/product.js */ "./src/js/components/product.js");
 /* harmony import */ var _components_product_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_product_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _components_stepper_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/stepper.js */ "./src/js/components/stepper.js");
+/* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./_components.js */ "./src/js/_components.js");
+/* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_js__WEBPACK_IMPORTED_MODULE_14__);
+
 
 
 
@@ -5288,6 +5308,29 @@ if (document.querySelector('.tab')) {
     $($(undefined).attr('href')).addClass('tabs-content--active');
   });
 }
+
+// $(function () {
+//    $('.shop-content__filter-btn').on('click', function(){
+
+//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+//     $(this).addClass('shop-content__filter-btn--active');
+//   });
+// });
+
+// $('.button-list').on('click', function(){
+//   $('.product').addClass('product--list');
+// });
+
+// $('.button-grid').on('click', function(){
+//   $('.product').removeClass('product--list');
+
+// });
+$(function () {
+  $('.catalog-props-top__filter-btn').on('click', function () {
+    $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+    $(this).addClass('catalog-props-top__filter-btn--active');
+  });
+});
 })();
 
 /******/ })()
