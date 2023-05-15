@@ -2116,6 +2116,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2124,6 +2126,11 @@ ul {
   justify-content: space-between;
   margin-bottom: 20px;
   margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .catalog-props-top {
+    display: none;
+  }
 }
 .catalog-props-top__text {
   display: -webkit-box;

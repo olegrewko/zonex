@@ -718,15 +718,14 @@
 .catalog-props-top {
   // &__top{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
   margin-right: 5px;
-  //   @include xs {
-
-  //     display: none;
-
-  // }
+    @include xs {
+      display: none;
+  }
   &__text{
     display: flex;
   align-items: center;
