@@ -12,9 +12,11 @@ import './components/catalog-slider.js';
 
 import './components/color-select.js';
 import './components/card-slider.js';
-import './components/product.js';
 import './components/stepper.js';
-import './_components.js';
+import './components/jquery.js';
+import './components/product.js';
+// import './components/stepper.js';
+
 // import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';
 vars.$freeDeliveryBtn.addEventListener('click', (e) => {
@@ -54,7 +56,7 @@ $(function () {
 
 
   });
-  });
+});
 
  $(document).ready(function () {
         var defaults = {
@@ -100,12 +102,14 @@ if (document.querySelector('.tab')) {
   //   $('.product').removeClass('product--list');
 
   // });
-$(function () {
- $('.catalog-props-top__filter-btn').on('click', function(){
 
-    $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
-    $(this).addClass('catalog-props-top__filter-btn--active');
 
-  });
-});
+// $(function () {
+//  $('.catalog-props-top__filter-btn').on('click', function(){
+
+//     $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+//     $(this).addClass('catalog-props-top__filter-btn--active');
+
+//   });
+// });
 

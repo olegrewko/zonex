@@ -1,16 +1,18 @@
 .hero{
+
   position: relative;
-  height: 100vh;
+  height: 90vh;
   min-height: 600px;
-  background-color: #d9d9d7;
+  // background-color: #d9d9d7;
+  background-color: #c7e9ea;
 
   &__container {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 0 100px;
+    padding: 10px 10px;
     height: 100%;
 
   }
@@ -22,6 +24,7 @@
     font-weight: 700;
     font-size: 40px;
     z-index: 1;
+
    }
    &__d{
     margin: 0;
@@ -35,14 +38,14 @@
 
     right: 0;
     bottom: 0;
-    max-height: 80%;
+    max-height: 100%;
    }
     @include xs {
    .hero__container {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-center;
+    align-items: center;
     justify-content: center;
     padding: 0 10px;
     height: 100%;
@@ -57,4 +60,98 @@
     z-index: 1;
    }
     }
+}
+
+ .banner-slider{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+     background-color: #c7e9ea;
+
+  }
+.banner-slide {
+  position: relative;
+  padding: 250px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+   background-color: #c7e9ea;
+  @include sm {
+    padding: 20px 20px;
+  }
+  @include xs {
+    padding: 10px 10px;
+  }
+
+  &__title{
+    max-width: 375px;
+    width: 100%;
+     font-weight: 700;
+    font-size: 40px;
+    z-index: 10;
+  }
+    &__d{
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 400px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 10px;
+    color: black;
+    z-index: 10;
+   }
+   &__btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    z-index: 10;
+   }
+   &__link {
+    display: inline-block;
+    font-size: 12px;
+
+    padding: 15px 45px;
+    margin-top: 10px;
+    &--dark {
+      border: 2px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark);
+
+      &:hover {
+      border: 2px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent;
+      transition: all 0.3s;
+      }
+    }
+    &--light {
+      border: 2px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent;
+      transition: all 0.3s;
+
+       &:hover {
+      border: 2px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark);
+      }
+    }
+    &:not(:last-child){
+      margin-right: 15px;
+    }
+   }
+   &__image{
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    z-index: -1;
+    @include xs420 {
+      max-height: 60%;
+      // right: 10%;
+    }
+   }
 }

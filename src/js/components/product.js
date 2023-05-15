@@ -1,5 +1,30 @@
 
+// $(function () {
 
+//  $('.catalog-props-top__filter-btn').on('click', function(){
+
+//     $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+//     $(this).addClass('catalog-props-top__filter-btn--active');
+
+//   });
+
+//     $('.button-list').on('click', function(){
+//     $('.product').addClass('product--list');
+//   });
+
+//   $('.button-grid').on('click', function(){
+//     $('.product').removeClass('product--list');
+//   });
+
+// });
+
+// $(function () {
+//    $('.shop-content__filter-btn').on('click', function(){
+
+//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+//     $(this).addClass('shop-content__filter-btn--active');
+//   });
+// });
 // const productsGrid = document.querySelector('.products-grid');
 // const loadMore = document.querySelector('.main-products__more');
 // let quantityProducts = 5;

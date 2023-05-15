@@ -42,6 +42,26 @@
     <a href="#" id="toTop" style="display: block">
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script type="text/javascript">
+     $(function () {
+
+     $('.catalog-props-top__filter-btn').on('click', function(){
+    $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+    $(this).addClass('catalog-props-top__filter-btn--active');
+     });
+
+    $('.button-list').on('click', function(){
+    $('.product').addClass('catalog-grid__item--list');
+  });
+
+    $('.button-grid').on('click', function(){
+    $('.product').removeClass('catalog-grid__item--list');
+  });
+
+});
+    </script>
 </body>
 
 </html>

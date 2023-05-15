@@ -558,16 +558,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
   }
     &__item{
     max-width: 180px;
     width: 100%;
     margin-right: 5px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     width: 18.5%;
+        //   &.catalog-grid__item--list{
+        // min-width: 100%;
+        // display: flex;
+        // text-align: left;
 
+        // .catalog-grid__item__content-box{
+        //   display: block;
+        // }
+        // }
     &:nth-child(5n){
     margin-right: 5px;
     }
@@ -634,6 +642,9 @@
     // }
     }
   }
+  //  .catalog-grid__item__content-box{
+  //         display: none;
+  //       }
 }
 [data-grid-columns="2"] {
   .catalog-grid__item {
