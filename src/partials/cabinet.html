@@ -1,7 +1,7 @@
 <section class="cabinet">
   <script>
-    function changeLink() {
-      document.getElementById('myAnchor').innerHTML="Account Details";
+    function changeLink(e) {
+      document.getElementById('myAnchor').innerHTML = e;
 
     }
   </script>
@@ -13,13 +13,13 @@
       <div class="container">
         <div class="tabs-wrapper">
           <div class="tabs card__tab-box">
-            <a class="tab card-tabs" href="#tab-1">Dashboard</a>
-            <a class="tab card-tabs" href="#tab-2">Orders</a>
-            <a class="tab card-tabs" href="#tab-3" onclick="changeLink()">Downloads</a>
-            <a class="tab card-tabs tab--active" href="#tab-4">Addresses</a>
-            <a class="tab card-tabs" href="#tab-5" onclick="changeLink()">Account Details</a>
-            <a class="tab card-tabs" href="#tab-6">Wishlist</a>
-            <a class="tab card-tabs" href="#tab-7">Logout</a>
+            <a class="tab card-tabs" href="#tab-1" onclick="changeLink('Dashboard')">Dashboard</a>
+            <a class="tab card-tabs" href="#tab-2" onclick="changeLink('Orders')">Orders</a>
+            <a class="tab card-tabs" href="#tab-3" onclick="changeLink('Downloads')">Downloads</a>
+            <a class="tab card-tabs tab--active" href="#tab-4" onclick="changeLink('Addresses')">Addresses</a>
+            <a class="tab card-tabs" href="#tab-5" onclick="changeLink('Account Details')">Account Details</a>
+            <a class="tab card-tabs" href="#tab-6" onclick="changeLink('Wishlist')">Wishlist</a>
+            <a class="tab card-tabs" href="#tab-7" onclick="changeLink('Logout')">Logout</a>
           </div>
 
           <div class="tabs-container">
