@@ -69,16 +69,16 @@
     margin-bottom: 5px;
     color: darkslategray;
     font-size: 12px;
-    // a {
-    //   &::before{
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //   }
-    // }
+    a {
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
   }
   &__price{
     margin-bottom: 5px;
@@ -107,7 +107,7 @@
 }
 .product-custom {
   overflow: hidden;
-  height: 18px;
+  height: 16px;
 
   &__price {
     transition: transform 0.3s;

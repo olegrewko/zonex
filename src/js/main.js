@@ -105,11 +105,13 @@ if (document.querySelector('.tab')) {
 
 
 // $(function () {
-//  $('.catalog-props-top__filter-btn').on('click', function(){
+//    $('.tab').on('click', function (e) {
+//         e.preventDefault();
+//         $($(this).siblings()).removeClass('tab--active');
+//         $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
+//         $(this).addClass('tab--active');
+//         $($(this).attr('href')).addClass('tab-content--active');
 
-//     $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
-//     $(this).addClass('catalog-props-top__filter-btn--active');
-
-//   });
+//       });
 // });
 

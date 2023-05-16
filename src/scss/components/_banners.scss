@@ -1,6 +1,8 @@
 .banners {
+  padding-top: 20px;
+  padding-bottom: 20px;
   &__container{
-    padding: 30px 0;
+    padding:  0;
   }
   &__list{
     display: flex;

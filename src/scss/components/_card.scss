@@ -1,8 +1,8 @@
 .card {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .card-content {
-  padding-top: 20px;
+  padding-top: 10px;
 
 
 
@@ -15,6 +15,7 @@
 .card-top {
   .container{
     display: flex;
+    // justify-content: center;
      @include xs {
       flex-wrap: wrap;
     }
@@ -517,14 +518,16 @@
   &__slider {
     position: relative;
     overflow: hidden;
-    padding-bottom: 50px;
+    padding: 40px 0 30px 10px;
+    // padding-bottom: 40px;
+    background-color: cadetblue;
   }
 }
 .related-pag{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 10px;
   text-align: center;
 
   .swiper-pagination-bullet {

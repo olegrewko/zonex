@@ -23,21 +23,21 @@
     background-image: url(../../img/k1170gr250.png);
     background-size: cover;
     background-position: center center;
-
+  }
 
 		&__title {
       font-weight: 500;
-      font-size: 25px;
-      line-height: 45px;
+      font-size: 30px;
+      line-height: 35px;
 		}
 
 		// .contacts__subtitle
 
 		&__subtitle {
 font-weight: 700;
-font-size:14px;
-line-height: 15px;
-color: var(--color-tundora);
+font-size:12px;
+line-height: 14px;
+color:var(--color-dark);
 		}
 
 
@@ -140,4 +140,4 @@ transition: all 0.3s;
       }
 
  }
-}
+
