@@ -14,6 +14,9 @@
 
     margin-bottom: 100px;
     border-bottom: 2px solid lightgrey;
+     @include xs640 {
+      display: block;
+    }
 }
 .card-tabs {
 
@@ -53,8 +56,8 @@
 
 .card__list-item {
   display: flex;
-
-    justify-content: flex-start;
+    justify-content: space-between;
+    // justify-content: flex-start;
     align-items: center;
 font-family: 'Jost';
 font-style: normal;
@@ -66,6 +69,9 @@ line-height: 22px;
 color: var(--color-dark);
 padding: 20px 0;
 border-bottom: 0.5px solid lightgrey;
+    @include xs640 {
+      display: block;
+    }
 }
 .card__list-item--title {
     font-family: 'Jost';
@@ -81,6 +87,7 @@ color: var(--color-dark);
 .card__list-address{
 width: 149px;
 margin-right: 81px;
+padding: 5px 0;
 		}
 
 .card__list-work{
@@ -88,9 +95,9 @@ margin-right: 81px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 147px;
-    margin-right: 96px;
-
+    width: 200px;
+    margin-right: 10px;
+    padding: 5px 0;
 		}
 .card__list-work span{
  display: flex;
@@ -101,26 +108,31 @@ margin-right: 81px;
 		}
 
 .card__list-a{
-width: 140px;
-margin-right: 60px;
-
+width: 120px;
+margin-right: 5px;
+padding: 5px 0;
 		}
 
 .card__list-n{
-width: 50px;
-text-align: center;
+width: 100px;
+
+padding: 5px 0;
+  img{
+    padding: 5px 0px;
+  }
 
 		}
 
 .card__list-btn{
-margin-left: auto;
-margin: 0 auto;
+// margin-left: auto;
+// margin: 0 auto;
+
 		}
 .card__list-btn button{
-width: 140px;
+width: 120px;
 height: 35px;
 background-color: var(--color-dark);
-border-radius: 3px;
+border-radius: 0px;
 font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
@@ -133,7 +145,16 @@ letter-spacing: 0.12em;
 padding: 9px 10px;
 
 color: #FFFFFF;
+transition: all 0.3s;
+      cursor: pointer;
 
+     &:hover{
+      color: var(--color-dark);
+      background-color: transparent;
+      border: 2px solid var(--color-dark);
+      transition: all 0.3s;
+      cursor: pointer;
+     }
 		}
 .work span {
 display: block;

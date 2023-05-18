@@ -4232,6 +4232,11 @@ ul {
   margin-bottom: 100px;
   border-bottom: 2px solid lightgrey;
 }
+@media (max-width: 640px) {
+  .card__tab-box {
+    display: block;
+  }
+}
 
 .card-tabs {
   font-family: "Jost";
@@ -4265,9 +4270,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4279,6 +4284,11 @@ ul {
   color: var(--color-dark);
   padding: 20px 0;
   border-bottom: 0.5px solid lightgrey;
+}
+@media (max-width: 640px) {
+  .card__list-item {
+    display: block;
+  }
 }
 
 .card__list-item--title {
@@ -4294,6 +4304,7 @@ ul {
 .card__list-address {
   width: 149px;
   margin-right: 81px;
+  padding: 5px 0;
 }
 
 .card__list-work {
@@ -4310,8 +4321,9 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 147px;
-  margin-right: 96px;
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px 0;
 }
 
 .card__list-work span {
@@ -4324,25 +4336,24 @@ ul {
 }
 
 .card__list-a {
-  width: 140px;
-  margin-right: 60px;
+  width: 120px;
+  margin-right: 5px;
+  padding: 5px 0;
 }
 
 .card__list-n {
-  width: 50px;
-  text-align: center;
+  width: 100px;
+  padding: 5px 0;
 }
-
-.card__list-btn {
-  margin-left: auto;
-  margin: 0 auto;
+.card__list-n img {
+  padding: 5px 0px;
 }
 
 .card__list-btn button {
-  width: 140px;
+  width: 120px;
   height: 35px;
   background-color: var(--color-dark);
-  border-radius: 3px;
+  border-radius: 0px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -4352,6 +4363,19 @@ ul {
   letter-spacing: 0.12em;
   padding: 9px 10px;
   color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.card__list-btn button:hover {
+  color: var(--color-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-dark);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .work span {
