@@ -5,6 +5,7 @@
 //   bodyEl: document.body,
 //   $bannerSlider: document.querySelector('.banner-slider'),
 //   $catalogSlider: document.querySelector('.hero-catalog__slider'),
+//   $cardRelatedSlider: document.querySelector('.card-related__slider'),
 //   $catalogFilters: document.querySelectorAll('.catalog-filter')
 // }
 export default {

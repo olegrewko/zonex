@@ -117,6 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 //   bodyEl: document.body,
 //   $bannerSlider: document.querySelector('.banner-slider'),
 //   $catalogSlider: document.querySelector('.hero-catalog__slider'),
+//   $cardRelatedSlider: document.querySelector('.card-related__slider'),
 //   $catalogFilters: document.querySelectorAll('.catalog-filter')
 // }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
