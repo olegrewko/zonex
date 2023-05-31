@@ -520,14 +520,14 @@
     overflow: hidden;
     padding: 40px 0 30px 10px;
 
-    background-color: cadetblue;
+    background-color: #273a49;
   }
 }
 .related-pag{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 0px;
   text-align: center;
 
   .swiper-pagination-bullet {

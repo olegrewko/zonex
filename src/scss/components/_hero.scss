@@ -1,10 +1,12 @@
 .hero{
-
-  position: relative;
-  height: 90vh;
-  min-height: 600px;
+  padding-top: 5px;
+  // position: relative;
+  // height: 80vh;
+  // min-height: 600px;
   // background-color: #d9d9d7;
-  background-color: #c7e9ea;
+  // background-color: #c7e9ea;
+  background-color: #babdc4;
+  z-index: 0;
 
   &__container {
 
@@ -14,7 +16,7 @@
     justify-content: center;
     padding: 10px 10px;
     height: 100%;
-
+    background-color: rgba(29, 39, 58, 0.3);
   }
    &__title{
     margin: 0;
@@ -37,7 +39,7 @@
    }
    &__image{
     position: absolute;
-
+    left: 0;
     right: 0;
     bottom: 0;
     max-height: 100%;
@@ -68,17 +70,18 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-     background-color: #c7e9ea;
+    background-color: rgba(29, 39, 58, 0.3);
 
   }
 .banner-slide {
-  position: relative;
+
+  // position: relative;
   padding: 250px 250px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-   background-color: #c7e9ea;
+  background-color: rgba(29, 39, 58, 0.5);
   @include sm {
     padding: 20px 20px;
   }
