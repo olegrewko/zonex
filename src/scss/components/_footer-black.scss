@@ -50,6 +50,7 @@
       // margin-left: -50px;
     }
   }
+
 }
 .subscribe-form-black {
   position: relative;
@@ -83,9 +84,15 @@
     padding-right: 100px;
     background-color: #151515;
 
-    &::placeholder{
-      color: rgba(#e7e4e4, 1);
-    }
+  }
+  &__placeholder{
+    color: #ccc;
+    input[type="search"]::-webkit-input-placeholder {
+                color: #ccc;
+              }
+              input[type="search"]::-moz-placeholder {
+                color: #ccc;
+              }
   }
   &__text {
     color: var(--color-gray);
