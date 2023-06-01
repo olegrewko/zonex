@@ -133,6 +133,7 @@ __webpack_require__.r(__webpack_exports__);
   $hideFilters: document.querySelector('.hide-filters'),
   $catalogColumns: document.querySelector('.catalog-columns__list'),
   $catalogGridContent: document.querySelector('.catalog-grid__content'),
+  $catalogFilter: document.querySelectorAll('.catalog-filter'),
   $catalogFilterItems: document.querySelectorAll('.catalog-filter__item'),
   $catalogChoice: document.querySelector('.catalog-choice'),
   $customSelect: document.querySelectorAll('.custom-select'),
