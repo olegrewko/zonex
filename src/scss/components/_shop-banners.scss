@@ -1,6 +1,8 @@
 .shop-banners {
+  background-color: #f16149;
   &__container{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -11,11 +13,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  // width: 50%;
   padding:  40px;
-  min-height: 300px;
+  min-height: 280px;
   color: var(--color-white);
-  background-color: var(--color-dark);
+  // background-color: var(--color-dark);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,14 +29,29 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(maroon, 0.1);
-  }
+    background-color: rgba(#f16149, 0);
 
+  }
+// .shop-banner01 {
+//   width: 30%;
+// }
+// .shop-banner02 {
+//   width: 70%;
+// }
   &--man{
-    background-image: url(../../img/banner01.jpg);
+    width: 25%;
+    background-image: url(../../img/banner01.png);
   }
   &--woman{
-    background-image: url(../../img/banner02.jpg);
+    background-image: url(../../img/banner02-600.png);
+    width: 75%;
+  }
+  &__title{
+    max-width: 375px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 1;
   }
 
 }

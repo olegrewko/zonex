@@ -325,7 +325,7 @@ ul {
   left: 0;
   width: 100%;
   height: 60px;
-  z-index: 10;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +423,7 @@ ul {
     padding: 5% 2%;
     width: 58%;
     height: 78vh;
-    background-color: #c9e8ea;
+    background-color: #fff;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(18, 18, 18, 0.3);
     box-shadow: 0px 7px 5px 0px rgba(18, 18, 18, 0.3);
     z-index: 400;
@@ -595,7 +595,7 @@ ul {
 }
 
 .hero {
-  padding-top: 5px;
+  padding-top: 40px;
   background-color: #babdc4;
   z-index: 0;
 }
@@ -964,6 +964,15 @@ ul {
   font-size: 10px;
   text-transform: uppercase;
   color: rgb(154, 156, 156);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.product-custom .to-cart:hover {
+  color: rgb(97, 98, 98);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .product-custom__cart {
   text-transform: uppercase;
@@ -1159,10 +1168,15 @@ ul {
   display: block;
 }
 
+.shop-banners {
+  background-color: #f16149;
+}
 .shop-banners__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1184,11 +1198,9 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 50%;
   padding: 40px;
-  min-height: 300px;
+  min-height: 280px;
   color: var(--color-white);
-  background-color: var(--color-dark);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1200,13 +1212,22 @@ ul {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(128, 0, 0, 0.1);
+  background-color: rgba(241, 97, 73, 0);
 }
 .shop-banner--man {
-  background-image: url(../../img/banner01.jpg);
+  width: 25%;
+  background-image: url(../../img/banner01.png);
 }
 .shop-banner--woman {
-  background-image: url(../../img/banner02.jpg);
+  background-image: url(../../img/banner02-600.png);
+  width: 75%;
+}
+.shop-banner__title {
+  max-width: 375px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  z-index: 1;
 }
 
 .free-delivery {
@@ -1336,7 +1357,7 @@ ul {
 }
 
 .hero-catalog {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .hero-catalog__slider {
   position: relative;
@@ -1626,9 +1647,10 @@ ul {
   font-weight: 700;
   font-size: 10px;
   text-transform: uppercase;
-  background-image: url(../../img/filter16.png);
+  background-image: url(../../img/close.png);
   background-position: left center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .catalog-filter {

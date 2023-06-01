@@ -114,6 +114,12 @@
     font-size: 10px;
     text-transform: uppercase;
     color: rgb(154, 156, 156);
+    transition: all 0.3s;
+    &:hover {
+     color: rgb(97, 98, 98);
+     transition: all 0.3s;
+    }
+
   }
 
   &__cart {

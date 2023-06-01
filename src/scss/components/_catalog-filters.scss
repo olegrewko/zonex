@@ -24,10 +24,11 @@
   font-weight: 700;
   font-size: 10px;
   text-transform: uppercase;
-  background-image: url(../../img/filter16.png);
-  // background-image: url(../../img/close.png);
+  // background-image: url(../../img/filter16.png);
+  background-image: url(../../img/close.png);
   background-position: left center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .catalog-filter {
 
