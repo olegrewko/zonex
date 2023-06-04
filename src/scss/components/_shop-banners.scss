@@ -7,14 +7,14 @@
   }
 }
 .shop-banner {
-  padding-top: 20px;
-  position: relative;
+  margin-left: 10px;
+  // position: relative;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
   // width: 50%;
-  padding:  40px;
+  // padding:  40px;
   min-height: 280px;
   color: var(--color-white);
   // background-color: var(--color-dark);
@@ -39,18 +39,18 @@
 //   width: 70%;
 // }
   &--man{
-    width: 25%;
+    width: 30%;
     background-image: url(../../img/banner01.png);
   }
   &--woman{
     background-image: url(../../img/banner02-600.png);
-    width: 75%;
+    width: 70%;
   }
   &__title{
-    max-width: 375px;
+    max-width: 475px;
     width: 100%;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     z-index: 1;
   }
 

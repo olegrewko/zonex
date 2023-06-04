@@ -296,30 +296,55 @@
   }
 
 }
+.white {
+  color: #fff;
+}
 .promo {
     margin-bottom: 20px;
 		&__maroon {
       font-weight: 500;
-      color: #d24242;
+
     }
 
 		&__clock {
       display: flex;
+      // text-align: left;
       @include sm {
         display: flex;
         flex-direction: column;
       }
 		}
+		// &__clock-white {
+    //   color: #fff;
+    //   display: flex;
 
-		// .promo__clock-item
+    //   @include sm {
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
+		// }
+
+
 
 		&__clock-item {
       display: flex;
+		}
+		&__clock-item-white {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      margin-right: 15px;
+      margin-bottom: 10px;
 		}
 }
 .days {
   margin-right: 0px;
 }
+
 .smalltext {
   font-size: 12px;
   font-weight: 400;
@@ -327,12 +352,20 @@
   margin-right: 10px;
   margin-left: 3px;
 }
-.hours {
+.smalltext-white {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 0px;
+  margin-left: 0px;
 }
-.minutes {
-}
-.seconds {
-}
+  .hours {
+  }
+  .minutes {
+  }
+  .seconds {
+  }
 
 .stepper {
   display: flex;

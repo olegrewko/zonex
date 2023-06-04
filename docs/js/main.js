@@ -543,6 +543,7 @@ function initializeClock(id, endtime) {
 }
 const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('promo__clock', deadline);
+initializeClock('promo__clock-white', deadline);
 
 // $(function () {
 //    $('.shop-content__filter-btn').on('click', function(){
@@ -14037,6 +14038,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import './_fotorama464.min.js';
 
 
 
@@ -14049,7 +14051,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import './components/stepper.js';
+// import './components/fotorama464.min.js';
 
 // import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';

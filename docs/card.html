@@ -8,17 +8,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Zonex</title>
+
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500;1,700&display=swap" rel="stylesheet"> -->
   <!-- <link rel="preload" href="../resources/fonts/Jost-Medium.woff2" as="font"  type="font/woff2" crossorigin>
   <link rel="preload" href="../resources/fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
-  <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fotorama464.min.css" />
+  <link rel="stylesheet" href="js/vendor/fotorama464.min.js" />
 
   <script defer src="js/main.js"></script>
 </head>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./scss/vendor/fotorama464.min.css" /> -->
 <body class="card-page">
   <div class="site-container">
 
@@ -102,25 +107,25 @@
       <div class="card-slider">
         <div class="card-slider__thumbs">
           <div class="card-slider__thumb">
-            <img src="../img/bag01.png" alt="1.png" />
+            <img src="../img/bag01.png" alt="../img/bag01.png" />
+          </div>
+          <div class="card-slider__thumb">
+            <img src="../img/bag02.png" alt="../img/bag02.png" />
+          </div>
+          <div class="card-slider__thumb">
+            <img src="../img/bag03.png" alt="../img/bag03.png" />
           </div>
           <div class="card-slider__thumb">
             <img src="../img/bag02.png" alt="1.png" />
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/bag03.png" alt="bag03.jpg" />
-          </div>
-          <div class="card-slider__thumb">
-            <img src="../img/bag02.png" alt="1.png" />
-          </div>
-          <div class="card-slider__thumb">
-            <img src="../img/bag05.png" alt="1.png" />
+            <img src="../img/bag05.png" alt="../img/bag05.png" />
           </div>
           <div class="card-slider__thumb">
             <img src="../img/bag01.png" alt="1.png" />
           </div>
           <div class="card-slider__thumb">
-            <img src="../img/bag08.png" alt="1.png" />
+            <img src="../img/bag08.png" alt="../img/bag08.png" />
           </div>
         </div>
         <div class="card-slider__main">
@@ -131,6 +136,15 @@
           </div>
         </div>
       </div>
+        <div class="fotorama bg-grey" data-nav="thumbs">
+              <img src="../img/bag01.png" alt="../img/bag01.png" />
+              <img src="../img/bag02.png" alt="../img/bag02.png" />
+              <img src="../img/bag03.png" alt="../img/bag03.png" />
+              <img src="../img/bag05.png" alt="../img/bag05.png" />
+              <img src="../img/bag08.png" alt="../img/bag08.png" />
+              <!-- <img src="../img/bag03.png" alt="../img/bag03.png" /> -->
+
+            </div>
     </div>
     <div class="card-top__right">
       <div class="card-info">
@@ -981,6 +995,7 @@
     <a href="#" id="toTop" style="display: block">
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
+
 </body>
 
 </html>

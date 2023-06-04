@@ -99,6 +99,7 @@ if (vars.$sizeSelect) {
 
   const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
   initializeClock('promo__clock', deadline);
+  initializeClock('promo__clock-white', deadline);
 
 // $(function () {
 //    $('.shop-content__filter-btn').on('click', function(){

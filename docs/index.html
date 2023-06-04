@@ -8,13 +8,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Zonex</title>
+
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500;1,700&display=swap" rel="stylesheet"> -->
   <!-- <link rel="preload" href="../resources/fonts/Jost-Medium.woff2" as="font"  type="font/woff2" crossorigin>
   <link rel="preload" href="../resources/fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
-  <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fotorama464.min.css" />
+  <link rel="stylesheet" href="js/vendor/fotorama464.min.js" />
 
   <script defer src="js/main.js"></script>
 </head>
@@ -97,14 +100,14 @@
             <img class="catalog-slide__image"  src="../img/two600.png" alt="two600.png">
           </div>
         </div>
-         <div class=" swiper-slide">
+         <!-- <div class=" swiper-slide">
           <div class="hero catalog-slide">
           <h2 class="catalog-slide__title">Fall-Winter Clearance Sales</h2>
           <p class="catalog-slide__d">Fall-Winter Clearance Sales / Zonex-best shop</p>
 
             <img class="catalog-slide__image"  src="../img/sport.png" alt="sport.png">
           </div>
-        </div>
+        </div> -->
          <div class="swiper-slide">
           <div class="hero catalog-slide">
          <h2 class="catalog-slide__title">Fall-Winter Clearance Sales</h2>
@@ -697,8 +700,30 @@
   <h2 class="visually-hidden">Banners</h2>
   <div class="container shop-banners__container">
     <a href="" class="shop-banners__banner shop-banner  shop-banner--man">
-      <h1 class="shop-banner__title">Best Woomen<br>Street Style</h1>
-      <!-- <span class="shop-banner__text main-link  main-link--white">Read more</span> -->
+      <div>
+      <h1 class="shop-banner__title">Best woomen<br> street style</h1>
+       <div class="promo">
+          <!-- <h4 class="promo__maroon">Sale end in</h4> -->
+           <div id="promo__clock" class="promo__clock">
+                <div class="promo__clock-item-white">
+                  <span class="days"></span>
+                  <div class="smalltext-white">Days</div>
+                </div>
+                <div class="promo__clock-item-white">
+                  <span class="hours"></span>
+                  <div class="smalltext-white">Hours</div>
+                </div>
+                <div class="promo__clock-item-white">
+                  <span class="minutes"></span>
+                  <div class="smalltext-white">Min</div>
+                </div>
+                <div class="promo__clock-item-white">
+                  <span class="seconds"></span>
+                  <div class="smalltext-white">Sec</div>
+                </div>
+              </div>
+        </div>
+      </div>
     </a>
     <a href="" class="shop-banners__banner shop-banner  shop-banner--woman">
       <!-- <h3 class="shop-banner__title">Find your fit</h3>
@@ -1135,6 +1160,8 @@
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="css/fotorama464.min.css" />
+  <link rel="stylesheet" href="js/vendor/fotorama464.min.js" />
   <script src="js/libs.min.js"></script>
 </body>
 

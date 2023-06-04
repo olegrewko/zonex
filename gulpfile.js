@@ -3,7 +3,9 @@ const {
   dest,
   series,
   watch
+
 } = require('gulp');
+const copy = require('gulp-copy');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
@@ -49,13 +51,21 @@ const paths = {
   srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
 };
+// const jsFiles = [
+//   './docs/js/_fotorama464.js'
+
+// ]
 
 let isProd = false; // dev by default
 
 const clean = () => {
   return del([buildFolder])
 }
+ function copyfolder() {
+    return src([ 'src/js/vendor/fotorama464.min.js', 'src/css/fotorama464.min.css'] )
+    .pipe(copy('docs', {prefix: 1} ))
 
+}
 //svg sprite
 const svgSprites = () => {
   return src(paths.srcSvg)
@@ -315,8 +325,9 @@ const toProd = (done) => {
   isProd = true;
   done();
 };
+exports.copyfolder = copyfolder;
 
-exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
+exports.default = series(clean, copyfolder, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
 
 exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites)
 
