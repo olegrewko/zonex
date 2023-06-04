@@ -16,7 +16,7 @@ import './components/card-slider.js';
 import './components/stepper.js';
 import './components/jquery.js';
 import './components/product.js';
-// import './components/fotorama464.min.js';
+import './components/fotorama464.min.js';
 
 // import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';

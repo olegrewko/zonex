@@ -62,7 +62,7 @@ const clean = () => {
   return del([buildFolder])
 }
  function copyfolder() {
-    return src([ 'src/js/vendor/fotorama464.min.js', 'src/css/fotorama464.min.css'] )
+    return src(['src/css/fotorama464.min.css'] )
     .pipe(copy('docs', {prefix: 1} ))
 
 }
