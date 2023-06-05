@@ -597,7 +597,12 @@ ul {
 .hero {
   padding-top: 40px;
   background-color: #babdc4;
-  z-index: 0;
+}
+.hero__slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #babdc4;
 }
 .hero__container {
   display: -webkit-box;
@@ -1363,7 +1368,7 @@ ul {
 
 .catalog-slide {
   position: relative;
-  padding: 50px 100px;
+  padding: 50px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1371,16 +1376,6 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-@media (max-width: 768px) {
-  .catalog-slide {
-    padding: 20px 20px;
-  }
-}
-@media (max-width: 600px) {
-  .catalog-slide {
-    padding: 10px 10px;
-  }
 }
 .catalog-slide__title {
   max-width: 375px;

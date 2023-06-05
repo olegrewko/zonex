@@ -83,15 +83,15 @@
 
 .catalog-slide {
   position: relative;
-  padding: 50px 100px;
+  padding: 50px 70px;
   display: flex;
   flex-direction: column;
-  @include sm {
-    padding: 20px 20px;
-  }
-  @include xs {
-    padding: 10px 10px;
-  }
+  // @include sm {
+  //   padding: 20px 20px;
+  // }
+  // @include xs {
+  //   padding: 10px 10px;
+  // }
 
   &__title{
     max-width: 375px;

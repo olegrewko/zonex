@@ -1,12 +1,16 @@
+
 .hero{
   padding-top: 40px;
-  // position: relative;
-  // height: 80vh;
-  // min-height: 600px;
-  // background-color: #d9d9d7;
-  // background-color: #c7e9ea;
   background-color: #babdc4;
-  z-index: 0;
+  &__slider{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #babdc4;
+
+
+  }
+
 
   &__container {
 
