@@ -3917,6 +3917,19 @@ ul {
 }
 
 .filter-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: #efeded;
   border: none;
   padding: 10px;
@@ -3997,6 +4010,16 @@ ul {
   font-weight: 500;
   font-size: 20px;
 }
+@media (max-width: 640px) {
+  .blog-content__title {
+    max-width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  .blog-content__title {
+    max-width: 40%;
+  }
+}
 .blog-content__link {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -4012,16 +4035,42 @@ ul {
 }
 .blog-content__text {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 9px;
   color: rgb(99, 99, 99);
   line-height: 1.7;
 }
+@media (max-width: 640px) {
+  .blog-content__text {
+    max-width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  .blog-content__text {
+    max-width: 40%;
+  }
+}
+.blog-content__text-white {
+  font-weight: 300;
+  font-size: 9px;
+  color: #fff;
+  line-height: 1.4;
+}
 .blog-content__text002 {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   color: black;
-  border-left: 4px solid #000;
+  border-left: 2px solid #000;
   padding-left: 20px;
+}
+@media (max-width: 640px) {
+  .blog-content__text002 {
+    max-width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  .blog-content__text002 {
+    max-width: 40%;
+  }
 }
 .blog-content article p:first-letter {
   text-transform: uppercase;
@@ -4036,8 +4085,23 @@ ul {
   font-size: 16px;
   color: rgb(99, 99, 99);
 }
-.blog-content span {
+.blog-content__sp {
   color: rgb(35, 35, 35);
+}
+@media (max-width: 640px) {
+  .blog-content__sp {
+    max-width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  .blog-content__sp {
+    max-width: 40%;
+  }
+}
+.blog-content__sp-white {
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
 }
 .blog-content-slide {
   position: relative;
