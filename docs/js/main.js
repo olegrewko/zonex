@@ -410,8 +410,8 @@ const blogSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___defau
   slidesPerView: 1,
   containerModifierClass: 'blog-cont-',
   navigation: {
-    nextEl: '.hero-next-btn',
-    prevEl: '.hero-prev-btn'
+    nextEl: '.blog-next-btn',
+    prevEl: '.blog-prev-btn'
   },
   pagination: {
     el: '.hero-pag',

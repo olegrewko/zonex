@@ -164,6 +164,89 @@
     }
    }
 }
+.blog-prev-btn {
+    position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-white);
+  width: 48px;
+  height: 48px;
+  color: var(--color-dark);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    background-image: url(../../img/prev-arrow.svg);
+    // background-image: url(../../img/prev-arrow-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: fill 0.3s;
+    //  &:hover {
+    // background-image: url(../../img/prev-arrow.png);
+    // transition: background-color 0.3s;
+
+    // }
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    transition: background-color 0.3s;
+
+    }
+
+}
+.blog-next-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-white);
+  width: 48px;
+  height: 48px;
+  color: var(--color-white);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    background-image: url(../../img/next-arrow.svg);
+    // background-image: url(../../img/next-arrow-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: fill 0.3s;
+    //    &:hover {
+    // background-image: url(../../img/next-arrow.png);
+    // transition: background-color 0.3s;
+
+    // }
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    transition: background-color 0.3s;
+
+    }
+}
+.blog-prev-btn {
+  left: auto;
+  left: 15px;
+}
+.blog-next-btn {
+  left: auto;
+  right: 15px;
+}
 .hero-prev-btn {
     position: absolute;
   left: 10px;
@@ -227,6 +310,10 @@
 
     }
 }
+.hero-prev-btn {
+  left: auto;
+  left: 10px;
+}
 .hero-next-btn {
   left: auto;
   right: 10px;
@@ -246,7 +333,7 @@
     width: 16px;
     height: 6px;
     border: none;
-    background-color: #c3bbbb;
+    background-color: var(--color-white);
   }
 
   .swiper-pagination-bullet-active {
