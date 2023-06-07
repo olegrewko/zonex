@@ -3624,13 +3624,10 @@ ul {
 
 .socialmap {
   margin: 0 auto;
-  /* display: flex;
-  justify-content: center; */
   height: 400px;
   width: 100%;
   padding-top: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 #map {
@@ -3665,6 +3662,12 @@ ul {
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding: 40px;
+}
+@media (max-width: 380px) {
+  .contacts__form {
+    padding: 10px;
+  }
 }
 .contacts__input {
   width: 100%;
@@ -3733,6 +3736,10 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 40px;
 }
 
 .blog-grid {
@@ -3997,7 +4004,7 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #f3d0b2;
+  background-color: #fff3f5;
   border: none;
   padding: 10px;
   margin-bottom: 10px;
@@ -4368,16 +4375,25 @@ ul {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  gap: 40px;
+  gap: 10px;
   place-items: center;
-  padding: 0;
-  background-color: #f4f4ed;
   margin: 0 auto;
   padding: 60px 20px;
+}
+.about-grid__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .about-grid__address, .about-grid__tel, .about-grid__email {
   display: -webkit-box;
@@ -4434,14 +4450,14 @@ ul {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 5px;
   place-items: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 20px;
   padding: 0px 0px;
 }
@@ -4456,6 +4472,13 @@ ul {
   .founders-grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+}
+@media (max-width: 380px) {
+  .founders-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 5px;
   }
 }
