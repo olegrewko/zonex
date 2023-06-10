@@ -1,3 +1,4 @@
+import Swiper from '../vendor/swiper.min.js';
 import vars from '../_vars';
 
 
@@ -56,6 +57,8 @@ if (vars.$stepper) {
   });
 
 }
+
+
 if (vars.$cardSliderThumbs) {
   vars.$cardSliderThumbs.addEventListener('click', (e) => {
     if (e.target.classList.contains('card-slider__thumb')) {

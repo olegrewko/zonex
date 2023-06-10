@@ -259,6 +259,8 @@ __webpack_require__.r(__webpack_exports__);
 
 // }
 
+// go to stepper.js
+
 /***/ }),
 
 /***/ "./src/js/components/catalog-filter-toggle.js":
@@ -9455,12 +9457,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+/* harmony import */ var _vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../vendor/swiper.min.js */ "./src/js/vendor/swiper.min.js");
+/* harmony import */ var _vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
 
-if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper) {
-  const $stepperInput = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__input'),
-    $stepperMinus = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__btn--minus'),
-    $stepperPlus = _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper.querySelector('.stepper__btn--plus');
+
+if (_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$stepper) {
+  const $stepperInput = _vars__WEBPACK_IMPORTED_MODULE_1__["default"].$stepper.querySelector('.stepper__input'),
+    $stepperMinus = _vars__WEBPACK_IMPORTED_MODULE_1__["default"].$stepper.querySelector('.stepper__btn--minus'),
+    $stepperPlus = _vars__WEBPACK_IMPORTED_MODULE_1__["default"].$stepper.querySelector('.stepper__btn--plus');
   $stepperInput.addEventListener('keydown', e => {
     console.log(e.currentTarget.value);
     if (e.currentTarget.value <= 1) {
@@ -9501,12 +9506,12 @@ if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$stepper) {
     }
   });
 }
-if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$cardSliderThumbs) {
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$cardSliderThumbs.addEventListener('click', e => {
+if (_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$cardSliderThumbs) {
+  _vars__WEBPACK_IMPORTED_MODULE_1__["default"].$cardSliderThumbs.addEventListener('click', e => {
     if (e.target.classList.contains('card-slider__thumb')) {
       let src = e.target.querySelector('img').getAttribute('src');
       console.log(src);
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$sliderImg.setAttribute('src', src);
+      _vars__WEBPACK_IMPORTED_MODULE_1__["default"].$sliderImg.setAttribute('src', src);
     }
   });
 }
