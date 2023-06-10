@@ -2,7 +2,7 @@ import './_vendor';
 import vars from '../js/_vars';
 
 import './_functions';
-// import './_fotorama464.min.js';
+
 import './components/tabs.js';
 import './components/catalog-props.js';
 import './components/catalog-filter-toggle.js';
@@ -10,14 +10,15 @@ import './components/burger.js';
 import './components/card-bottom-tabs.js';
 import './components/banner-slider.js';
 import './components/catalog-slider.js';
-
+import './components/stepper.js';
 import './components/color-select.js';
 import './components/card-slider.js';
-import './components/stepper.js';
+// import './components/stepper.js';
 import './components/jquery.js';
 import './components/product.js';
-import './components/fotorama464.min.js';
-
+// import './components/card-slider.js';
+// import './components/fotorama464.min.js';
+// import './components/stepper.js';
 // import './components/catalog-filter-toggle.js';
 // import 'simplebar/dist/simplebar.css';
 vars.$freeDeliveryBtn.addEventListener('click', (e) => {
