@@ -14,6 +14,7 @@ const blogSlider = new Swiper(vars.$blogSlider, {
     type: 'bullets',
     clickable: true,
   },
+
 });
 const catalogSlider = new Swiper(vars.$catalogSlider, {
   loop: true,
