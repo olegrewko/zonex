@@ -983,8 +983,8 @@ ul {
 }
 .product-custom .to-cart {
   display: block;
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 600;
+  font-size: 7px;
   text-transform: uppercase;
   color: rgb(154, 156, 156);
   -webkit-transition: all 0.3s;
@@ -992,7 +992,7 @@ ul {
   transition: all 0.3s;
 }
 .product-custom .to-cart:hover {
-  color: rgb(97, 98, 98);
+  color: tomato;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -1007,7 +1007,7 @@ ul {
 }
 
 .deep-grey {
-  color: rgb(97, 98, 98);
+  color: rgb(57, 57, 57);
 }
 
 .light-grey {
@@ -3809,6 +3809,7 @@ ul {
   height: 40px;
   border: none;
   border-bottom: 1px solid #eee;
+  padding: 0 15px;
   margin-bottom: 10px;
 }
 .contacts__submit {
