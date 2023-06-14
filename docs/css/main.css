@@ -903,7 +903,7 @@ ul {
   color: var(--color-gray);
 }
 .product__title {
-  color: rgb(154, 156, 156);
+  color: rgb(57, 57, 57);
   font-size: 8px;
   margin-bottom: 2px;
 }
@@ -922,7 +922,7 @@ ul {
 }
 .product__price {
   margin-bottom: 2px;
-  color: rgb(154, 156, 156);
+  color: rgb(57, 57, 57);
   font-size: 8px;
   font-weight: 700;
 }
