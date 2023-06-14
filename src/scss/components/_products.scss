@@ -1,5 +1,5 @@
 .product{
-
+  display: block;
   &__prop{
    color: rgb(160, 160, 160);
   }
@@ -8,7 +8,8 @@
          }
 
         .product__content-box{
-          display: block;
+          margin-top: 5px;
+          display: flex;
         }
 
         .product__wrapper-box{
@@ -55,7 +56,8 @@
     // margin: 0;
     // margin-bottom: 5px;
     color: rgb(154, 156, 156);
-    font-size: 12px;
+    font-size: 8px;
+    margin-bottom: 2px;
     a {
       &::before{
         content: "";
@@ -67,16 +69,20 @@
       }
     }
   }
+  &__wrap {
+    display: flex;
+
+  }
   &__price{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     color: rgb(154, 156, 156);
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 700;
   }
   &__oldprice{
-    margin-bottom: 5px;
+    margin-left: 5px;
     color: rgb(97, 98, 98);
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 700;
   }
      &:hover {
@@ -110,6 +116,7 @@
   }
 
   .to-cart {
+    display: block;
     font-weight: 700;
     font-size: 10px;
     text-transform: uppercase;
@@ -145,4 +152,9 @@
   //   }
   // }
 }
-
+.deep-grey {
+  color: rgb(97, 98, 98);
+}
+.light-grey {
+  color: rgb(154, 156, 156);
+}
