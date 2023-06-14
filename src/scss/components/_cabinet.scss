@@ -27,7 +27,7 @@
     font-size: 20px;
     line-height: 30px;
 
-    color: #9b9ea8;
+    color: #29292a;
 
     opacity: 1;
 
@@ -123,11 +123,7 @@ padding: 5px 0;
 
 		}
 
-.card__list-btn{
-// margin-left: auto;
-// margin: 0 auto;
 
-		}
 .card__list-btn button{
 width: 120px;
 height: 35px;
@@ -169,3 +165,187 @@ margin-left: auto;
 .tomato {
     background-color: tomato;
 }
+.faq__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+        @include sm {
+              flex-wrap: wrap;
+              width: 100%;
+            }
+
+}
+.faq__left {
+  max-width: 590px;
+  width: 100%;
+  padding: 5px;
+      @include sm {
+            width: 100%;
+      }
+}
+.faq__title {
+   font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: black;
+}
+.faq__right {
+  max-width: 590px;
+  width: 100%;
+  padding: 5px;
+       @include sm {
+            width: 100%;
+      }
+}
+.faq__text500{
+      font-weight: 500;
+      font-size: 12px;
+      color: rgb(99, 99, 99);
+      line-height: 1.7;
+               @include xs640 {
+              width: 100%;
+
+            }
+
+              @include xs420 {
+              width: 100%;
+
+            }
+}
+.faq__text800{
+  font-weight: 700;
+      font-size: 12px;
+      color: rgb(67, 67, 67);
+      line-height: 1.7;
+               @include xs640 {
+              width: 100%;
+
+            }
+
+              @include xs420 {
+              width: 100%;
+
+            }
+}
+// .account-detail {
+//   max-width: 900px;
+//   width: 100%;
+//   padding: 10px;
+//   margin: 0 auto;
+// }
+.account-detail {
+  display: block;
+    // border-top: 1px solid #eee;
+    max-width: 900px;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+          @include xs420{
+
+              width: 100%;
+              // margin-left: 5px;
+              // padding-left: 5px;
+
+            }
+
+    &__title{
+      // border-top: 1px solid #eee;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 35px;
+      margin-bottom: 20px;
+      color: var(--color-dark);
+    }
+    &__form{
+      // max-width: 900px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    &__hr{
+      margin-top: 60px;
+      margin-bottom: 60px;
+      border: none; /* Убираем границу для браузера Firefox */
+      color: #eee; /* Цвет линии для остальных браузеров */
+      background-color: #eee; /* Цвет линии для браузера Firefox и Opera */
+      height: 1px; /* Толщина линии */
+      // border: 1px solid #eee;
+    }
+    &__links{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__link{
+     color: #909090;
+     font-size: 22px;
+     margin: 0 30px;
+
+    }
+    &__link--active{
+     color: #2b2b2b;
+    }
+    &__input-wrap{
+      max-width: 700px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      // margin-left: 10px;
+      // color:rgb(18, 18, 18);
+      font-weight: 500;
+      font-size: 12px;
+      color: rgb(99, 99, 99);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    &__label{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      color:rgb(18, 18, 18);
+
+    }
+    &__input-name{
+      display: block;
+      max-width: 340px;
+      width: 100%;
+      border: none;
+      // margin-top: 4px;
+      height: 40px;
+      // padding: 0 15px;
+      border-bottom: 1px solid #eee;
+      // background-color: $bg;
+    }
+    &__input{
+      display: block;
+      max-width: 800px;
+      width: 100%;
+      border: none;
+      // margin-top: 4px;
+      height: 40px;
+      // padding: 0 15px;
+      border-bottom: 1px solid #eee;
+      // background-color: $bg;
+    }
+    &__btn{
+      height: 40px;
+      display: block;
+      background-color: var(--color-dark);
+      color: #fff;
+
+      padding: 10px 0 ;
+      display: block;
+      width: 100%;
+      border: none;
+    }
+    &__error{
+      display: block;
+      margin-top: 10px;
+      color: tomato;
+    }
+  }
