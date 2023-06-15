@@ -215,7 +215,7 @@ margin-left: auto;
             }
 }
 .faq__text800{
-  font-weight: 700;
+      font-weight: 700;
       font-size: 12px;
       color: rgb(67, 67, 67);
       line-height: 1.7;
@@ -234,6 +234,16 @@ margin-left: auto;
   width: 100%;
   padding: 10px;
   margin: 0 auto;
+    &__label-remember{
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:  20px;
+      // margin-top: 20px;
+      // margin-bottom: 20px;
+      width: 100%;
+    }
     &__label{
       display: block;
       width: 100%;
@@ -355,5 +365,13 @@ margin-left: auto;
       display: block;
       margin-top: 10px;
       color: tomato;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.7;
+       &:hover{
+        color: var(--color-tundora);
+        cursor: pointer;
+        transition: all 0.3s;
+       }
     }
   }

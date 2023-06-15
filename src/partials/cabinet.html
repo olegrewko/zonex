@@ -16,11 +16,11 @@
             <a class="tab card-tabs" href="#tab-1" onclick="changeLink('FAQ')">FAQ</a>
             <a class="tab card-tabs" href="#tab-2" onclick="changeLink('Account Details')">Account Details</a>
             <a class="tab card-tabs" href="#tab-3" onclick="changeLink('Downloads')">Downloads</a>
-            <a class="tab card-tabs tab--active" href="#tab-4" onclick="changeLink('Addresses')">Addresses</a>
+            <a class="tab card-tabs" href="#tab-4" onclick="changeLink('Addresses')">Addresses</a>
 
             <a class="tab card-tabs" href="#tab-5" onclick="changeLink('Wishlist')">Wishlist</a>
             <a class="tab card-tabs" href="#tab-6" onclick="changeLink('Cart')">Cart</a>
-            <a class="tab card-tabs" href="#tab-7" onclick="changeLink('Orders')">Orders</a>
+            <a class="tab card-tabs tab--active" href="#tab-7" onclick="changeLink('Orders')">Orders</a>
           </div>
 
           <div class="tabs-container">
@@ -94,69 +94,79 @@
               </div>
                 <div class="container contact-grid">
 
-      <form class="contacts__form">
-        <h3 class="account-detail__title">Login</h3>
-          <label class="account__label">
-              <span class="faq__text800">
-              Name
-              </span>
+                  <form class="contacts__form">
+                    <h3 class="account-detail__title">Login</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Name
+                          </span>
 
-        <input
-          class="account-detail__input"
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name"
-        />
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your name"
+                    />
 
-        </label>
-          <label class="account__label">
-              <span class="faq__text800">
-              Password
-              </span>
-        <input
-          class="account-detail__input"
-          type="password"
-          id="femail"
-          name="firstemail"
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
 
-        />
-        </label>
+                    />
+                    </label>
+                    <label class="account__label-remember">
+                          <input type="checkbox" />
+                          <span class="faq__text500">
+                          Remember
+                          </span>
+                    </label>
+                    <input class="contacts__submit-hollow" type="submit" value="Login" />
+                    <a class="account-detail__error">Lost you parole?</a>
+                  </form>
 
-        <input class="contacts__submit" type="submit" value="Login" />
+                  <form class="contacts__form">
+                    <h3 class="account-detail__title">Register</h3>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Email
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your email"
+                    />
+                    </label>
+                      <label class="account__label">
+                          <span class="faq__text800">
+                          Password
+                          </span>
+                    <input
+                      class="account-detail__input"
+                      type="password"
+                      id="femail"
+                      name="firstemail"
 
-      </form>
+                    />
+                    </label>
+                     <label class="account__label-remember">
+                          <!-- <input type="checkbox" />
+                          <span class="faq__text500">
+                          Remember
+                          </span> -->
+                    </label>
+                    <input class="contacts__submit" type="submit" value="Register" />
 
-      <form class="contacts__form">
-        <h3 class="account-detail__title">Register</h3>
-           <label class="account__label">
-              <span class="faq__text800">
-              Email
-              </span>
-        <input
-          class="account-detail__input"
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your email"
-        />
-        </label>
-          <label class="account__label">
-              <span class="faq__text800">
-              Password
-              </span>
-        <input
-          class="account-detail__input"
-          type="password"
-          id="femail"
-          name="firstemail"
-
-        />
-        </label>
-
-        <input class="contacts__submit" type="submit" value="Register" />
-
-      </form>
+                  </form>
                 </div>
 
                <div class=" container-narrow">
@@ -235,7 +245,7 @@
             </div>
             <div
               id="tab-4"
-              class="card__tab-content tab-content tab-content--active"
+              class="card__tab-content tab-content"
             >
               <form>
                 <div class="card__top-line">
@@ -574,13 +584,13 @@
                 </ul>
               </form>
             </div>
-            <div id="tab-7" class="card__tab-content tab-content">
+            <div id="tab-7" class="card__tab-content tab-content tab-content--active">
                  <div class=" container-narrow">
               <h1 class="cabinet__title">Billing details</h1>
               </div>
 
               <div class="account-detail">
-    <h3 class="account-detail__title">Edit Account</h3>
+
         <form class="account-detail__form">
             <label class="account-detail__label">
               <span class="faq__text800">
@@ -593,10 +603,50 @@
             </label>
             <label class="account-detail__label">
               <span class="faq__text800">
-              Display name
+              Company name
               </span>
               <div class="account-detail__input-wrap">
-              <input class="account-detail__input" placeholder="olegrewko" type="text" required />
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Country
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Street address
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Postcode
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Town/City
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Phone
+              </span>
+              <div class="account-detail__input-wrap">
+              <input class="account-detail__input" type="text" required />
               </div>
             </label>
             <label class="account-detail__label">
@@ -604,12 +654,20 @@
               Email address
               </span>
               <div class="account-detail__input-wrap">
-              <input class="account-detail__input" placeholder="olegrewko@gmail.com" type="text" required />
+              <input class="account-detail__input"  type="text" required />
+              </div>
+            </label>
+            <label class="account-detail__label">
+              <span class="faq__text800">
+              Order notes
+              </span>
+              <div class="account-detail__input-wrap">
+              <textarea class="account-detail__input"  ></textarea>
               </div>
             </label>
 
         </form>
-        <hr class="account-detail__hr">
+        <!-- <hr class="account-detail__hr">
     <h3 class="account-detail__title">Password change</h3>
         <form class="account-detail__form">
 
@@ -643,7 +701,7 @@
               <input class="contacts__submit" type="submit" value="Send changes" />
               </div>
             </label>
-        </form>
+        </form> -->
               </div>
             </div>
           </div>
