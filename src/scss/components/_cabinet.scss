@@ -239,7 +239,7 @@ margin-left: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding:  20px;
+      padding:  0px;
       // margin-top: 20px;
       // margin-bottom: 20px;
       width: 100%;
@@ -350,6 +350,12 @@ margin-left: auto;
       line-height: 1.7;
       margin-bottom: 10px;
     }
+    &__label-remember-error {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+     }
     &__btn{
       height: 40px;
       display: block;
