@@ -2835,7 +2835,7 @@ ul {
 .card-info__btn--towishlist {
   color: var(--color-dark);
   background-color: var(--color-white);
-  border: 2px solid #eee;
+  border: 0px solid #eee;
 }
 .card-info__btn--towishlist:hover {
   color: var(--color-white);
@@ -4757,9 +4757,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 100px;
   grid-template-rows: 100px;
-  -webkit-column-gap: 5px;
-  -moz-column-gap: 5px;
-  column-gap: 5px;
+  gap: 5px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4770,12 +4768,14 @@ ul {
   .cabinet__grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
 }
 @media (max-width: 420px) {
   .cabinet__grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 5px;
   }
 }
 .cabinet__input {
@@ -4822,7 +4822,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 100px;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid #eee;
 }
 @media (max-width: 640px) {
   .card__tab-box {
@@ -4875,7 +4875,7 @@ ul {
   line-height: 22px;
   color: var(--color-dark);
   padding: 5px 0;
-  border-bottom: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid #eee;
 }
 @media (max-width: 640px) {
   .card__list-item {
@@ -5237,6 +5237,10 @@ ul {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.grey {
+  background-color: #eee;
 }
 
 .page404-content {
