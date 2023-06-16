@@ -1506,7 +1506,7 @@ ul {
 .blog-prev-btn svg {
   width: 40px;
   height: 20px;
-  background-image: url(../../img/prev-arrow.svg);
+  background-image: url(../../img/prev-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1514,8 +1514,17 @@ ul {
   -o-transition: fill 0.3s;
   transition: fill 0.3s;
 }
+.blog-prev-btn svg:hover {
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.blog-prev-btn svg:hover path {
+  fill: #000;
+}
 .blog-prev-btn:hover {
   background-color: var(--color-white);
+  background-image: url(../../img/prev-arrow.svg);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -1549,7 +1558,7 @@ ul {
 .blog-next-btn svg {
   width: 40px;
   height: 20px;
-  background-image: url(../../img/next-arrow.svg);
+  background-image: url(../../img/next-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1559,6 +1568,7 @@ ul {
 }
 .blog-next-btn:hover {
   background-color: var(--color-white);
+  background-image: url(../../img/next-arrow.svg);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
