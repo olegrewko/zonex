@@ -904,7 +904,7 @@ ul {
 }
 .product__title {
   color: rgb(57, 57, 57);
-  font-size: 8px;
+  font-size: 12px;
   margin-bottom: 2px;
 }
 .product__title a::before {
@@ -921,15 +921,15 @@ ul {
   display: flex;
 }
 .product__price {
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   color: rgb(57, 57, 57);
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 .product__oldprice {
   margin-left: 5px;
   color: rgb(97, 98, 98);
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 .product:hover .product__image img {
@@ -2784,18 +2784,17 @@ ul {
   color: var(--color-tundora);
 }
 .card-info__stepper {
+  max-width: 100px;
   width: 100%;
   margin-bottom: 10px;
-}
-@media (max-width: 380px) {
-  .card-info__stepper {
-    width: 70%;
-  }
 }
 .card-info__btn38 {
   margin-bottom: 5px;
   width: 100%;
-  height: 38px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7px;
 }
 .card-info__btn {
   margin-bottom: 5px;
@@ -2836,6 +2835,7 @@ ul {
 .card-info__btn--towishlist {
   color: var(--color-dark);
   background-color: var(--color-white);
+  border: 2px solid #eee;
 }
 .card-info__btn--towishlist:hover {
   color: var(--color-white);
@@ -3892,6 +3892,49 @@ ul {
   cursor: pointer;
 }
 
+.contact-grid-w100 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 500px;
+  grid-template-rows: 500px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .contact-grid-w100 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+  }
+}
+.contact-grid-w100__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 0px;
+}
+
 .contact-grid {
   max-width: 900px;
   width: 100%;
@@ -4706,6 +4749,68 @@ ul {
   font-weight: 700;
   margin-bottom: 30px;
 }
+.cabinet__grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 100px;
+  grid-template-rows: 100px;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .cabinet__grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .cabinet__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.cabinet__input {
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7px;
+  border: 2px solid #eee;
+  padding: 0 15px;
+}
+.cabinet__submit {
+  width: 100%;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7px;
+  border: none;
+  color: #FFFFFF;
+  background-color: var(--color-dark);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.cabinet__submit:hover {
+  color: var(--color-dark);
+  background-color: #fff;
+  border: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
 
 .card__tab-box {
   display: -webkit-box;
@@ -4769,7 +4874,7 @@ ul {
   font-size: 14px;
   line-height: 22px;
   color: var(--color-dark);
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 640px) {
@@ -4789,7 +4894,7 @@ ul {
 }
 
 .card__list-address {
-  width: 149px;
+  width: 150px;
   margin-right: 81px;
   padding: 5px 0;
 }
@@ -4808,7 +4913,7 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 200px;
+  width: 150px;
   margin-right: 10px;
   padding: 5px 0;
 }
@@ -4823,13 +4928,13 @@ ul {
 }
 
 .card__list-a {
-  width: 120px;
+  width: 150px;
   margin-right: 5px;
   padding: 5px 0;
 }
 
 .card__list-n {
-  width: 100px;
+  width: 50px;
   padding: 5px 0;
 }
 .card__list-n img {
