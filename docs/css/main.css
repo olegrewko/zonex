@@ -2784,9 +2784,14 @@ ul {
   color: var(--color-tundora);
 }
 .card-info__stepper {
-  max-width: 100px;
+  max-width: 80px;
   width: 100%;
   margin-bottom: 10px;
+}
+@media (max-width: 420px) {
+  .card-info__stepper {
+    width: 70%;
+  }
 }
 .card-info__btn38 {
   margin-bottom: 5px;
@@ -4891,14 +4896,15 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 14px;
   color: var(--color-dark);
-  padding: 5px 0;
+  padding: 2px 0;
   border-bottom: 0.5px solid #eee;
 }
-@media (max-width: 640px) {
+@media (max-width: 420px) {
   .card__list-item {
-    display: block;
+    font-size: 5px;
+    line-height: 10px;
   }
 }
 
@@ -4919,9 +4925,9 @@ ul {
 }
 
 .card__list-address {
-  width: 150px;
-  margin-right: 10px;
-  padding: 5px 0;
+  width: 100px;
+  margin-right: 5px;
+  padding: 0px 0;
 }
 
 .card__list-order-work {
@@ -4988,7 +4994,7 @@ ul {
 }
 
 .card__list-n {
-  width: 50px;
+  width: 150px;
   padding: 5px 0;
 }
 .card__list-n img {

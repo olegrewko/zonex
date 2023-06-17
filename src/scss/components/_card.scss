@@ -85,13 +85,13 @@
 
   }
    &__stepper {
-    max-width: 100px;
+    max-width: 80px;
     width: 100%;
     margin-bottom: 10px;
-      //  @include xs380 {
+       @include xs420 {
 
-      //   width: 70%;
-      // }
+        width: 70%;
+      }
   }
     &__btn38 {
     margin-bottom: 5px;
