@@ -119,42 +119,75 @@
 
 }
 
+.card__list-order-item {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-family: 'Jost';
+    font-weight: 700;
+      font-size: 12px;
+      // color: rgb(67, 67, 67);
+      line-height: 1.7;
+
+    color: var(--color-dark);
+    padding: 5px 0;
+    border-bottom: 0.5px solid #eee;
+    // @include xs320 {
+    //   display: block;
+    // }
+}
 .card__list-item {
   display: flex;
     justify-content: space-between;
-    // justify-content: flex-start;
+
     align-items: center;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 500;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
 
-font-size: 14px;
-line-height: 22px;
+    font-size: 14px;
+    line-height: 22px;
 
-color: var(--color-dark);
-padding: 5px 0;
-border-bottom: 0.5px solid #eee;
+    color: var(--color-dark);
+    padding: 5px 0;
+    border-bottom: 0.5px solid #eee;
     @include xs640 {
       display: block;
     }
 }
 .card__list-item--title {
     font-family: 'Jost';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 24px;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
 
-color: var(--color-dark);
+    color: var(--color-dark);
 }
 
+.card__list-order-address{
+width: 50px;
+margin-right: 5px;
+padding: 0px 0;
+		}
 .card__list-address{
 width: 150px;
-margin-right: 81px;
+margin-right: 10px;
 padding: 5px 0;
 		}
 
+.card__list-order-work{
+ display: flex;
+    // flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    margin-right: 0px;
+    padding: 0px 0;
+		}
 .card__list-work{
  display: flex;
     flex-direction: column;
@@ -172,12 +205,26 @@ padding: 5px 0;
 
 		}
 
+.card__list-order-a{
+width: 100px;
+margin-right: 5px;
+padding: 5px 0;
+		}
 .card__list-a{
 width: 150px;
 margin-right: 5px;
 padding: 5px 0;
 		}
 
+.card__list-order-n{
+width: 50px;
+
+padding: 0px 0;
+  img{
+    padding: 5px 0px;
+  }
+
+		}
 .card__list-n{
 width: 50px;
 

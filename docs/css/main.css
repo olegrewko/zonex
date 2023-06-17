@@ -4858,6 +4858,25 @@ ul {
   display: block;
 }
 
+.card__list-order-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--color-dark);
+  padding: 5px 0;
+  border-bottom: 0.5px solid #eee;
+}
+
 .card__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4893,10 +4912,31 @@ ul {
   color: var(--color-dark);
 }
 
+.card__list-order-address {
+  width: 50px;
+  margin-right: 5px;
+  padding: 0px 0;
+}
+
 .card__list-address {
   width: 150px;
-  margin-right: 81px;
+  margin-right: 10px;
   padding: 5px 0;
+}
+
+.card__list-order-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 150px;
+  margin-right: 0px;
+  padding: 0px 0;
 }
 
 .card__list-work {
@@ -4927,10 +4967,24 @@ ul {
   justify-content: space-between;
 }
 
+.card__list-order-a {
+  width: 100px;
+  margin-right: 5px;
+  padding: 5px 0;
+}
+
 .card__list-a {
   width: 150px;
   margin-right: 5px;
   padding: 5px 0;
+}
+
+.card__list-order-n {
+  width: 50px;
+  padding: 0px 0;
+}
+.card__list-order-n img {
+  padding: 5px 0px;
 }
 
 .card__list-n {
