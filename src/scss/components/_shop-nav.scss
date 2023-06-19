@@ -62,6 +62,11 @@
   }
 }
 .search-form{
+  position: relative;
+      &:hover {
+
+      cursor: pointer;
+    }
   &__btn{
      display: inline-block;
     width: 16px;
@@ -71,13 +76,92 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.3;
-
+     cursor: pointer;
      &:hover {
       opacity: 0.7;
       transition: all 0.3;
+      cursor: pointer;
     }
   }
 }
+// .dropdown {
+//     position: relative;
+//     display: inline-block;
+// }
+
+// .dropdown-content {
+//     display: none;
+//     position: absolute;
+
+//      background-color: #f1f1f1;
+//     min-width: 150px;
+//      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+
+//     padding: 5px 0px;
+
+
+//      color: grey;
+//     cursor: pointer;
+//     transition: all .4s;
+//     z-index: 800;
+//      &__input {
+//        border: none;
+//       background-color: #fff;
+//       height: 40px;
+//       width: 150px;
+//       padding: 0 5px 0 15px;
+//      }
+// }
+// .show {
+//   display: block;
+
+// }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 50px;
+    right: 20px;
+    padding: 0px 0px;
+    z-index: 1;
+        &__input {
+      //   border: none;
+      //  background-color: #fff;
+      // height: 40px;
+      // width: 300px;
+      // padding: 0 5px 0 15px;
+       height: 40px;
+        width: 0;
+        padding: 5px 42px 0 15px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        outline: none;
+        background: transparent;
+        transition: .4s cubic-bezier(0, 0.8, 0, 1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        &:focus{
+
+          width: 200px;
+          z-index: 1;
+          border-bottom: 2px solid #202020;
+}
+
+     }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 .quantity {
   display: inline-flex;
   justify-content: center;

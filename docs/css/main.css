@@ -560,6 +560,12 @@ ul {
   background-color: #000;
 }
 
+.search-form {
+  position: relative;
+}
+.search-form:hover {
+  cursor: pointer;
+}
 .search-form__btn {
   display: inline-block;
   width: 16px;
@@ -571,12 +577,57 @@ ul {
   -webkit-transition: all 0.3;
   -o-transition: all 0.3;
   transition: all 0.3;
+  cursor: pointer;
 }
 .search-form__btn:hover {
   opacity: 0.7;
   -webkit-transition: all 0.3;
   -o-transition: all 0.3;
   transition: all 0.3;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 200px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  right: 20px;
+  padding: 0px 0px;
+  z-index: 1;
+}
+.dropdown-content__input {
+  height: 40px;
+  width: 0;
+  padding: 5px 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  -webkit-transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  -o-transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.dropdown-content__input:focus {
+  width: 200px;
+  z-index: 1;
+  border-bottom: 2px solid #202020;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .quantity {
