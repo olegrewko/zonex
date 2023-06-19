@@ -85,7 +85,10 @@ color:var(--color-dark);
         padding: 0px;
        }
 		}
-
+//     &__form:focus-within {
+//     background: #eee;
+//     color: black;
+// }
 		// .contact__input
 
 		&__input {
@@ -96,7 +99,7 @@ color:var(--color-dark);
     border: none;
     border-bottom: 1px solid #eee;
     padding: 0 15px;
-margin-bottom: 10px;
+     margin-bottom: 10px;
 		}
 
 		// .contact__submit-hollow
