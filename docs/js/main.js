@@ -107,16 +107,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-// export default {
-//   windowEl: window,
-//   documentEl: document,
-//   htmlEl: document.documentElement,
-//   bodyEl: document.body,
-//   $bannerSlider: document.querySelector('.banner-slider'),
-//   $catalogSlider: document.querySelector('.hero-catalog__slider'),
-//   $cardRelatedSlider: document.querySelector('.card-related__slider'),
-//   $catalogFilters: document.querySelectorAll('.catalog-filter')
-// }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   $window: window,
   $document: document,
@@ -144,6 +134,7 @@ __webpack_require__.r(__webpack_exports__);
   $cardDescrLink: document.querySelectorAll('.card-description__link'),
   $cardRelatedSlider: document.querySelector('.card-related__slider'),
   $burger: document.querySelector('.burger'),
+  $cart: document.querySelector('.cart'),
   $navClose: document.querySelector('.nav__close'),
   $nav: document.querySelector('.nav'),
   $mobileFiltersOpen: document.querySelector('.catalog-mobile-filters'),
@@ -209,6 +200,17 @@ if (_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$burger) {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$nav.classList.remove('nav--visible');
   });
 }
+
+// if (vars.$cart) {
+//     vars.$cart.addEventListener('click', () => {
+//     vars.$nav.classList.toggle('nav--visible');
+//   });
+
+//   vars.$navClose.addEventListener('click', () => {
+//     vars.$nav.classList.remove('nav--visible');
+//   });
+
+// }
 
 /***/ }),
 
@@ -13938,32 +13940,11 @@ __webpack_require__.r(__webpack_exports__);
 // import './components/stepper.js';
 
 
-// import './components/card-slider.js';
-// import './components/fotorama464.min.js';
-// import './components/stepper.js';
-// import './components/catalog-filter-toggle.js';
+
 // import 'simplebar/dist/simplebar.css';
 _js_vars__WEBPACK_IMPORTED_MODULE_1__["default"].$freeDeliveryBtn.addEventListener('click', e => {
   e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
 });
-// import './components/catalog-slider.js';
-// import './components/catalog-filter-toggle';
-// import './components/catalog-props';
-// import './components/card-select';
-// import './components/stepper';
-// import './components/color-select.js';
-// import './components/card-bottom-tabs';
-// import './components/product';
-// import './components/burger';
-// import './components/mobile-filter';
-// import vars from '../js/_vars';
-// import {resizeContent} from './functions/resize';
-// import {scrollTo} from './functions/smooth-scroll';
-// import {disableScroll, enableScroll} from './functions/stop-scroll';
-// import SimpleBar from 'simplebar';
-
-//disableScroll(fix) // fix -> class of element with position: fixed
-// new SimpleBar(document.getElementById('myElement'));
 if (document.querySelector('[data-bar]')) {
   new SimpleBar(document.querySelector('.card-description__navigation'));
 }
@@ -13998,35 +13979,6 @@ if (document.querySelector('.tab')) {
     $($(undefined).attr('href')).addClass('tabs-content--active');
   });
 }
-
-// $(function () {
-//    $('.shop-content__filter-btn').on('click', function(){
-
-//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
-//     $(this).addClass('shop-content__filter-btn--active');
-//   });
-// });
-
-// $('.button-list').on('click', function(){
-//   $('.product').addClass('product--list');
-// });
-
-// $('.button-grid').on('click', function(){
-//   $('.product').removeClass('product--list');
-
-// });
-
-// $(function () {
-//    $('.tab').on('click', function (e) {
-//         e.preventDefault();
-//         $($(this).siblings()).removeClass('tab--active');
-//         $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
-//         $(this).addClass('tab--active');
-//         $($(this).attr('href')).addClass('tab-content--active');
-
-//       });
-// });
-
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }

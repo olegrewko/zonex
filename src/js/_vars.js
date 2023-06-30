@@ -1,13 +1,4 @@
-// export default {
-//   windowEl: window,
-//   documentEl: document,
-//   htmlEl: document.documentElement,
-//   bodyEl: document.body,
-//   $bannerSlider: document.querySelector('.banner-slider'),
-//   $catalogSlider: document.querySelector('.hero-catalog__slider'),
-//   $cardRelatedSlider: document.querySelector('.card-related__slider'),
-//   $catalogFilters: document.querySelectorAll('.catalog-filter')
-// }
+
 export default {
   $window: window,
   $document: document,
@@ -35,6 +26,7 @@ export default {
   $cardDescrLink: document.querySelectorAll('.card-description__link'),
   $cardRelatedSlider: document.querySelector('.card-related__slider'),
   $burger: document.querySelector('.burger'),
+  $cart: document.querySelector('.cart'),
   $navClose: document.querySelector('.nav__close'),
   $nav: document.querySelector('.nav'),
   $mobileFiltersOpen: document.querySelector('.catalog-mobile-filters'),

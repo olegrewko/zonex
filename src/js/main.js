@@ -16,32 +16,12 @@ import './components/card-slider.js';
 // import './components/stepper.js';
 import './components/jquery.js';
 import './components/product.js';
-// import './components/card-slider.js';
-// import './components/fotorama464.min.js';
-// import './components/stepper.js';
-// import './components/catalog-filter-toggle.js';
+
 // import 'simplebar/dist/simplebar.css';
 vars.$freeDeliveryBtn.addEventListener('click', (e) => {
   e.currentTarget.closest('.free-delivery__btn').style.display = 'none';
 });
-// import './components/catalog-slider.js';
-// import './components/catalog-filter-toggle';
-// import './components/catalog-props';
-// import './components/card-select';
-// import './components/stepper';
-// import './components/color-select.js';
-// import './components/card-bottom-tabs';
-// import './components/product';
-// import './components/burger';
-// import './components/mobile-filter';
-// import vars from '../js/_vars';
-// import {resizeContent} from './functions/resize';
-// import {scrollTo} from './functions/smooth-scroll';
-// import {disableScroll, enableScroll} from './functions/stop-scroll';
-// import SimpleBar from 'simplebar';
 
-//disableScroll(fix) // fix -> class of element with position: fixed
-// new SimpleBar(document.getElementById('myElement'));
 if (document.querySelector('[data-bar]')) {
   new SimpleBar(document.querySelector('.card-description__navigation'));
 }
@@ -88,34 +68,7 @@ if (document.querySelector('.tab')) {
   });
 }
 
-// $(function () {
-//    $('.shop-content__filter-btn').on('click', function(){
 
-//     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
-//     $(this).addClass('shop-content__filter-btn--active');
-//   });
-// });
-
-  // $('.button-list').on('click', function(){
-  //   $('.product').addClass('product--list');
-  // });
-
-  // $('.button-grid').on('click', function(){
-  //   $('.product').removeClass('product--list');
-
-  // });
-
-
-// $(function () {
-//    $('.tab').on('click', function (e) {
-//         e.preventDefault();
-//         $($(this).siblings()).removeClass('tab--active');
-//         $($(this).parent().siblings().find('div')).removeClass('tab-content--active');
-//         $(this).addClass('tab--active');
-//         $($(this).attr('href')).addClass('tab-content--active');
-
-//       });
-// });
 
         function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");

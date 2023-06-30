@@ -24,6 +24,7 @@ const htmlmin = require('gulp-htmlmin');
 const gulpif = require('gulp-if');
 const notify = require('gulp-notify');
 const image = require('gulp-imagemin');
+const imgmin = require('gulp-imagemin');
 const {
   readFileSync
 } = require('fs');
@@ -235,8 +236,18 @@ const images = () => {
       image.optipng({
         optimizationLevel: 2
       }),
+
     ])))
     .pipe(dest(paths.buildImgFolder))
+};
+const imgmins = () => {
+  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
+		   .pipe(gulpif(isProd, image([
+       imgmin ({
+      verbose: true
+    }),
+   ])))
+		.pipe(dest(paths.buildImgFolder))
 };
 
 const webpImages = () => {
@@ -325,9 +336,11 @@ const toProd = (done) => {
   isProd = true;
   done();
 };
+exports.imgmins = imgmins;
+
 exports.copyfolder = copyfolder;
 
-exports.default = series(clean, copyfolder, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
+exports.default = series(clean, copyfolder, htmlInclude, scripts, styles, resources, images, imgmins, webpImages, svgSprites, watchFiles);
 
 exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites)
 

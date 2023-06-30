@@ -11,3 +11,15 @@ if (vars.$burger) {
 
 }
 
+
+// if (vars.$cart) {
+//     vars.$cart.addEventListener('click', () => {
+//     vars.$nav.classList.toggle('nav--visible');
+//   });
+
+//   vars.$navClose.addEventListener('click', () => {
+//     vars.$nav.classList.remove('nav--visible');
+//   });
+
+// }
+
