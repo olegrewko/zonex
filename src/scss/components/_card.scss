@@ -16,7 +16,7 @@
   .container{
 
     display: flex;
-    // justify-content: center;
+
      @include xs {
       flex-wrap: wrap;
     }

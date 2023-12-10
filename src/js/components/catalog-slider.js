@@ -49,6 +49,9 @@ const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
     },
     420: {
       slidesPerView: 3,
+    },
+    380: {
+      slidesPerView: 2,
     }
   }
 });

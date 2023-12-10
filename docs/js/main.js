@@ -457,6 +457,9 @@ const relatedSlider = new (_vendor_swiper_min_js__WEBPACK_IMPORTED_MODULE_0___de
     },
     420: {
       slidesPerView: 3
+    },
+    380: {
+      slidesPerView: 2
     }
   }
 });
