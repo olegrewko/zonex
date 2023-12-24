@@ -10,6 +10,9 @@
         .product__content-box{
           margin-top: 5px;
           display: flex;
+            @include xs380 {
+              flex-wrap: wrap;
+      }
         }
 
         .product__wrapper-box{

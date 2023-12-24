@@ -920,6 +920,12 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 380px) {
+  .product .product__content-box {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 .product .product__wrapper-box {
   padding: 5px 0px;
   border: 0px solid #ececec;
