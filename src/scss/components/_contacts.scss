@@ -5,7 +5,7 @@
  justify-content: center;
   align-items: center;
 
-  // padding-top: 50px;
+
 
   &__box{
     position: relative;
@@ -26,9 +26,7 @@
   }
 
 		&__title {
-      // font-weight: 500;
-      // font-size: 25px;
-      // line-height: 30px;
+
       font-weight: 700;
       font-size: 16px;
       line-height: 35px;
@@ -36,13 +34,13 @@
       color: var(--color-dark);
 		}
 
-		// .contacts__subtitle
+
 
 		&__subtitle {
-font-weight: 700;
-font-size:12px;
-line-height: 14px;
-color:var(--color-dark);
+      font-weight: 700;
+      font-size:12px;
+      line-height: 14px;
+      color:var(--color-dark);
 		}
 
 
@@ -85,15 +83,10 @@ color:var(--color-dark);
         padding: 0px;
        }
 		}
-//     &__form:focus-within {
-//     background: #eee;
-//     color: black;
-// }
-		// .contact__input
+
 
 		&__input {
 
-        // max-width: 1000px;
       width: 100%;
     height: 40px;
     border: none;
@@ -115,19 +108,18 @@ color:var(--color-dark);
       font-size: 12px;
       line-height: 1.7px;
       border: 2px solid var(--color-tundora);
-      // border: none;
-      // color: #FFFFFF;
+
       color: var(--color-dark);
       background-color: #fff;
-      // background-color: var(--color-dark);
+
       transition: all 0.3s;
       cursor: pointer;
 
      &:hover{
       color: #FFFFFF;
-      // background-color: #fff;
+
       background-color: var(--color-dark);
-      // border: 2px solid var(--color-tundora);
+
       border: none;
       transition: all 0.3s;
       cursor: pointer;
@@ -162,18 +154,18 @@ color:var(--color-dark);
 }
 
  .contact-grid-w100 {
-      // max-width: 900px;
+
       width: 100%;
       display: grid;
       grid-template-columns: 1fr  1fr;
       grid-template-rows: 500px;
       column-gap: 20px;
       align-items: center;
-      // margin: 0 auto;
+
       margin-top: 20px;
       margin-bottom: 20px;
 
-      // align-items: center;
+
        @include xs {
         grid-template-columns:  1fr;
         column-gap: 0px;
@@ -196,7 +188,7 @@ color:var(--color-dark);
       grid-template-rows: 500px;
       column-gap: 20px;
 
-      // margin: 0 auto;
+
       margin-top: 20px;
       margin-bottom: 20px;
 
